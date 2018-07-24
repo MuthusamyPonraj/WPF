@@ -1,0 +1,14 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+GridTreeControl - Product Showcase
+</Paragraph> 
+<Paragraph>
+    The GridTreeControl serves as a multi-column tree control that is optimized to display tens and thousands of items. This control uses a load-on-demand architecture and quickly generates the tree view. You can toggle the view of the underlying nodes by clicking the plus-minus glyphs of a root node. It provides complete customization options. It can be used in applications that deals with hierarchical data. Following samples will showcases the real-time applications on which the GridTreeControl can be used.
+</Paragraph> 
+
+<Paragraph> <Bold>File Explorer</Bold>-This sample showcases how a File Explorer application can be created by using GridTreeControl.</Paragraph>
+
+<Paragraph> <Bold>Organization Tree</Bold>-This sample showcases how an Organization's employee hierarchy can be displayed by using GridTreeControl.</Paragraph>
+
+</FlowDocument>

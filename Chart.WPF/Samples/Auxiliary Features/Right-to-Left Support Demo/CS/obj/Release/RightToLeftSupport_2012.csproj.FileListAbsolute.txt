@@ -1,0 +1,4 @@
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Auxiliary Features\Right-to-Left Support Demo\CS\obj\Release\RightToLeftSupport_2012.csprojResolveAssemblyReference.cache
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Auxiliary Features\Right-to-Left Support Demo\CS\obj\Release\App.baml
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Auxiliary Features\Right-to-Left Support Demo\CS\obj\Release\App.g.cs
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Auxiliary Features\Right-to-Left Support Demo\CS\obj\Release\RightToLeftSupportDemo_MarkupCompile.cache

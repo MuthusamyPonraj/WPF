@@ -1,0 +1,21 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+        <Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+            Recurrence Appointments Demo
+        </Paragraph>
+
+
+
+        <Paragraph>
+            This sample showcases how the recurrence appointments can be added to the Schedule Control Works manually 
+        </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\Recurrence Appointments Demo.png" Width="700" Height="600" /></Paragraph>
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+Features:
+</Paragraph>
+        <List Margin="25,0,0,0">
+			<ListItem><Paragraph>Schedule Control allows the user to add their recurrence appointments. These recurrence appointments can be added, edited or deleted similar to that of schedule appointment. </Paragraph></ListItem>	 
+        </List>
+</FlowDocument>
+

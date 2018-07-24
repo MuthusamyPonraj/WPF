@@ -1,0 +1,18 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+        Schedule Control - Advanced
+    </Paragraph>
+    <Paragraph FontFamily="Calibri" FontSize="14">
+       This list of samples will show the advanced funtionalities of Schedule Control
+    </Paragraph>    
+    <Paragraph FontFamily="Calibri" FontSize="14">
+        <Bold>Recurrence Appointments Demo</Bold>- This sample demonstrate adding recurrence appointments to Schedule control. 
+    </Paragraph>
+    <Paragraph FontFamily="Calibri" FontSize="14">
+        <Bold>Reminder Alert Demo</Bold> - This sample demonstrates how schedule alerts the user when time arrives for an appointment.
+    </Paragraph>
+	<Paragraph FontFamily="Calibri" FontSize="14">
+        <Bold>Localization Demo</Bold> - This sample demonstrates how schedule supports different cultures.
+    </Paragraph>
+</FlowDocument>

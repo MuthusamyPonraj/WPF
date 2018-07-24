@@ -1,0 +1,92 @@
+﻿<syncfusion:ChromelessWindow x:Class="DefaultTolltipDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:behavior="clr-namespace:DefaultTolltipDemo.Behavior"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:view="clr-namespace:DefaultTolltipDemo"
+        Icon="App.ico"
+        syncfusion:LayoutControl.SetMetroMode="True">
+
+    <!--  DataContext set here for Window  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <view:ViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+    <syncfusion:LayoutControl HeaderDescriptionText="This sample showcases the default tooltip feature of GridDataControl."
+                              HeaderText="Default Tooltip Demo"
+                              LayoutMode="Metro"
+                              UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/#!documents/42313tooltips.htm"
+                              UserOptionsVisibility="Collapsed">
+        <syncfusion:LayoutControl.GridView>
+            <!--  GridDataControl Created here  -->
+            <syncfusion:GridDataControl x:Name="grid"
+                                        AllowEdit="False"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ColumnSizer="Star"
+                                        ItemsSource="{Binding Path=ZipCodeCollection}"
+                                        NotifyPropertyChanges="True"
+                                        ShowAddNewRow="False"
+                                        ShowGroupDropArea="False"
+                                        ShowTooltips="True"
+                                        VisualStyle="Metro">
+
+                <!--  Behavior Created here for GridDataControl  -->
+                <i:Interaction.Behaviors>
+                    <behavior:ToolTipBehavior />
+                </i:Interaction.Behaviors>
+                <!--  Visible Columns Created here  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Zip Code" MappingName="ZipCode">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="City Name" MappingName="City">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="State Abbereviation" MappingName="StateAbbereviation">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="State Name" MappingName="StateName">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Latitude" MappingName="Latitude">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Longitude" MappingName="Longitude">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                </syncfusion:GridDataControl.VisibleColumns>
+
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>
+

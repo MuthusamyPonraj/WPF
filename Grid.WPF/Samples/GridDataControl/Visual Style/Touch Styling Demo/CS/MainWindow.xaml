@@ -1,0 +1,156 @@
+﻿<syncfusion:ChromelessWindow x:Class="TouchStylingDemo.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                             xmlns:local="clr-namespace:TouchStylingDemo"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+                             Icon="App.ico"
+                             syncfusion:LayoutControl.SetMetroMode="True">
+
+    <!--  Window DataContext  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:ViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+
+    <syncfusion:LayoutControl HeaderDescriptionText="This sample showcases the different Touch Styling functionalities of GridDataControl."
+                              HeaderText="Touch Styling Demo"
+                              LayoutBrush="#FFF68909"
+                              LayoutMode="Metro"
+                              UserOptionsVisibility="Collapsed">
+
+        <syncfusion:LayoutControl.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="/TouchStylingDemo;component/Resources/GridDataHeaderCellControlStyle.xaml" />
+                    <ResourceDictionary Source="/TouchStylingDemo;component/Resources/GridDataStyleManager.xaml" />
+                    <ResourceDictionary Source="/TouchStylingDemo;component/Resources/ScrollBarStyle.xaml" />
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+        </syncfusion:LayoutControl.Resources>
+
+        <syncfusion:LayoutControl.GridView>
+
+            <!--  GridDataControl Definition  -->
+            <syncfusion:GridDataControl x:Name="dataGrid1"
+                                        AllowEdit="False"
+                                        AllowSort="True"
+                                        AlternatingRowBackground="White"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ColumnSizer="Star"
+                                        DefaultHeaderRowHeight="50"
+                                        EnableBlendStyling="True"
+                                        HeaderStyle="{StaticResource GridDataHeaderCellControlStyle2}"
+                                        HideColumnsWhenGrouped="True"
+                                        IsGroupsExpanded="True"
+                                        ItemsSource="{Binding CustomerDetails}"
+                                        NotifyPropertyChanges="True"
+                                        PersistGroupsExpandState="True"
+                                        ShowAddNewRow="False"
+                                        ShowFilters="True"
+                                        ShowGroupDropArea="True"
+                                        ShowRowHeader="False"
+                                        StyleManager="{StaticResource CustomGridDataStyleManager}"
+                                        VisualStyle="Metro">
+
+                <i:Interaction.Behaviors>
+                    <local:InitialSetupBehavior />
+                </i:Interaction.Behaviors>
+
+                <syncfusion:GridDataControl.GroupedColumns>
+                    <syncfusion:GridDataGroupColumn ColumnName="ContactTitle" />
+                </syncfusion:GridDataControl.GroupedColumns>
+
+
+                <!--  Visible Column created here  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+
+                    <syncfusion:GridDataVisibleColumn Width="80"
+                                                      HeaderText="Customer ID"
+                                                      MappingName="CustomerID">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle ReadOnly="True" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Company Name" MappingName="CompanyName" />
+                    <syncfusion:GridDataVisibleColumn HeaderText="Contact Title" MappingName="ContactName" />
+
+                    <syncfusion:GridDataVisibleColumn Width="100"
+                                                      HeaderText="City"
+                                                      MappingName="City" />
+
+                    <syncfusion:GridDataVisibleColumn Width="100"
+                                                      HeaderText="Country"
+                                                      MappingName="Country" />
+
+                    <syncfusion:GridDataVisibleColumn Width="100" MappingName="Phone">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                </syncfusion:GridDataControl.VisibleColumns>
+
+
+                <!--  GridDataControl Relation Definition  -->
+                <syncfusion:GridDataControl.Relations>
+                    <syncfusion:GridDataRelation RelationalColumn="Orders" RelationType="MasterDetails">
+                        <syncfusion:GridDataRelation.TableProperties>
+                            <syncfusion:GridDataTableProperties AllowEdit="False"
+                                                                AllowSort="True"
+                                                                AlternatingRowBackground="White"
+                                                                AutoPopulateColumns="False"
+                                                                AutoPopulateRelations="False"
+                                                                ColumnSizer="Star"
+                                                                DefaultHeaderRowHeight="50"
+                                                                NotifyPropertyChanges="True"
+                                                                ShowAddNewRow="False"
+                                                                ShowFilters="True"
+                                                                UpdateMode="PropertyChanged">
+
+                                <!--  GridDataControl relation column definition  -->
+                                <syncfusion:GridDataTableProperties.VisibleColumns>
+
+                                    <syncfusion:GridDataVisibleColumn AllowFilter="True"
+                                                                      HeaderText="Order ID"
+                                                                      MappingName="OrderID">
+                                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataVisibleColumn>
+
+                                    <syncfusion:GridDataVisibleColumn AllowFilter="True"
+                                                                      HeaderText="Customer ID"
+                                                                      MappingName="CustomerID">
+                                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle ReadOnly="True" />
+                                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataVisibleColumn>
+
+                                    <syncfusion:GridDataVisibleColumn AllowFilter="True"
+                                                                      HeaderText="Employee ID"
+                                                                      MappingName="EmployeeID" />
+
+                                    <syncfusion:GridDataCurrencyEditVisibleColumn AllowFilter="True" MappingName="Freight">
+                                        <syncfusion:GridDataCurrencyEditVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                                        </syncfusion:GridDataCurrencyEditVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataCurrencyEditVisibleColumn>
+
+                                    <syncfusion:GridDataVisibleColumn AllowFilter="True"
+                                                                      HeaderText="Ship Name"
+                                                                      MappingName="ShipName" />
+                                    <syncfusion:GridDataVisibleColumn AllowFilter="True"
+                                                                      HeaderText="Ship Address"
+                                                                      MappingName="ShipAddress" />
+
+                                </syncfusion:GridDataTableProperties.VisibleColumns>
+                            </syncfusion:GridDataTableProperties>
+                        </syncfusion:GridDataRelation.TableProperties>
+                    </syncfusion:GridDataRelation>
+                </syncfusion:GridDataControl.Relations>
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

@@ -1,0 +1,11 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+
+    <Paragraph FontFamily="Calibri"  FontSize="14">
+        This sample illustrates the line routing feature of Diagram.
+    </Paragraph>
+
+    <Paragraph TextAlignment="Center">
+        <Image Source="Image\LineRouting.png" Stretch="None"/>
+    </Paragraph>
+</FlowDocument>

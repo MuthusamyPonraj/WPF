@@ -1,0 +1,98 @@
+﻿<SampleLayout:SampleLayoutWindow x:Class="SimpleMapsDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Simple Maps Demo"  WindowStartupLocation="CenterScreen"  
+       xmlns:maps="http://schemas.syncfusion.com/wpf" 
+        xmlns:local="clr-namespace:SimpleMapsDemo"
+          xmlns:sys="clr-namespace:System;assembly=mscorlib" xmlns:SampleLayout="clr-namespace:Syncfusion.Windows.SampleLayout;assembly=Syncfusion.Chart.Wpf.SampleLayout"
+      >
+    <SampleLayout:SampleLayoutWindow.Resources>
+        <local:SelectedValueToBrushConvertor x:Key="colorConverter"/>
+        <local:SelectedIndexToZoomModeCoverter x:Key="zoomModeConverter"/>
+        <local:IndexToNavigationControlPositionConverter x:Key="positionConverter"/>
+        <local:SelectedValueToStringConverter x:Key="selectedvalueToStringConverter"/>       
+        <local:SimpleMapViewData x:Key="data"/>
+    </SampleLayout:SampleLayoutWindow.Resources>
+        <Grid>
+            <maps:MapControl x:Name="Map" maps:SkinStorage.VisualStyle="{Binding SelectedIndex,ElementName=SkinChooser,Converter={StaticResource selectedvalueToStringConverter}}"  NavigationControlPosition="{Binding SelectedIndex,ElementName=navigationPositioncombo,Converter={StaticResource positionConverter}}" ShapeStrokeThickness="{Binding Value,ElementName=shapeStrokeThicknessslider,Mode=TwoWay}" ShapeFill="{Binding SelectedValue,ElementName=shapeFillCombo,Converter={StaticResource colorConverter}}" ShapeStroke="{Binding SelectedValue,ElementName=shapestrokeCombo,Converter={StaticResource colorConverter}}" ShowNavigationControl="{Binding IsChecked,ElementName=showNavigationControl}"  ZoomLevel="{Binding Value,ElementName=ZoomLevelSlider,Mode=TwoWay}" EnableHoverEffects="{Binding IsChecked,ElementName=enableHoverEffects}" ShapeHoverFill="{Binding SelectedValue,ElementName=shapeHoverfillCombo,Converter={StaticResource colorConverter}}" ShapeHoverStroke="{Binding SelectedValue,ElementName=shapeHoverStrokeCombo,Converter={StaticResource colorConverter}}" ZoomMode="{Binding SelectedIndex,ElementName=zoomMode,Converter={StaticResource zoomModeConverter}}" ShapeHoverStrokeThickness="{Binding ElementName=StrokeThicknessslider,Path=Value}">
+                <maps:MapControl.LayeredContent>
+                    <maps:ShapeFileLayer  Uri="SimpleMapsDemo.ShapeFiles.world.shp" x:Name="shapeControl">
+                    </maps:ShapeFileLayer>
+                </maps:MapControl.LayeredContent>
+            </maps:MapControl>
+        </Grid>
+    <SampleLayout:SampleLayoutWindow.UserOptionsLayout>
+        <Grid  DataContext="{StaticResource data}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Expander Header="Shape File Layer Options" Grid.Row="0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Enable Hover           Effects" />
+                    <CheckBox Name="enableHoverEffects" IsChecked="True" Grid.Column="1" />
+                    <TextBlock Text="Shape Hover Fill" Grid.Row="1"  />
+                    <ComboBox Name="shapeHoverfillCombo" Height="25" SelectedIndex="96" ItemsSource="{Binding BrushCollection}"  Grid.Row="1"  Grid.Column="1" />
+                    <TextBlock Text="Shape Hover Stroke"  Grid.Row="2"/>
+                    <ComboBox Name="shapeHoverStrokeCombo" Height="25" SelectedIndex="1" ItemsSource="{Binding BrushCollection}"  Grid.Row="2" Grid.Column="1"  />
+                    <TextBlock Text="Hover Stroke Thickness" Grid.Row="3"  VerticalAlignment="Center" HorizontalAlignment="Left" />
+                    <Slider Name="StrokeThicknessslider"  Grid.Row="3" Grid.Column="1"  Value="0.3" />
+                    <TextBlock Text="Shape Stroke" Grid.Row="4" />
+                    <ComboBox Name="shapestrokeCombo" Height="25" SelectedIndex="1"  Grid.Row="4" ItemsSource="{Binding BrushCollection}"  Grid.Column="1"  />
+                    <TextBlock Text="Shape Fill" Grid.Row="5" />
+                    <ComboBox Name="shapeFillCombo" Height="25" SelectedIndex="97"  Grid.Row="5" ItemsSource="{Binding BrushCollection}" Grid.Column="1"  />
+                    <TextBlock Text="Shape Stroke Thickness" Grid.Row="6" />
+                    <Slider Name="shapeStrokeThicknessslider"  Grid.Row="6" Value="0.25" Grid.Column="1" />
+                </Grid>
+            </Expander>
+            <Expander Header="Navigation Control Options" Grid.Row="1">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <TextBlock Text="Skin Chooser" TextWrapping="Wrap"  />
+                    <ComboBox   Height="25" VerticalAlignment="Top" x:Name="SkinChooser"  SelectedIndex="6"  Grid.Column="1">
+                      
+                        <ComboBoxItem>Office2007Blue</ComboBoxItem>
+                        <ComboBoxItem>Default</ComboBoxItem>
+                        <ComboBoxItem>Office2007Black</ComboBoxItem>
+                        <ComboBoxItem>Office2007Silver</ComboBoxItem>
+                        <ComboBoxItem>Blend</ComboBoxItem>
+                        <ComboBoxItem>VS2010</ComboBoxItem>
+                        <ComboBoxItem>Office2010Blue</ComboBoxItem>
+                        <ComboBoxItem>Office2010Black</ComboBoxItem>
+                        <ComboBoxItem>Office2010Silver</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock  Text="Show Navigation Control" TextWrapping="Wrap" Grid.Row="1" />
+                    <CheckBox  Name="showNavigationControl" IsChecked="True" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" />
+                    <TextBlock Text="Navigation Control Position" TextWrapping="Wrap" Grid.Row="2" />
+                    <ComboBox Name="navigationPositioncombo" Height="25" SelectedIndex="3"    Grid.Column="1" Grid.Row="2" >
+                        <ComboBoxItem>Top</ComboBoxItem>
+                        <ComboBoxItem>Right</ComboBoxItem>
+                        <ComboBoxItem>Bottom</ComboBoxItem>
+                        <ComboBoxItem>Left</ComboBoxItem>
+                    </ComboBox>
+                </Grid>
+            </Expander>
+        </Grid>
+    </SampleLayout:SampleLayoutWindow.UserOptionsLayout>
+</SampleLayout:SampleLayoutWindow>

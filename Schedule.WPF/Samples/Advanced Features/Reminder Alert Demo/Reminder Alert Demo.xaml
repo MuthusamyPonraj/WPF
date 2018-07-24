@@ -1,0 +1,15 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+        <Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+            Reminder Alert Demo
+        </Paragraph>
+		<Paragraph>This sample demonstrates how schedule alerts the user when time arrives for an appointment.</Paragraph>
+		<Paragraph TextAlignment="Center"><Image Source="Images\Reminder Alert Demo.png" Width="700" Height="600" /></Paragraph>
+		<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+		Features:
+		</Paragraph>
+		<List Margin="25,0,0,0">
+			<ListItem><Paragraph>Schedule Control will alert the user when time arrives for any appointment that has been fixed in schedule control </Paragraph></ListItem>	 
+        </List>
+</FlowDocument>
+

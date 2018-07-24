@@ -1,0 +1,170 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+Linear Gauge Demo
+</Paragraph>
+<Paragraph>
+The "Linear Gauge Control" demo demonstrates the entire functionality of the Essential WPF linear gauge. The linear gauge provides powerful functionalities, such as state indicators, orientations, different types of scales, and pointers with label ticks. Apart from this, complete customization using style and template properties of the Linear Gauge class are available.
+</Paragraph>
+<Paragraph TextAlignment="Center"><Image Source="Images\linearGauge.png" Stretch="None"/></Paragraph>
+<Paragraph TextAlignment="Center">Vertical Linear Gauge.</Paragraph>
+<Paragraph TextAlignment="Center"><Image Source="Images\linearGauge_Horizontal.png" Stretch="None"/></Paragraph>
+<Paragraph TextAlignment="Center">Horizontal Linear Gauge </Paragraph>
+<Paragraph TextAlignment="Center"><Image Source="Images\linearGauge_interval.png" Stretch="None"/></Paragraph>
+<Paragraph TextAlignment="Center">Linear Gauge with Different Interval and Pointer Position. </Paragraph>
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+Features:
+</Paragraph>
+
+<List Margin="25,0,0,0">
+
+<ListItem>
+<Paragraph>Orientation (horizontal and vertical) support has been provided.</Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Several properties have been provided for indicating the scale and state of the Linear Gauge control.</Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>The range of the Linear Gauge control can be specified using various range options. </Paragraph>
+</ListItem>
+
+
+<ListItem>
+<Paragraph>Support for hosting any content inside the linear gauge has been provided.</Paragraph>
+</ListItem>
+
+
+
+<ListItem>
+<Paragraph>Different shapes can be used for the marker.</Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>Several customizable properties have been provided for the ticks, pointers, labels, etc.</Paragraph>
+</ListItem>
+
+</List>
+
+
+
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+Interactive Features:
+</Paragraph>
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="14">General</Paragraph>
+<List Margin="25,0,0,0">
+
+<ListItem>
+<Paragraph>To change the orientation of the linear gauge, the appropriate radio button can be selected. Clicking on the "Vertical" button displays the linear gauge vertically. Clicking on "Horizontal" button displays it horizontally.</Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>The major and minor intervals can be specified using the corresponding sliders in the sample. Increasing the major interval will increase the distance between the ticks and therefore correspond to larger intervals and vice versa. The minor interval specifies the distance between the minor tick lines on the scale. </Paragraph>
+</ListItem>
+
+
+</List>
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="14">Pointer Options</Paragraph>
+<List Margin="25,0,0,0">
+
+<ListItem>
+<Paragraph>The pointer value can be specified by using the "Pointer value" slider provided in the sample. The pointer will move accordingly to point to the specific values.</Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>The width of the pointer can be specified by changing the "Pointer width" slider value. </Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>The length of the pointer can be set by using the "Pointer length" slider.  </Paragraph>
+</ListItem>
+
+
+<ListItem>
+<Paragraph>Several shapes like triangle, rectangle, ellipse, trapezoid, pentagon, and diamond have been provided for the marker pointer. Just select the desired shape from the "Marker style" combo box to display the pointer in that shape.  </Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>The marker position can also be specified to be inside the scale, outside the scale, or on the scale.  Select the position from the combo box to display the pointer at that position.</Paragraph>
+</ListItem>
+
+</List>
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="14">Scale Options</Paragraph>
+<List Margin="25,0,0,0">
+
+<ListItem>
+<Paragraph>To change the size of the scale bar, increase or decrease the value by using the "Scale bar size" slider. </Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>To change the width of the scale's border, increase or decrease the value by using the "Scale border width" slider. </Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>To change the style of the indicator, select any of the styles from the "Indicator Style" combo box. The indicator is displayed at the bottom. The initial color is green. As the pointer value reaches the end point, it will turn red. </Paragraph>
+</ListItem>
+
+</List>
+
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="14">Mark Ticks Options</Paragraph>
+<List Margin="25,0,0,0">
+
+<ListItem>
+<Paragraph>The angle of the ticks displayed on the scale can be specified using the "Ticks angle" slider in the sample. The ticks will be rotated accordingly.  </Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>The  position of the ticks can also be specified to be inside the scale, outside the scale, or on the scale. To set the desired position, select the corresponding option from the "Ticks position" combo box.</Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>Several shapes, like rectangle, rounded rectangle, ellipse, and triangle, have been provided for the ticks. Just select the desired shape from the "Ticks shape" combo box to display the ticks in that shape.  </Paragraph>
+</ListItem>
+</List>
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="14">Label Ticks Options</Paragraph>
+<List Margin="25,0,0,0">
+
+<ListItem>
+<Paragraph>To change the position of the labels on the scale, increase the value by using the "Scale offset" slider. The labels will be accordingly placed.</Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>The label values are displayed beside the ticks. The angle of the labels can be specified using the "Label angle" slider in the sample.  </Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>The  position of the labels can also be specified to be inside the scale, outside the scale, or on the scale. To set the desired position, select the corresponding option from the "Label position" combo box.</Paragraph>
+</ListItem>
+
+
+</List>
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="14">Range Options</Paragraph>
+<List Margin="25,0,0,0">
+<ListItem>
+<Paragraph>The width of the start position of the range indicator can be set by using the "Start width" slider. </Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>Similarly, the width of the end position of the range indicator can be set by using the "End width" slider. </Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>The start and end values of the range indicator can be specified using the corresponding sliders. The range indicator's start and end points will be set accordingly. </Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>The distance between the range indicator and the scale can be set by changing the "Distance from scale" slider value. </Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>The range indicator can be placed inside the scale, outside the scale, or on the scale. The desired position can be selected from the "Range position" combo box, and the range indicator will be placed at the selected position. </Paragraph>
+</ListItem>
+</List>
+</FlowDocument>

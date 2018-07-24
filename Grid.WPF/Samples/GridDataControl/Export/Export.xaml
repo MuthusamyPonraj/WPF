@@ -1,0 +1,29 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        GridDataControl - Export 
+    </Paragraph>
+    <Paragraph>
+        The following samples demonstrate Exporting feature in GridDataControl.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>Excel Export Demo</Bold>- This sample shows how GridDataControl Contents are exported to Excel SpreadSheet.
+    </Paragraph>
+	
+    <Paragraph>
+        <Bold>Grouping Excel Export Demo</Bold>- This sample shows how GridDataControl with Grouping Contents are exported to Excel SpreadSheet.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>NestedChild Excel Export Demo</Bold>- This sample shows how GridDataControl with NestedChild Contents are exported to Excel SpreadSheet.
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>Pdf Export Demo</Bold>- This sample shows how GridDataControl contents are exported to a Pdf file.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>CSV Export Demo</Bold>- This sample shows how GridDataControl contents are exported to CSV file.
+    </Paragraph>
+</FlowDocument>

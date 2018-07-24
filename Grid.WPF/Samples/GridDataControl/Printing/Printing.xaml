@@ -1,0 +1,14 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        GridDataControl - Printing
+    </Paragraph>
+    <Paragraph>
+        The GridDataControl can Print the data present in control.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>Print Demo</Bold>- This sample demonstrates Print Process in GridDataControl.
+    </Paragraph>
+  
+</FlowDocument>

@@ -1,0 +1,10 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+      <Paragraph>
+		This sample showcases the ComplexProperty capability of GridDataControl. The GridDataControl supports binding complex properties. A complex property is the one that contains multiple values. For example, a "size" type object which contains two values: width and height, is represented as a single property. Such complex properties are displayed in the grid columns in the Property.Member format. For an example of the size property, the grid populates two columns: "Size.Width" and "Size.Height". The complex property binding feature is useful when users have nested data, i.e. when data of one table is mapped to another table.
+	  </Paragraph>
+        	
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\ComplexPropertyBindingDemo.png" Stretch="None" /></Paragraph>
+
+</FlowDocument>

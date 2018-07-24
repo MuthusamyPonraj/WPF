@@ -1,0 +1,24 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+        Schedule Control - Basics
+    </Paragraph>
+    <Paragraph FontFamily="Calibri" FontSize="14">
+        This list of samples will show the some basic funtionalities of Schedule Control
+    </Paragraph>
+    <Paragraph FontFamily="Calibri" FontSize="14">
+        <Bold>Basic Schedule Demo</Bold> - This sample demonstrates schedule control's fundemental features and functionalities.
+    </Paragraph>
+    <Paragraph FontFamily="Calibri" FontSize="14">
+        <Bold>Basic Schedule DataBinding Demo</Bold> - This sample explains how schedule appointments can be binded to a collection object.
+    </Paragraph>
+	 <Paragraph FontFamily="Calibri" FontSize="14">
+        <Bold>Appointments Rescheduling Demo</Bold>- This sample demonstrates how appointments can be resized or drag and dropped in Schedule control. So that appoinments are rescheduled according to new location.
+    </Paragraph>
+	<Paragraph FontFamily="Calibri" FontSize="14">
+        <Bold>Holidays Setting Demo</Bold>- This sample showcases adding holidays to Schedule control. 
+    </Paragraph>
+	 <Paragraph FontFamily="Calibri" FontSize="14">
+        <Bold>Themes Setting Demo</Bold> - This sample shows schedule control with various skins like Blend, Office14Blue, Office14Black and Office14Silver.
+    </Paragraph>
+</FlowDocument>

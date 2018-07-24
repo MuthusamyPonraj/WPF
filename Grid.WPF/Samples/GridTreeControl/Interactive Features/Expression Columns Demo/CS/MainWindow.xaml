@@ -1,0 +1,116 @@
+﻿<syncfusion:ChromelessWindow x:Class="UnboundColumns.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:Interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                             xmlns:local="clr-namespace:UnboundColumns"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+                             Title="GridTree Expression Columns Demo"
+                             SizeToContent="WidthAndHeight"
+							 Icon="App.ico"
+                             syncfusion:LayoutControl.SetMetroMode="True"
+                             WindowStartupLocation="CenterScreen">
+
+
+    <syncfusion:LayoutControl Name="layOut"
+                              HeaderDescriptionText="This sample shows how to display values using expressions in GridTreeControl."
+                              HeaderText="Expression Columns"
+                              LayoutMode="Metro"
+                              SkinPickerVisibility="Collapsed"
+                              UserOptionsVisibility="Collapsed">
+
+        <syncfusion:LayoutControl.GridView>
+            <syncfusion:GridTreeControl Name="treeGrid"
+                                        AutoPopulateColumns="False"
+                                        EnableHotRowMarker="False"
+                                        EnableNodeSelection="True"
+                                        EnableTriStateSorting="True"
+                                        PercentSizingBehavior="SizeAlwaysPercent"
+                                        SupportRowSizing="True"
+                                        VisualStyle="Metro">
+
+                <syncfusion:GridTreeControl.DataContext>
+                    <local:ViewModel />
+                </syncfusion:GridTreeControl.DataContext>
+
+                <Interactivity:Interaction.Behaviors>
+                    <local:RequestTreeItemsBehavior />
+                    <local:GridCellStylesBehavior />
+                </Interactivity:Interaction.Behaviors>
+
+                <syncfusion:GridTreeControl.Columns>
+                    <syncfusion:GridTreeColumn MappingName="Title" PercentWidth="1.5" />
+                    <syncfusion:GridTreeColumn MappingName="ID" PercentWidth="1">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridStyleInfo HorizontalAlignment="Right" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+
+                    <syncfusion:GridTreeColumn HeaderText="Car Model"
+                                               MappingName="Model"
+                                               PercentWidth="2" />
+
+                    <syncfusion:GridTreeColumn HeaderText="Year"
+                                               MappingName="Year"
+                                               PercentWidth="1">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridStyleInfo HorizontalAlignment="Right" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+
+                    <syncfusion:GridTreeColumn HeaderText="Cost"
+                                               MappingName="Cost"
+                                               PercentWidth="1">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridStyleInfo HorizontalAlignment="Right" CellType="CurrencyEdit" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+
+                    <syncfusion:GridTreeColumn HeaderText="Quantity"
+                                               MappingName="Quantity"
+                                               PercentWidth="1">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridStyleInfo HorizontalAlignment="Right" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+
+                    <syncfusion:GridTreeColumn HeaderText="Discount"
+                                               MappingName="Discount"
+                                               PercentWidth="1">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridStyleInfo HorizontalAlignment="Right"
+                                                      CellType="PercentEdit"
+                                                      PercentEditMode="DoubleMode" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+
+                    <syncfusion:GridTreeUnboundColumn Expression="Quantity*Cost"
+                                                      HeaderText="Grand Total"
+                                                      MappingName="GrandTotal"
+                                                      PercentWidth="2">
+                        <syncfusion:GridTreeUnboundColumn.StyleInfo>
+                            <syncfusion:GridStyleInfo HorizontalAlignment="Right" CellType="CurrencyEdit" />
+                        </syncfusion:GridTreeUnboundColumn.StyleInfo>
+                    </syncfusion:GridTreeUnboundColumn>
+
+                    <syncfusion:GridTreeUnboundColumn Expression="Cost*Discount/100"
+                                                      HeaderText="Discount Amount"
+                                                      MappingName="DiscountAmount"
+                                                      PercentWidth="2">
+                        <syncfusion:GridTreeUnboundColumn.StyleInfo>
+                            <syncfusion:GridStyleInfo HorizontalAlignment="Right" CellType="CurrencyEdit" />
+                        </syncfusion:GridTreeUnboundColumn.StyleInfo>
+                    </syncfusion:GridTreeUnboundColumn>
+
+                    <syncfusion:GridTreeUnboundColumn Expression="(Quantity*Cost)-(Cost*Discount/100)"
+                                                      HeaderText="Net Total"
+                                                      MappingName="NetTotal"
+                                                      PercentWidth="2">
+                        <syncfusion:GridTreeUnboundColumn.StyleInfo>
+                            <syncfusion:GridStyleInfo HorizontalAlignment="Right" CellType="CurrencyEdit" />
+                        </syncfusion:GridTreeUnboundColumn.StyleInfo>
+                    </syncfusion:GridTreeUnboundColumn>
+                </syncfusion:GridTreeControl.Columns>
+            </syncfusion:GridTreeControl>
+        </syncfusion:LayoutControl.GridView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

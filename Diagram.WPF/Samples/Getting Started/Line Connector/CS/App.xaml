@@ -1,0 +1,174 @@
+﻿<Application x:Class="LineConnectorDemo_2010.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!--Style for the window-->
+        <Style TargetType="Window" x:Key="windowStyle">
+            <Style.Triggers>
+                <!--Window Background if Visual Style is Default-->
+                <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Default">
+                    <Setter Property="Background" Value="WhiteSmoke"/>
+                    <Setter Property="Foreground" Value="Black"></Setter>
+                </Trigger>
+
+                <!--Window Background if Visual Style is Blend-->
+                <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Blend">
+                    <Setter Property="Foreground" Value="#FFFFFFFF"></Setter>
+                    <Setter Property="Background" Value="#FF333333"></Setter>
+
+                </Trigger>
+
+                <!--Window Background if Visual Style is Office2007Silver-->
+                <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Office2007Silver">
+                    <Setter Property="Background" Value="#FFE8EAEC"></Setter>
+                    <Setter Property="Foreground" Value="Black"></Setter>
+                </Trigger>
+
+                <!--Window Background if Visual Style is Office2007Blue-->
+                <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Office2007Blue">
+                    <Setter Property="Background" Value="#FFEAF2FB"></Setter>
+                    <Setter Property="Foreground" Value="Black"></Setter>
+                </Trigger>
+
+                <!--Window Background if Visual Style is Office2003-->
+                <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Office2003">
+                    <Setter Property="Background" Value="#FFEAF2FB"></Setter>
+                    <Setter Property="Foreground" Value="Black"></Setter>
+                </Trigger>
+
+                <!--Window Background if Visual Style is Office2007Black-->
+                <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Office2007Black">
+                    <Setter Property="Background" Value="#FFCED3DA"/>
+                    <Setter Property="Foreground" Value="Black"></Setter>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <!--Custom Head Decorator Style-->
+        <Style TargetType="{x:Type Path}" x:Key="Deco1">
+            <Setter Property="Data" Value="F1 M 63.9168,177.986L 96.6082,224.775L 63.6994,272.667L 198.327,224.958L 63.9168,177.986 Z"></Setter>
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Fill" Value="Magenta"/>
+            <Setter Property="Height" Value="20"/>
+        </Style>        
+        <Style TargetType="{x:Type Path}" x:Key="Deco2">
+            <Setter Property="Data" Value="F1 M 335.432,360.902L 464.875,279.999L 335.432,199.098L 448.693,279.999L 335.432,360.902 Z M 319.125,237.365L 346.793,280.083L 319.125,322.637L 403.745,280.083L 319.125,237.365 Z "></Setter>
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Fill" Value="MidnightBlue" />
+            <Setter Property="Height" Value="20"/>
+        </Style>        
+        <Style TargetType="{x:Type Path}" x:Key="Deco3">
+            <Setter Property="Data" Value="F1 M 826.794,228.082L 700.29,164.831C 700.29,164.831 714.284,178.879 723.652,197.585C 713.876,200.228 705.994,207.432 702.403,216.775C 698.141,218.768 695.169,223.064 695.169,228.082C 695.169,233.099 698.141,237.395 702.403,239.389C 705.994,248.73 713.876,255.936 723.652,258.578C 714.284,277.284 700.29,291.333 700.29,291.333L 826.794,228.082 Z "></Setter>
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Fill" Value="DarkGreen"/>
+            <Setter Property="Height" Value="20"/>
+        </Style>
+        <Style TargetType="{x:Type Path}" x:Key="Deco4">            
+            <Setter Property="Width" Value="10"/>
+            <Setter Property="Fill" Value="Gray"/>
+            <Setter Property="Height" Value="10"/>
+        </Style>
+
+        <!--Custom Tail Decorator Style-->
+        <Style TargetType="{x:Type Path}" x:Key="TDeco1">
+            <Setter Property="Data" Value="F1 M 350.348,321.655L 392,300.828L 392,342.479L 454.479,280L 392,217.521L 392,259.172L 350.348,238.349L 329.521,259.172L 329.521,300.828L 350.348,321.655 Z"></Setter>
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Fill" Value="Magenta"/>
+            <Setter Property="Height" Value="20"/>
+        </Style>
+        <Style TargetType="{x:Type Path}" x:Key="TDeco2">
+            <Setter Property="Data" Value="F1 M 54.4034,502.68L 104.594,452.492L 54.4034,402.303C 48.4633,396.363 38.8344,396.363 32.8943,402.303C 26.9542,408.242 26.9542,417.872 32.8943,423.811L 61.574,452.491L 32.8943,481.17C 26.9542,487.11 26.9542,496.74 32.8943,502.68C 38.8344,508.62 48.4633,508.62 54.4034,502.68 Z "></Setter>
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Fill" Value="MidnightBlue" />
+            <Setter Property="Height" Value="20"/>
+        </Style>
+        <Style TargetType="{x:Type Path}" x:Key="TDeco3">
+            <Setter Property="Data" Value="F1 M 220.661,473.49L 183.026,451.761L 183.026,459.074L 170.359,451.761L 170.359,495.219L 183.026,487.906L 183.026,495.219L 220.661,473.49 Z"></Setter>
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Fill" Value="DarkGreen"/>
+            <Setter Property="Height" Value="20"/>
+        </Style>
+        <Style TargetType="{x:Type Path}" x:Key="TDeco4">
+            <Setter Property="Width" Value="10"/>
+            <Setter Property="Fill" Value="Gray"/>
+            <Setter Property="Height" Value="10"/>
+        </Style>
+
+        <!--Lable Template-->
+        <DataTemplate x:Key="labelTemplate1">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="LabelTemplate1"/>
+                <Image Margin="5,0,0,0" Source="/Images/image1.png" Width="25" Height="25"/>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="labelTemplate2">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="LabelTemplate2" Foreground="Blue"/>
+                <Image Margin="5,0,0,0" Source="/Images/image11.jpg" Width="25" Height="25"/>
+            </StackPanel>
+        </DataTemplate>
+        <DataTemplate x:Key="labelTemplate3">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="LabelTemplate3" Foreground="Red"/>
+                <Image Margin="5,0,0,0" Source="/Images/image10.jpg" Width="25" Height="25"/>
+            </StackPanel>
+        </DataTemplate>
+
+        <!--Decorator Adornor Style-->
+        <Style x:Key="decrator1" TargetType="{x:Type Thumb}">
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Thumb}">
+                        <Rectangle Fill="#66F5F5DC" Stroke="Black"  StrokeThickness="1" RadiusX="0" RadiusY="0">
+                        </Rectangle>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="decrator2" TargetType="{x:Type Thumb}">
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Thumb}">
+                        <Rectangle Fill="Navy" Stroke="Black"  StrokeThickness="1" RadiusX="0" RadiusY="0">
+                        </Rectangle>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="decrator3" TargetType="{x:Type Thumb}">
+            <Setter Property="Width" Value="20"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Thumb}">
+                        <Rectangle Fill="Yellow" Stroke="Black"  StrokeThickness="1" RadiusX="0" RadiusY="0">
+                        </Rectangle>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style x:Key="decrator4" TargetType="{x:Type Thumb}">
+            <Setter Property="Width" Value="14"/>
+            <Setter Property="Height" Value="14"/>
+            <Setter Property="SnapsToDevicePixels" Value="true"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Thumb}">
+                        <Rectangle Fill="#AADCDCDC" Stroke="DodgerBlue" StrokeThickness="1" RadiusX="0" RadiusY="0">
+                        </Rectangle>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Application.Resources>
+</Application>

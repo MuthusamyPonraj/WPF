@@ -1,0 +1,10 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+		<Paragraph>
+		This sample showcases the Filter Bar capabilities of GridDataControl. The GridDataControl supports FilterBar, which filters the records with different expressions depending upon the column type. The FilterBar is displayed at the top of the Grid below the Header Row by setting the ShowFilterBar property to true in GridDataControl. The filtering tokens are tabulated in the Tokens to filter the value table.Dropdown. FilterBar feature is similar to a Text Box Filter, instead of entering the key word the dropdown button can be used to filter the items.
+		</Paragraph>
+		<Paragraph TextAlignment="Center"><Image Source="Images\filter.png"  Stretch="None" />
+        </Paragraph>
+   
+</FlowDocument>
+

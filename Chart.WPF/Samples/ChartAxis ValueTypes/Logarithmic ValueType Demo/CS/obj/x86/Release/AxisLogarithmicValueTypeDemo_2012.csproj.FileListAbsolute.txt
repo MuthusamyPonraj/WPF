@@ -1,0 +1,3 @@
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\ChartAxis ValueTypes\Logarithmic ValueType Demo\CS\obj\x86\Release\AxisLogarithmicValueTypeDemo_2012.csprojResolveAssemblyReference.cache
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\ChartAxis ValueTypes\Logarithmic ValueType Demo\CS\obj\x86\Release\App.g.cs
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\ChartAxis ValueTypes\Logarithmic ValueType Demo\CS\obj\x86\Release\LogarithmicValueRangeDemo_MarkupCompile.cache

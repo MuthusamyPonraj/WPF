@@ -1,0 +1,23 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        GridDataControl - Column Options
+    </Paragraph>
+    
+    <Paragraph>
+        <Bold>Column Options Demo</Bold>- This sample illustrates the Column Options feature.
+    </Paragraph>   
+	
+	<Paragraph>
+        <Bold>Column Auto Sizing Demo</Bold>-  This sample illustrates Column Auto Sizing feature in GridDataControl.
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>Column Chooser Demo</Bold>-  This sample illustrates Column Chooser feature in GridDataControl.
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>Custom Column Chooser Demo</Bold>-  This sample illustrates Custom Column Chooser feature in GridDataControl.
+    </Paragraph>
+		
+</FlowDocument>

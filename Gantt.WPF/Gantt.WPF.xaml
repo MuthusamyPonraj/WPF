@@ -1,0 +1,171 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <FlowDocument.Resources>
+    </FlowDocument.Resources>
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+
+        Syncfusion Essential Gantt WPF
+
+
+    </Paragraph>
+    <Paragraph FontFamily="Calibri" FontSize="14">
+        Essential Gantt WPF Edition is a MS Project like Project Viewer with inbuilt Grid, Scheduling and Resource assignment control. It is designed to assist project managers in developing plans, assigning resources to the task, tracking task progress etc. 
+		Some of the key features of Gantt Control are you can Increase / Decrease the Start / Finish Date of the Task by mouse dragging on the both sides of the Task, Drag and Drop the Task to any places within the row, Automatic data synchronization between Grid and Chart, etc.
+
+
+
+    </Paragraph>
+    <Paragraph>
+        <Figure HorizontalAnchor="PageRight" VerticalAnchor="PageTop" WrapDirection="Left">
+            <BlockUIContainer>
+                <Grid>
+                    <Grid.Resources>
+                    </Grid.Resources>
+                    <Grid.Background>
+                    </Grid.Background>
+                    <StackPanel Orientation="Vertical">
+                       
+						<Border Margin="0,5,0,5" CornerRadius="5,5,0,0">
+							<TextBlock Margin="2,10,0,10" VerticalAlignment="Center" Style="{DynamicResource HeaderTextStyle}"> Featured Samples</TextBlock>
+						</Border>
+						
+                       <WrapPanel Margin="10" TextBlock.FontFamily="Calibri" TextBlock.FontSize="12">
+					   
+					   		<StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand" VerticalAlignment="Stretch"
+                                           Source="Images\ProjectScheduler.png"
+                                           Stretch="None"
+                                           Tag="Getting Started\Project Scheduler\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Project Scheduler </TextBlock>
+                            </StackPanel>
+					   
+					   		<StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand" VerticalAlignment="Stretch"
+                                           Source="Images\ResourceView.png"
+                                           Stretch="None"
+                                           Tag="Data Binding\Resource View Gantt\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Resource View Gantt</TextBlock>
+                            </StackPanel>
+					   
+					   		<StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand" VerticalAlignment="Stretch"
+                                           Source="Images\ProjectStatistics.png"
+                                           Stretch="None"
+                                           Tag="Baseline Support\Project Statistics\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Project Statistics</TextBlock>
+                            </StackPanel>
+					   							
+							<StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand" VerticalAlignment="Stretch"
+                                           Source="Images\CustomizedSchedule.png"
+                                           Stretch="None"
+                                           Tag="Custom Schedule\Customized Schedule\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Customized Schedule </TextBlock>
+                            </StackPanel>
+							
+							<StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand" VerticalAlignment="Stretch"
+                                           Source="Images\CustomizedTable.png"
+                                           Stretch="None"
+                                           Tag="Table Customization\Customized Table\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Customized Table</TextBlock>
+                            </StackPanel>
+
+							<StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand" VerticalAlignment="Stretch"
+                                           Source="Images\CustomNumericSchedule.png"
+                                           Stretch="None"
+                                           Tag="Custom Schedule\Custom Numeric Schedule\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Custom Numeric Schedule</TextBlock>
+                            </StackPanel>
+							
+					        <StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand"
+                                           Source="Images\CustomNodeStyle.png"
+                                           Stretch="None"
+                                           Tag="Styles\Custom Node Style\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Custom Node Style</TextBlock>
+                            </StackPanel>	
+							
+							<StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand" VerticalAlignment="Stretch"
+                                           Source="Images\CustomZooming.png"
+                                           Stretch="None"
+                                           Tag="Interactive Features\Custom Zooming\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Custom Zooming</TextBlock>
+                            </StackPanel>
+														
+							<StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand" VerticalAlignment="Stretch"
+                                           Source="Images\HighlightingTasks.png"
+                                           Stretch="None"
+                                           Tag="Interactive Features\Highlighting Tasks\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Highlighting Tasks</TextBlock>
+                            </StackPanel>							
+												
+                            <StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand" 
+                                           Source="Images\GanttVisualStyle.png"
+                                           Stretch="None"
+                                           Tag="Styles\Gantt Visual Style\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Gantt Visual Style</TextBlock>
+                            </StackPanel>
+
+							<StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand" VerticalAlignment="Stretch"
+                                           Source="Images\StripLines.png"
+                                           Stretch="None"
+                                           Tag="Interactive Features\Strip Lines\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Strip Lines</TextBlock>
+                            </StackPanel>
+
+							<StackPanel Margin="10" Orientation="Vertical">
+                                <Button>
+                                    <Image HorizontalAlignment="Center"
+                                           Cursor="Hand" VerticalAlignment="Stretch"
+                                           Source="Images\ExportToImage.png"
+                                           Stretch="None"
+                                           Tag="Import Export\Export To Image\"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Export To Image</TextBlock>
+                            </StackPanel>
+							
+						</WrapPanel> 
+                    </StackPanel>
+                </Grid>
+            </BlockUIContainer>
+        </Figure>
+    </Paragraph>
+</FlowDocument>

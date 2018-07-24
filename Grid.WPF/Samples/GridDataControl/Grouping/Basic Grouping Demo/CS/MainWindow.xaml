@@ -1,0 +1,150 @@
+﻿<syncfusion:ChromelessWindow x:Class="BasicGroupingDemo.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:local="clr-namespace:BasicGroupingDemo"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+                             Height="710"
+                             Icon="App.ico"
+                             syncfusion:LayoutControl.SetMetroMode="True">
+    <!--  DataContext Created for Window  -->
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+    <syncfusion:LayoutControl HeaderDescriptionText="This sample illustrates the GridDataControl grouping with the grouping properties"
+                              HeaderText="GridDataControl Grouping"
+                              LayoutMode="Metro"
+                              SkinPickerVisibility="Collapsed"
+                              UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/default.htm#!documents/4231grouping.htm">
+
+        <syncfusion:LayoutControl.GridView>
+            <!--  GridDataControl Created here  -->
+            <syncfusion:GridDataControl Name="gridDataControl1"
+                                        AllowEdit="False"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ColumnSizer="Star"
+                                        HideColumnsWhenGrouped="{Binding Path=IsChecked,
+                                                                         ElementName=HideWhenGroup}"
+                                        ItemsSource="{Binding Path=SupplierInfo}"
+                                        NotifyPropertyChanges="True"
+                                        ShowAddNewRow="False"
+                                        ShowGroupDropArea="True"
+                                        VisualStyle="Metro">
+                <!--  Visible Column Created here  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+
+                    <syncfusion:GridDataVisibleColumn AllowGroup="{Binding Path=IsChecked,
+                                                                           ElementName=NameCheckbox}"
+                                                      HeaderText="Name"
+                                                      MappingName="Name">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn AllowGroup="{Binding Path=IsChecked,
+                                                                           ElementName=ProductNumberCheckbox}"
+                                                      HeaderText="Product Number"
+                                                      MappingName="ProductNumber">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn AllowGroup="{Binding Path=IsChecked,
+                                                                           ElementName=MakeFlagCheckbox}"
+                                                      HeaderText="Flag"
+                                                      MappingName="MakeFlag">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn AllowGroup="{Binding Path=IsChecked,
+                                                                           ElementName=FinishedGoodsFlagCheckbox}"
+                                                      HeaderText="Finished GoodsFlag"
+                                                      MappingName="FinishedGoodsFlag">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn AllowGroup="{Binding Path=IsChecked,
+                                                                           ElementName=SafetyStockLevelCheckbox}"
+                                                      HeaderText="Safety StockLevel"
+                                                      MappingName="SafetyStockLevel">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn AllowGroup="{Binding Path=IsChecked,
+                                                                           ElementName=ReorderPointCheckbox}"
+                                                      HeaderText="Reorder Point"
+                                                      MappingName="ReorderPoint">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                </syncfusion:GridDataControl.VisibleColumns>
+
+            </syncfusion:GridDataControl>
+
+        </syncfusion:LayoutControl.GridView>
+
+        <syncfusion:LayoutControl.UserOptionsView>
+            <syncfusion:UserOptions HeaderText="Entire Grid Grouping">
+                <StackPanel>
+                    <CheckBox Name="HideWhenGroup"
+                              Margin="5"
+                              Content="Hide When Group"
+                              IsChecked="True" />
+                    <Button Name="GroupByName"
+                            Margin="5"
+                            Command="local:GroupingColumnCommand.GroupingColumn"
+                            CommandTarget="{Binding GridView,
+                                                    RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                                   AncestorType={x:Type syncfusion:LayoutControl}}}"
+                            Content="Group/UnGroup By Name" />
+                </StackPanel>
+            </syncfusion:UserOptions>
+
+            <syncfusion:UserOptions HeaderText="Allow/Disable Column Grouping">
+                <StackPanel>
+                    <CheckBox Name="NameCheckbox"
+                              Margin="5"
+                              Content="Group Name"
+                              IsChecked="True" />
+                    <CheckBox Name="ProductNumberCheckbox"
+                              Margin="5"
+                              Content="Group ProductNumber"
+                              IsChecked="True" />
+                    <CheckBox Name="MakeFlagCheckbox"
+                              Margin="5"
+                              Content="Group MakeFlag"
+                              IsChecked="True" />
+                    <CheckBox Name="FinishedGoodsFlagCheckbox"
+                              Margin="5"
+                              Content="Group FinishedGoodsFlag"
+                              IsChecked="True" />
+                    <CheckBox Name="SafetyStockLevelCheckbox"
+                              Margin="5"
+                              Content="Group SafetyStockLevel"
+                              IsChecked="True" />
+                    <CheckBox Name="ReorderPointCheckbox"
+                              Margin="5"
+                              Content="Group ReorderPoint"
+                              IsChecked="True" />
+                </StackPanel>
+            </syncfusion:UserOptions>
+
+        </syncfusion:LayoutControl.UserOptionsView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

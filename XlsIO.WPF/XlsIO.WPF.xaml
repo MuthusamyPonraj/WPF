@@ -1,0 +1,80 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Syncfusion Essential XlsIO WPF
+    </Paragraph>
+
+    <Paragraph  FontFamily="Calibri" FontSize="14">
+        Essential XlsIO is a .Net library that can read and write Microsoft Excel files. It features a full-fledged object model just like the Microsoft Office COM libraries. It is built entirely in C#. It can be used on systems that do not have Microsoft Excel installed, making it an excellent reporting engine for tabular data.
+    </Paragraph>
+    <Paragraph>
+        <Figure HorizontalAnchor="PageRight" VerticalAnchor="PageTop" WrapDirection="Left">
+
+            <BlockUIContainer>
+                <Grid>
+                    <StackPanel Orientation="Vertical">
+
+                        <Border CornerRadius="5,5,0,0" Margin="0,5,0,5">
+                            <TextBlock Margin="2,10,0,10" VerticalAlignment="Center" Style="{DynamicResource HeaderTextStyle}">XlsIO Featured Samples</TextBlock>
+                        </Border>
+						
+                        <WrapPanel TextBlock.FontSize="12" Margin="10" TextBlock.FontFamily="Calibri">
+                            <StackPanel Orientation="Vertical"  Margin="10">
+							<Button>
+                                <Image Tag="Charts\Sparklines"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\sparklines.png" Stretch="None" Margin="5"/>
+								</Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Sparklines</TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical"  Margin="10" >
+							<Button>
+                                <Image Tag="Data Binding\Invoice"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\invoice.png" Stretch="None" Margin="5"/>
+								</Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5"> Invoice</TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical"  Margin="10">
+							<Button>
+                                <Image Tag="Data Management\Performance"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\performance.png" Stretch="None" Margin="5"/>
+								</Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5"> Performance</TextBlock>
+                            </StackPanel>
+                            <StackPanel Orientation="Vertical"  Margin="10">
+							<Button>
+                                <Image Tag="Data Binding\Template Marker"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\templatemarker.png" Stretch="None" Margin="5"/>
+								</Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Template Marker</TextBlock>
+                            </StackPanel>  					
+                        </WrapPanel>						
+						
+                        <Border CornerRadius="5,5,0,0" Margin="0,5,0,5">
+                            <TextBlock Margin="2,10,0,10" VerticalAlignment="Center" Style="{DynamicResource HeaderTextStyle}"> Updated Samples</TextBlock>
+                        </Border>
+                        
+						<WrapPanel TextBlock.FontSize="12"  TextBlock.FontFamily="Calibri">												
+							<StackPanel Orientation="Vertical"  Margin="10">
+							<Button>
+                                <Image Tag="Formatting\Conditional Formatting"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\AdvancedConditionalFormatting.png" Stretch="None" Margin="5"/>
+								</Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5"> Conditional Formatting</TextBlock>
+                            </StackPanel>														
+                        </WrapPanel>
+						
+						
+						<Border CornerRadius="5,5,0,0" Margin="0,5,0,5">
+                            <TextBlock Margin="2,10,0,10" VerticalAlignment="Center" Style="{DynamicResource HeaderTextStyle}"> New Samples</TextBlock>
+                        </Border>
+                        
+						<WrapPanel TextBlock.FontSize="12"  TextBlock.FontFamily="Calibri">																	
+							<StackPanel Orientation="Vertical"  Margin="10">
+							<Button>
+                                <Image Tag="Data Binding\External Connection"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\Externalconnection.png" Stretch="None" />
+								</Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5"> External Connection</TextBlock>
+                            </StackPanel>														
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+
+            </BlockUIContainer>
+        </Figure>
+    </Paragraph>
+</FlowDocument>

@@ -1,0 +1,12 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="400" >
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Import and Export
+    </Paragraph>
+    <Paragraph>
+        The following sample demonstrates the import and export of map elements as XML and image files.
+    </Paragraph>
+    <Paragraph>
+        <Bold>Serialization Demo</Bold> - This sample demonstrates how to save and load map elements as an XML file, and how to save a map in an image format.
+    </Paragraph>
+</FlowDocument> 

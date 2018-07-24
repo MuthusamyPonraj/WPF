@@ -1,0 +1,87 @@
+﻿<Window x:Class="CustomSummaryDemo.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:viewModel="clr-namespace:CustomSummaryDemo.ViewModel"
+        xmlns:sfshared="clr-namespace:Syncfusion.Windows.Shared;assembly=Syncfusion.Shared.WPF"
+        xmlns:action="clr-namespace:CustomSummaryDemo.Action"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        sfshared:SkinStorage.VisualStyle="Metro"
+        Title="Custom Summary Demo"
+        Height="570"
+        Width="924"
+        Icon="App.ico"
+        WindowStartupLocation="CenterScreen">
+    <Grid>        
+        <Grid.DataContext>
+            <viewModel:ViewModel />            
+        </Grid.DataContext>
+        <Grid.Resources>
+            <viewModel:MyCustomSummaryBase1 x:Key="summary1" />
+        </Grid.Resources>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="280"/>
+        </Grid.ColumnDefinitions>
+
+        <syncfusion:PivotGridControl Name="Pivot" ShowGrandTotals="True" ShowGroupingBar="True" ItemSource="{Binding Data}">
+            <syncfusion:PivotGridControl.PivotRows>
+                <syncfusion:PivotItem FieldHeader="Category" FieldMappingName="Category" TotalHeader="Cat total"/>
+                <syncfusion:PivotItem FieldHeader="Item" FieldMappingName="Item" TotalHeader="It total"/>
+            </syncfusion:PivotGridControl.PivotRows>
+            <syncfusion:PivotGridControl.PivotColumns>
+                <syncfusion:PivotItem FieldHeader="Country" FieldMappingName="Country" TotalHeader="Cat total"/>
+                <syncfusion:PivotItem FieldHeader="State" FieldMappingName="State" TotalHeader="It total"/>
+            </syncfusion:PivotGridControl.PivotColumns>
+            <syncfusion:PivotGridControl.PivotCalculations>
+                <syncfusion:PivotComputationInfo FieldHeader="Shipped!" FieldName="Value1" Format="#,##0.00" SummaryType="Custom" x:Name="CalcColumn" Summary="{StaticResource summary1}" />
+                <syncfusion:PivotComputationInfo FieldHeader="Scrap!" FieldName="Value3"  SummaryType="DisplayIfDiscreteValuesEqual" PadString="***"/>
+                <syncfusion:PivotComputationInfo FieldHeader="Received!" FieldName="Value2"  SummaryType="DoubleTotalSum"/>
+            </syncfusion:PivotGridControl.PivotCalculations>
+            <syncfusion:PivotGridControl.PivotFields>
+                <syncfusion:PivotItem FieldHeader="Category (header)" FieldMappingName="Category" TotalHeader="Category Total"/>
+                <syncfusion:PivotItem FieldHeader="Item (header)" FieldMappingName="Item" TotalHeader="Item total"/>
+                <syncfusion:PivotItem FieldHeader="Currency ($)" FieldMappingName="Currency" Format="C" TotalHeader="Total ($)"/>
+                <syncfusion:PivotItem FieldHeader="Shipped" FieldMappingName="Value1" Format="#,##0.00" TotalHeader="Total shipped"/>
+                <syncfusion:PivotItem FieldHeader="Received" FieldMappingName="Value2" Format="#,##0.00" TotalHeader="Total received"/>
+                <syncfusion:PivotItem FieldHeader="Scrap" FieldMappingName="Value3" Format="#,##0.00" TotalHeader="Total scrap"/>
+            </syncfusion:PivotGridControl.PivotFields>
+        </syncfusion:PivotGridControl>
+
+        <Grid Grid.Column="1" x:Name="schemaDesignerContainer" Tag="{Binding CustomSummaryBaseClasses}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <syncfusion:PivotSchemaDesigner Name="Designer" PivotControl="{Binding ElementName=Pivot}" VisualStyle="Metro" CustomSummaryBaseCollection="{Binding ElementName=schemaDesignerContainer, Path=Tag}" />
+            <CheckBox Content="CustomSummary" Grid.Row="1" Margin="7,10"  IsChecked="True">
+                <i:Interaction.Triggers>
+                    <i:EventTrigger EventName="Click">
+                        <action:SummariesAction TargetName="Pivot" />
+                    </i:EventTrigger>
+                </i:Interaction.Triggers>
+            </CheckBox>
+            <GroupBox  Margin="7,-10"  Grid.Row="2" Height ="80">
+                <GroupBox.Header>
+                    <CheckBox Name="displayIfDiscreteValuesEqualSummary" Content="DisplayIfDiscreteValuesEqualSummary" IsChecked="True">
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="Click">
+                                <action:SummariesAction TargetName="Pivot" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                    </CheckBox>
+                </GroupBox.Header>
+                <ComboBox x:Name="cmbPadString"  Margin="5,5,5,5" SelectedIndex="0" Height="30" Width="200" IsEnabled="{Binding ElementName=displayIfDiscreteValuesEqualSummary, Path=IsChecked}">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="SelectionChanged">
+                            <action:SummariesAction TargetName="Pivot" />
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    <ComboBoxItem Tag="Star" IsSelected="True">***</ComboBoxItem>
+                    <ComboBoxItem Tag="Number">999</ComboBoxItem>
+                </ComboBox>
+            </GroupBox>
+        </Grid>
+    </Grid>
+</Window>

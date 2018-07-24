@@ -1,0 +1,66 @@
+﻿<SampleLayout:SampleLayoutWindow x:Class="ColorPaletteDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Color Palette Demo"
+        xmlns:maps="http://schemas.syncfusion.com/wpf" 
+        xmlns:local="clr-namespace:ColorPaletteDemo"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+      WindowStartupLocation="CenterScreen" xmlns:SampleLayout="clr-namespace:Syncfusion.Windows.SampleLayout;assembly=Syncfusion.Chart.Wpf.SampleLayout" >
+    <SampleLayout:SampleLayoutWindow.Resources>
+        <local:SelectedIndexToColorPalette x:Key="ColorPaletteConverter"/>
+        <local:SelectedValueToStringConverter x:Key="selectedvalueToStringConverter"/>
+        <local:ColorPaletteViewModel x:Key="viewModel"/>
+    </SampleLayout:SampleLayoutWindow.Resources>
+        <Grid DataContext="{StaticResource viewModel}">
+            <maps:MapControl CustomMapColorPalette="{Binding ColorPalette}" EnableHoverEffects="True" LayeredContent="{Binding ElementName=shapeControl}"   ColorPalette="{Binding SelectedIndex,ElementName=PaletteCombo,Converter={StaticResource ColorPaletteConverter}}" x:Name="Map" NavigationControlPosition="Left" EnableColorPalette="{Binding IsChecked,ElementName=enableColorPalette}" ShowNavigationControl="False">
+                <maps:MapControl.Layers>
+                    <maps:Layers>
+                        <maps:ShapeFileLayer Margin="10"  Uri="ColorPaletteDemo.ShapeFiles.world.shp"  x:Name="shapeControl" >
+                        </maps:ShapeFileLayer>
+                    </maps:Layers>
+                </maps:MapControl.Layers>
+            </maps:MapControl>
+        </Grid>
+    <SampleLayout:SampleLayoutWindow.UserOptionsLayout>
+        <Grid VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock Text="Enable ColorPalette" Width="100" HorizontalAlignment="Left"/>
+            <CheckBox Name="enableColorPalette" IsChecked="True" Grid.Column="1"  BorderBrush="#FFD9E9FF"  Foreground="#FF8A8A8A" />
+            <TextBlock Text="ColorPalette" Grid.Row="1"  HorizontalAlignment="Left"/>
+            <ComboBox Name="PaletteCombo"  Grid.Column="1" Grid.Row="1"  Height="25" SelectedIndex="5" >
+                <ComboBoxItem>Palette1</ComboBoxItem>
+                <ComboBoxItem>Palette2</ComboBoxItem>
+                <ComboBoxItem>Palette3</ComboBoxItem>
+                <ComboBoxItem>Palette4</ComboBoxItem>
+                <ComboBoxItem>Palette5</ComboBoxItem>
+                <ComboBoxItem>Custom Color Palette</ComboBoxItem>
+            </ComboBox>
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="110"/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+
+                    </Grid>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </SampleLayout:SampleLayoutWindow.UserOptionsLayout>
+</SampleLayout:SampleLayoutWindow>

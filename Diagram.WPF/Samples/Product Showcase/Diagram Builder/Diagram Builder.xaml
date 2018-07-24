@@ -1,0 +1,44 @@
+   
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+  <Paragraph FontFamily="Calibri"  FontSize="14">
+This application is used to create new or edit existing diagrams like flowchart, circuit diagram. SymbolPalette is available to add nodes into diagram, and ribbon gives rich editing experience.   
+  </Paragraph>  
+
+    <Paragraph TextAlignment="Center"><Image Source="Image\Diagram Builder.png" Stretch="None"/></Paragraph>
+	
+<Paragraph FontFamily="Calibri"  FontSize="14">
+Features:
+</Paragraph>
+<List Margin="25,0,0,0">
+
+<ListItem>
+<Paragraph FontFamily="Calibri"  FontSize="14">SymbolPalette</Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph FontFamily="Calibri"  FontSize="14">Commands</Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph FontFamily="Calibri"  FontSize="14">Drawing Tools</Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph FontFamily="Calibri"  FontSize="14">Serialization</Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph FontFamily="Calibri"  FontSize="14">Zooming and Panning</Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph FontFamily="Calibri"  FontSize="14">Formatting and styles</Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph FontFamily="Calibri"  FontSize="14">Page settings</Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph FontFamily="Calibri"  FontSize="14">Measurement units</Paragraph>
+</ListItem>
+</List>
+
+</FlowDocument>

@@ -1,0 +1,65 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Path Support Demo
+    </Paragraph>
+
+    <Paragraph >
+        This sample shows various world sea passages by connecting countries' harbors with map paths.
+    </Paragraph>
+    <Paragraph TextAlignment="Center">
+        <Image Source="Image\PathSupport.png" Stretch="None"/>
+    </Paragraph>
+	<Paragraph  FontFamily="Cambria" FontSize="16" TextAlignment="Center">
+Fig: Path Support Demo <Bold> </Bold>
+</Paragraph>
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Features
+    </Paragraph>
+    <List Margin="25,0,0,0">
+        <ListItem>
+            <Paragraph>Map paths to connect the various countries' harbors</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Path labels show the origin and destination of sea passages.</Paragraph>
+        </ListItem>
+    </List>
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Interactive Features
+    </Paragraph>
+    <List Margin="25,0,0,0">
+        <ListItem>
+            <Paragraph>Enable and disable the symbol palette visibility and dynamic path creation options.
+            </Paragraph>
+        </ListItem>
+		<ListItem>
+            <Paragraph>To edit a path properties click on the path. 
+            </Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Edit a selected path by changing the path label, path label font family and size, and path font style.
+            </Paragraph>
+        </ListItem>
+        
+        <ListItem>
+            <Paragraph>There are two different label position options:
+                <Bold>OnPoint</Bold> and
+                <Bold>OnMiddlePoint.</Bold>
+            </Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>
+                <Bold>OnPoint</Bold> displays a path label at the point you have chosen.
+            </Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>
+                <Bold> OnMiddlePoint </Bold> displays the path label in between the path points.
+            </Paragraph>
+        </ListItem>       
+        <ListItem>
+            <Paragraph>
+                You can also change the color of the path and the path label.
+            </Paragraph>
+        </ListItem>
+    </List>
+</FlowDocument>

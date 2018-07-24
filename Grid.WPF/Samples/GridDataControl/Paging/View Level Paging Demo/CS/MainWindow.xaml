@@ -1,0 +1,135 @@
+﻿<syncfusion:ChromelessWindow x:Class="ViewLevelPaging.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ViewLevelPaging"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Icon="App.ico"
+        syncfusion:LayoutControl.SetMetroMode="True">
+
+
+    <!--  Window DataContext  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:ViewModel />
+</syncfusion:ChromelessWindow.DataContext>
+
+    <syncfusion:LayoutControl HeaderDescriptionText="This sample showcases the View Level Paging feature of GridDataControl."
+                              HeaderText="View Level Paging Demo"                              
+                              LayoutMode="Metro"
+                              UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/default.htm#!documents/423612viewlevelpagin.htm"
+                              UserOptionsVisibility="Collapsed">
+        <syncfusion:LayoutControl.GridView>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <!--  GridDataControl Definition  -->
+                <syncfusion:GridDataControl x:Name="grid"
+                                            Grid.Row="0"
+                                            AllowEdit="False"
+                                            AllowSelection="Any"
+                                            AllowSort="True"
+                                            ApplySizingAfterLoad="True"
+                                            AutoPopulateColumns="False"
+                                            AutoPopulateRelations="False"
+                                            ColumnSizer="Star"
+                                            EnablePaging="True"
+                                            FilterBehavior="StringTyped"
+                                            IsViewLevelPaging="True"
+                                            ItemsSource="{Binding OrderDetails}"
+                                            ShowAddNewRow="False"
+                                            ShowFilterBar="True"
+                                            syncfusion:LayoutControl.IgnoreStyle="True"
+                                            VisualStyle="Metro">
+
+                    <!--  GridDataControl Visible Columns definition  -->
+                    <syncfusion:GridDataControl.VisibleColumns>
+
+                        <syncfusion:GridDataVisibleColumn Width="65"
+                                                          HeaderText="Order ID"
+                                                          MappingName="OrderID">
+                            <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                            </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                                <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                            </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        </syncfusion:GridDataVisibleColumn>
+
+                        <syncfusion:GridDataVisibleColumn Width="SizeToHeader"
+                                                          HeaderText="CustomerID"
+                                                          MappingName="CustomerID">
+                            <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                                <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                            </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        </syncfusion:GridDataVisibleColumn>
+
+                        <syncfusion:GridDataVisibleColumn Width="120"
+                                                          HeaderText="Employee ID"
+                                                          MappingName="EmployeeID">
+                            <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                            </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                                <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                            </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        </syncfusion:GridDataVisibleColumn>
+
+                        <syncfusion:GridDataVisibleColumn Width="120"
+                                                          HeaderText="Ship City"
+                                                          MappingName="ShipCity">
+                            <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                                <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                            </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        </syncfusion:GridDataVisibleColumn>
+
+                        <syncfusion:GridDataVisibleColumn Width="120"
+                                                          HeaderText="Ship Country"
+                                                          MappingName="ShipCountry">
+                            <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                                <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                            </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        </syncfusion:GridDataVisibleColumn>
+
+
+                        <syncfusion:GridDataVisibleColumn Width="80"
+                                                          HeaderText="Freight"
+                                                          MappingName="Freight">
+                            <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                <syncfusion:GridDataColumnStyle HorizontalAlignment="Right"
+                                                                CellType="CurrencyEdit"
+                                                                NegativeForeground="Red" />
+                            </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                                <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                            </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        </syncfusion:GridDataVisibleColumn>
+
+                        <syncfusion:GridDataVisibleColumn Width="SizeToCells"
+                                                          HeaderText="IsClosed"
+                                                          MappingName="IsClosed">
+                            <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" IsThreeState="False" />
+                            </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                                <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                            </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        </syncfusion:GridDataVisibleColumn>
+
+                    </syncfusion:GridDataControl.VisibleColumns>
+                </syncfusion:GridDataControl>
+                <!--  DataPager Definition  -->
+                <syncfusion:DataPagerExt x:Name="dataPager"
+                                         Grid.Row="1"
+                                         HorizontalAlignment="Right"
+                                         VerticalAlignment="Top"
+                                         AutoEllipsis="False"
+                                         DisplayMode="PreviousNextNumeric"
+                                         NumericButtonCount="10"
+                                         PageSize="25"
+                                         Source="{Binding OrderDetails}" />
+            </Grid>
+        </syncfusion:LayoutControl.GridView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>
+

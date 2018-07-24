@@ -1,0 +1,19 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        GridDataControl - Performance
+    </Paragraph>
+    <Paragraph>
+        The GridDataControl can automatically respond to outside updates of the bound data in an optimal manner.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>Trader Grid Test Demo</Bold>- This sample demonstrates high-frequency updates. The GridDataControl will quickly update its internal structures and also update the UI, keeping CPU usage very minimal.
+    </Paragraph>
+   <Paragraph>
+        <Bold>Stock Exchange Demo</Bold>- This sample demostrates the Stock pricing with high-frequency updates.
+    </Paragraph>
+<Paragraph>
+        <Bold>RealTime Updates Demo</Bold>- This sample shows the Real Time Updates of data with performance monitoring.
+    </Paragraph>
+</FlowDocument>

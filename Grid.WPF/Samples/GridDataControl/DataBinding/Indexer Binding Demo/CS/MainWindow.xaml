@@ -1,0 +1,116 @@
+﻿<syncfusion:ChromelessWindow x:Class="IndexerBindingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:IndexerBindingDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:system="clr-namespace:System;assembly=mscorlib"
+        Icon="App.ico" syncfusion:LayoutControl.SetMetroMode="True">
+    <!--  DataContext set here for Window  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:ViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+
+    <syncfusion:LayoutControl HeaderDescriptionText="This sample shows how to bind the index of an object with the VisibleColumns of GridDataControl."
+                              HeaderText="Indexer Binding Demo"
+                              LayoutMode="Metro"
+                              UserOptionsVisibility="Collapsed">
+        <syncfusion:LayoutControl.GridView>
+            <!--  GridDataControl creating here  -->
+            <syncfusion:GridDataControl x:Name="dataGrid"
+                                        AllowSort="True"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ColumnSizer="Star"
+                                        ItemsSource="{Binding OrderCollection}"
+                                        ListBoxSelectionMode="One"
+                                        NotifyPropertyChanges="True"
+                                        ShowAddNewRow="False"
+                                        ShowGroupDropArea="True"
+                                        VisualStyle="Metro">
+                <!--  Visible Columns Creating here  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+                    <syncfusion:GridDataVisibleColumn MappingName="OrderID">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="CustomerID">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="EmployeeID">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="IntegerEdit" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="Freight">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="CurrencyEdit" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn Binding="{Binding Path=ShipDetails[ShipCountry].Value,
+                                                                        Mode=TwoWay}"
+                                                      HeaderText="ShipCountry"
+                                                      MappingName="ShipDetails[ShipCountry].Value"
+                                                      VisibleColumnType="{x:Type system:Object}">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn Binding="{Binding Path=ShipDetails[ShipCity].Value,
+                                                                        Mode=TwoWay}"
+                                                      HeaderText="ShipCity"
+                                                      MappingName="ShipDetails[ShipCity].Value"
+                                                      VisibleColumnType="{x:Type system:Object}">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn Binding="{Binding Path=ShipDetails[ShipCode].Value,
+                                                                        Mode=TwoWay}"
+                                                      HeaderText="ShipCode"
+                                                      MappingName="ShipDetails[ShipCode].Value"
+                                                      VisibleColumnType="{x:Type system:Object}">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="IntegerEdit" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn Binding="{Binding Path=ShipDetails[ShipVia].Value,
+                                                                        Mode=TwoWay}"
+                                                      HeaderText="ShipVia"
+                                                      MappingName="ShipDetails[ShipVia].Value"
+                                                      VisibleColumnType="{x:Type system:Object}">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="IntegerEdit" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                </syncfusion:GridDataControl.VisibleColumns>
+
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

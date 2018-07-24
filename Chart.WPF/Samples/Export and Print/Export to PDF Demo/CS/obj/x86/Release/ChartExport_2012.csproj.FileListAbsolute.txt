@@ -1,0 +1,2 @@
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Export and Print\Export to PDF Demo\CS\obj\x86\Release\ChartExport_2012.csprojResolveAssemblyReference.cache
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Export and Print\Export to PDF Demo\CS\obj\x86\Release\ChartExport_MarkupCompile.cache

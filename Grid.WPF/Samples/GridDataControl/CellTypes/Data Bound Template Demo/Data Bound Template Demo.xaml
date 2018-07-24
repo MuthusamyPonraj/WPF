@@ -1,0 +1,8 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+		<Paragraph>
+             This sample showcases the DataBoundTemplate capability of GridDataControl. The GridDataControl supports DataTemplate cell type that can be used to set enriched styles for associated cells. Cell value can be bound to the controls placed in the data template. 
+        </Paragraph>
+ 
+				<Paragraph TextAlignment="Center"><Image Source="Images\DataBoundTemplateDemo.png" Stretch="None" /></Paragraph>
+</FlowDocument>

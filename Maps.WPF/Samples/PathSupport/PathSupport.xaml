@@ -1,0 +1,13 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="400" >
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Path Support
+    </Paragraph>
+    <Paragraph>
+       The following sample demonstrates the use of the path support feature in Essential Maps.
+    </Paragraph>
+    <Paragraph>
+        <Bold>Path Support Demo </Bold> - This sample shows world sea passages using the path support feature.
+    </Paragraph>
+	
+</FlowDocument> 

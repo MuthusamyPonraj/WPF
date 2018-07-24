@@ -1,0 +1,17 @@
+﻿<sampleLayout:SampleLayoutWindow x:Class="DataBindingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Data Binding Demo" xmlns:local="clr-namespace:DataBindingDemo"  xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Icon="Images/App.ico" Height="720" Width="1024" MinHeight="545" MinWidth="745"  WindowStartupLocation="CenterScreen" 
+        xmlns:sampleLayout="clr-namespace:Syncfusion.Windows.SampleLayout;assembly=Syncfusion.Chart.Wpf.SampleLayout" UserOptionsVisibility="Collapsed"
+        >
+    <sampleLayout:SampleLayoutWindow.Resources>
+        <local:ViewModel x:Key="viewModel"/>
+    </sampleLayout:SampleLayoutWindow.Resources>
+        <Grid DataContext="{StaticResource viewModel}">
+            <syncfusion:MapControl LatitudeLongitudeType="Decimal" ShapeFill="#FFF28607" ShapeStroke="#FFE76D00" ShapeHoverFill="#FFC44E00" ShapeHoverStroke="#FFC44E00"   ShapeStrokeThickness="1" Name="Map" EnableHoverEffects="True" ShowNavigationControl="False" ShowLatLonPoints="False">
+                <syncfusion:MapControl.LayeredContent>
+                    <syncfusion:ShapeFileLayer Margin="100"  SymbolSource="{Binding Symbols}"  PathSource="{Binding Paths}" LabelSource="{Binding Labels}" Uri="DataBindingDemo.ShapeFiles.states.shp" x:Name="shapeLayer"/>
+                </syncfusion:MapControl.LayeredContent>
+            </syncfusion:MapControl>
+        </Grid>
+</sampleLayout:SampleLayoutWindow>

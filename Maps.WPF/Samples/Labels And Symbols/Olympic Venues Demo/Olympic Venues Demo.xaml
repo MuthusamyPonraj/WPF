@@ -1,0 +1,87 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Olympic Venues Demo
+    </Paragraph>
+
+    <Paragraph>
+        This sample shows venues of Olympic games from 1896 - 2016 in North America and South America, using Labels and Symbols features of Essential Maps.
+    </Paragraph>
+
+    <Paragraph TextAlignment="Center">
+        <Image Source="Image\OlympicVenuesDemo.png" Stretch="None"/>
+    </Paragraph>
+	<Paragraph  FontFamily="Cambria" FontSize="16" TextAlignment="Center">
+Fig: Olympic Venues Demo <Bold> </Bold>
+</Paragraph>
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Features
+    </Paragraph>
+    <List Margin="25,0,0,0">
+        <ListItem>
+            <Paragraph>Edit and remove Labels</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Edit and remove Symbols</Paragraph>
+        </ListItem>
+		 
+		            </List>
+		            
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Interactions
+    </Paragraph>
+    <List Margin="25,0,0,0">
+        <ListItem>
+            <Paragraph>To enable or disable the label feature, check or uncheck the <Bold> EnableLabel </Bold> check box of General Options.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>
+           	To allow or forbid the labels and symbols to intersect, check or uncheck the <Bold> Allow Label Intersections </Bold> check box.
+            </Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>
+           	To show or hide the symbol palette, check or uncheck the <Bold> Symbol Palette Visibility </Bold> check box.
+            </Paragraph>
+        </ListItem>
+		  <ListItem>
+            <Paragraph>
+          	To edit a label, click on a label and expand the <Bold> Edit Selected Label  Property </Bold> area in the <Bold> Genaral Options </Bold> window. The label, label description, latitude, longitude, label font size, label background, label foreground, label font, label style, and label width can be edited here. While entering new values the changes will be saved.
+            </Paragraph>
+        </ListItem>
+		  <ListItem>
+            <Paragraph>
+          	To edit a symbol's text, click on a symbol and expand the <Bold> Edit Selected Symbol Property </Bold>. The symbol text, symbol description, latitude, longitude, symbol label font size, symbol label background, symbol label foreground, an symbol label style and symbol label width can be edited here. While entering new values the changes will be saved.
+            </Paragraph>
+        </ListItem>
+		  <ListItem>
+            <Paragraph>
+           	To add a new label, select the <Bold> Enable Label </Bold> check box in the <Bold> Genaral Options </Bold> window and hold <Bold> Shift </Bold> and click on the map. A text box will be added that can be edited. Press <Bold> Enter </Bold> to add the label.
+            </Paragraph>
+        </ListItem>
+		  <ListItem>
+            <Paragraph>
+           	To remove a label press <Bold> Ctrl </Bold> and click on the label. The chosen label will be removed.
+            </Paragraph>
+        </ListItem>
+		  <ListItem>
+            <Paragraph>
+             To edit a label's text press and hold the <Bold> Shift </Bold> key and click on the label. Edit the label as needed and press <Bold> Enter </Bold> to save the changes or press <Bold> Esc </Bold> to discard them.
+            </Paragraph>
+        </ListItem>
+		<ListItem>
+            <Paragraph>
+           	To add a new symbol from the symbol palette, simply drag and drop the symbol from the symbol palette.
+            </Paragraph>
+        </ListItem>
+		<ListItem>
+            <Paragraph>
+           		To remove a symbol press <Bold> Ctrl </Bold> and click on the label. The chosen symbol will be removed.
+            </Paragraph>
+        </ListItem>
+		<ListItem>
+            <Paragraph>
+           		To edit a symbol's text press and hold the <Bold> Shift </Bold> key and click on the Symbol. Edit the text and press <Bold> Enter </Bold> to save the changes or press <Bold> Esc </Bold> to discard them.
+            </Paragraph>
+        </ListItem>
+    </List>
+</FlowDocument>

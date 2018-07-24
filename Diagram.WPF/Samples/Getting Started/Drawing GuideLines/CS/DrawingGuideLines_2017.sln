@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion 15.0.26020.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrawingGuideLines_2017", "DrawingGuideLines_2017.csproj", "{6F9EE66E-7FD1-4EBC-8309-ED4D8439AA23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F9EE66E-7FD1-4EBC-8309-ED4D8439AA23}.Debug|x86.ActiveCfg = Debug|x86
+		{6F9EE66E-7FD1-4EBC-8309-ED4D8439AA23}.Debug|x86.Build.0 = Debug|x86
+		{6F9EE66E-7FD1-4EBC-8309-ED4D8439AA23}.Release|x86.ActiveCfg = Release|x86
+		{6F9EE66E-7FD1-4EBC-8309-ED4D8439AA23}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

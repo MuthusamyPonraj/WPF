@@ -1,0 +1,9 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+        <Paragraph>
+            This sample showcases the SortbySummary capability of GridDataControl. The GridDataControl supports sorting by group summaries. You can do this by setting the CustomGroupComparer property on the GridDataTableProperties. You need to add a custom IComparer object, and then you can compare based on any criteria you choose.
+        </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\SortbySummariesDemo.png" Stretch="None" /></Paragraph>
+</FlowDocument>
+

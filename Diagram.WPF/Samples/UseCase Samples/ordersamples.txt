@@ -1,0 +1,5 @@
+Circuit Diagram 
+DataFlow Diagram 
+Floorplan
+Ishikawa 
+Swim Lane Diagram

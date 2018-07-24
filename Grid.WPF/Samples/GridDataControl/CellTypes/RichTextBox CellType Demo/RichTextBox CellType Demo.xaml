@@ -1,0 +1,9 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+        <Paragraph>
+                 This sample showcases the RichTextBoxCellType capability of GridDataControl. The Rich Text control will allow you to display and edit rich text in grid cells. The control will allow you to modify the rich text through in-place editing. 
+        </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\image.png" Stretch="None" /></Paragraph>
+</FlowDocument>
+

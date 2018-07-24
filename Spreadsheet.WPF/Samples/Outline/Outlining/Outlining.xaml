@@ -1,0 +1,9 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+       
+        <Paragraph>
+            This sample showcases the outline support in Spreadsheet control. It provides support for row wise ,column wise and multi-level grouping support like Excel.
+        </Paragraph>
+		<Paragraph TextAlignment="Center"><Image Source="Images\OutliningDemo.png"  Stretch="None" /></Paragraph>
+</FlowDocument>
+

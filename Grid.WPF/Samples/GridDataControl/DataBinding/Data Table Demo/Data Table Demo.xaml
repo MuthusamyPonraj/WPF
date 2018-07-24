@@ -1,0 +1,11 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+		 <Paragraph>
+	   This sample showcases the DataTable capability of GridDataControl. Data binding is the master feature of the GridDataControl. The GridDataControl must be bound to an external data source to display the data. The GridDataControl supports data sources such as DataTables , DataSets and custom collections such as List, BindingList, ObservableCollection, or CollectionViewSource. These data sources can have multiple nested tables which are displayed hierarchically by the grouping grid. The GridDataControl can be bound to any collection.
+	   </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\DatatableDemo.png"  Stretch="None" /></Paragraph>
+
+				
+</FlowDocument>
+

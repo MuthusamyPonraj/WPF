@@ -1,0 +1,11 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+<Paragraph>
+This sample showcases the Details View capability of GridDataControl. The GridDataControl provides an option to have a user defined view called Details View, for each row. This details view will display additional information about each row, you can display any information in this view. Details view will appear below every row, you can expand and collapse the view by using the provided expander or APIs.
+</Paragraph>
+
+<Paragraph TextAlignment="Center"><Image Source="Images\DetailsViewDemo.png" Stretch="None" /></Paragraph>
+
+</FlowDocument>
+
+

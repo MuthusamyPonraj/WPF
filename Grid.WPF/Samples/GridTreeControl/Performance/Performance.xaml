@@ -1,0 +1,12 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+GridTreeControl - Performance
+</Paragraph> 
+<Paragraph>
+    Here is a sample discusses performance with the GridTreeControl. 
+</Paragraph> 
+
+<Paragraph> <Bold>TreeGrid Performance Demo</Bold>- This sample shows more features of the GridTreeControl, such as variable row heights, column sorting, and various GridStyleInfo support, that allow for the customization of the look and feel of the control. It also discusses performance issues and shows timing results, and it addresses issues with using large data sources that you want displayed in a fully populated tree.</Paragraph>
+
+</FlowDocument>

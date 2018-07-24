@@ -1,0 +1,17 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        GridDataControl - Sorting
+    </Paragraph>
+    <Paragraph>
+        The GridDataControl supports Sorting by clicking on the Column Header click and allows to customize the Sorting through IComparer objects.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>Basic Sorting</Bold>- This sample shows how the Grid Data Control uses properties to enable Sorting on specific columns.
+    </Paragraph>
+	
+    <Paragraph>
+        <Bold>Custom Sorting</Bold>- This sample uses IComparer objects to allow you to control how Sorting is performed.
+    </Paragraph>
+</FlowDocument>

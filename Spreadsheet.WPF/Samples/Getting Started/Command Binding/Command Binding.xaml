@@ -1,0 +1,8 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        
+        <Paragraph>
+		This sample showcases the usage of command binding feature in the Spreadsheet control which provides several built-in commands to format an Excel workbook. These commands can be executed in a spreadsheet whenever it is bound to the Command property. 
+        </Paragraph>
+		<Paragraph TextAlignment="Center"><Image Source="Images\image.png" Stretch="None" /></Paragraph>
+</FlowDocument>

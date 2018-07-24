@@ -1,0 +1,24 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <Paragraph>
+        The following samples are used to explain the data management features in Spreadsheet control.
+    </Paragraph>
+	
+    <Paragraph>
+        <Bold>Data Validation </Bold> -  This sample explains the data validation feature.
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>Formula </Bold> - This sample illustrates how to use formulae in Spreadsheet control.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>Import Data Table</Bold> - This sample demonstrates how to import and export data from a data table to the Spreadsheet.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>Template Marker</Bold> - This sample demonstrates the functionality of a marker that can be used to apply formatting.
+    </Paragraph>
+	
+</FlowDocument>

@@ -1,0 +1,7 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+        <Paragraph>
+            This sample showcases the ContextMenu capability of GridDataControl. The GridDataControl is well associated with a default context menu with default menu items. You can add custom context menu items to the existing context menu of the GridDataControl. 
+        </Paragraph>
+				<Paragraph TextAlignment="Center"><Image Source="Images\ContextMenuDemo.png" Stretch="None" /></Paragraph>
+</FlowDocument>

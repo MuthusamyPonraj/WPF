@@ -1,0 +1,149 @@
+﻿<syncfusion:ChromelessWindow x:Class="ColumnStylesDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:view="clr-namespace:ColumnStylesDemo"
+        xmlns:I="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        Icon="App.ico"
+        syncfusion:LayoutControl.SetMetroMode="True">
+
+    <syncfusion:ChromelessWindow.DataContext>
+        <view:ViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+    
+    <Window.Resources>
+        <!--  Code for Column Styles  -->
+        <syncfusion:GridDataColumnStyle x:Key="ColumnStyle">
+            <syncfusion:GridDataColumnStyle.Background>
+                <SolidColorBrush Color="#FFE671B8" Opacity="0.9"/>
+            </syncfusion:GridDataColumnStyle.Background>
+            <syncfusion:GridDataColumnStyle.Foreground>
+                <SolidColorBrush Color="White" />
+            </syncfusion:GridDataColumnStyle.Foreground>
+            <syncfusion:GridDataColumnStyle.Borders>
+                <syncfusion:CellBordersInfo>
+                    <syncfusion:CellBordersInfo.Bottom>
+                        <Pen Thickness="0"/>
+                    </syncfusion:CellBordersInfo.Bottom>
+                </syncfusion:CellBordersInfo>
+            </syncfusion:GridDataColumnStyle.Borders>
+            <syncfusion:GridDataColumnStyle.Font>
+                <syncfusion:GridFontInfo FontWeight="Bold"/>
+            </syncfusion:GridDataColumnStyle.Font>
+        </syncfusion:GridDataColumnStyle>
+
+        <syncfusion:GridDataColumnStyle x:Key="BandedColumnStyle">
+            <syncfusion:GridDataColumnStyle.Background>
+                <SolidColorBrush Color="#FFE671B8" Opacity="0.9"/>
+            </syncfusion:GridDataColumnStyle.Background>
+            <syncfusion:GridDataColumnStyle.Foreground>
+                <SolidColorBrush Color="White" />
+            </syncfusion:GridDataColumnStyle.Foreground>
+            <syncfusion:GridDataColumnStyle.Borders>
+                <syncfusion:CellBordersInfo>
+                    <syncfusion:CellBordersInfo.Bottom>
+                        <Pen Thickness="0"/>
+                    </syncfusion:CellBordersInfo.Bottom>
+                </syncfusion:CellBordersInfo>
+            </syncfusion:GridDataColumnStyle.Borders>
+            <syncfusion:GridDataColumnStyle.Font>
+                <syncfusion:GridFontInfo FontSize="13"
+                                         FontWeight="Medium" />
+            </syncfusion:GridDataColumnStyle.Font>
+        </syncfusion:GridDataColumnStyle>
+    </Window.Resources>
+
+    <syncfusion:LayoutControl HeaderDescriptionText="This sample shows a way to style column appearence by setting ColumnStyle property in XAML."
+                              HeaderText="Column Styles Demo"
+                              LayoutMode="Metro"
+                              UserOptionsVisibility="Visible">
+
+        <syncfusion:LayoutControl.GridView>
+            <!--  GridDataControl Created here  -->
+            <syncfusion:GridDataControl x:Name="dataGrid"
+                                        AllowEdit="False"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ColumnSizer="Star"
+                                        ItemsSource="{Binding Path=SupplierDetails}"
+                                        NotifyPropertyChanges="True"
+                                        ShowAddNewRow="False"
+                                        AlternatingRowBackground="White"
+                                        ShowGroupDropArea="False"                                        
+                                        VisualStyle="Metro">
+
+                <!--  Visible Column Added here  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+
+                    <syncfusion:GridDataVisibleColumn 
+                                                      HeaderText="CompanyName"
+                                                      MappingName="CompanyName">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    
+                    <syncfusion:GridDataVisibleColumn HeaderText="Supplier ID" MappingName="SupplierID">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="ContactName" MappingName="ContactName">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn 
+                                                      HeaderText="ContactTitle"
+                                                      MappingName="ContactTitle">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Region" MappingName="Region">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn 
+                                                      HeaderText="City"
+                                                      MappingName="City">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Address" MappingName="Address">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>              
+
+                </syncfusion:GridDataControl.VisibleColumns>
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+
+        <syncfusion:LayoutControl.UserOptionsView>
+            <syncfusion:UserOptions HeaderText="Column Style Options">
+                <StackPanel>
+                    <CheckBox Name="FirstColumn" Content="First Column" Margin="5" IsChecked="True"  />
+                    <CheckBox Name="LastColumn" Content="Last Column" Margin="5"  IsChecked="True"/>
+                    <CheckBox Name="BandedColumn" Content="Banded Columns" Margin="5" />
+                </StackPanel>
+            </syncfusion:UserOptions>
+        </syncfusion:LayoutControl.UserOptionsView>
+        
+    </syncfusion:LayoutControl>
+
+    <I:Interaction.Behaviors>
+        <view:ColumnStyleBehavior/>
+    </I:Interaction.Behaviors>
+
+</syncfusion:ChromelessWindow>

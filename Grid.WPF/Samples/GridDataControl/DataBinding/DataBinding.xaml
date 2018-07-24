@@ -1,0 +1,62 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        GridDataControl - DataBinding
+    </Paragraph>
+    <Paragraph>
+        The GridDataControl is a binding grid that handles different operations on a collection. It is built with UI and data virtualization. Some samples that demonstrate how to bind different type of collections and objects to the GridDataControl are listed below: 
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>Observable Collection Demo</Bold>- This sample uses the Grid Data Control to bind with an observable collection source.
+    </Paragraph>
+	
+	 <Paragraph>
+        <Bold>Data Table Demo</Bold>- This sample uses the Grid Data Control to bind with a legacy data table source.
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>Entity Collection Demo</Bold>- This sample uses the Grid Data Control to bind with an entity collection.
+    </Paragraph>	
+
+	<Paragraph>
+        <Bold>List Demo</Bold>- This sample showcases how the Grid Data Control accepts IList as a data source.
+    </Paragraph>
+	
+    <Paragraph>
+        <Bold>Binding List Demo</Bold>- This sample uses the Grid Data Control to bind with a BindingList source.
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>UnBound Column Demo</Bold>- This sample uses the Grid Data Control to bind with a UnBound Columns.
+    </Paragraph>   
+
+	<Paragraph>
+        <Bold>Dynamic Objects Demo</Bold>- This sample illustrates binding to Dynamic objects that can be defined at runtime.
+    </Paragraph>
+	
+     <Paragraph>
+        <Bold>Hierarchy Demo</Bold>- This sample uses the GridDataControl to show a hierarchy with a legacy data table source.
+    </Paragraph>
+	 
+	 <Paragraph>
+        <Bold>Complex Property Binding Demo</Bold>- This sample illustrates the complex property binding in the grid.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>Nested Child Collections Demo</Bold>- This sample uses the GridDataControl to show the nested collections with an IEnumerable source.
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>Indexer Binding Demo</Bold>- This sample uses the Grid Data Control to show Indexer object as data source.
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>Iron Python Demo</Bold>- This sample illustrates using Iron Python in GridDataControl.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>Iron Ruby Demo</Bold>- This sample illustrates using Iron Ruby in GridDataControl.
+    </Paragraph>
+
+</FlowDocument>

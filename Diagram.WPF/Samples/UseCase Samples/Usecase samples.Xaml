@@ -1,0 +1,18 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+     
+
+
+<Paragraph FontFamily="Calibri"  FontSize="14">
+	The following sample shows the customizung option of Diagram.
+</Paragraph> 
+<Paragraph  > <Bold>Circuit Diagram</Bold> - This sample demonstrates how an electrical circuit diagram can be created using Essential Diagram for WPF.</Paragraph>
+
+<Paragraph > <Bold>Floor Plan</Bold> - This sample demonstrates how a Floor Plan can be created using Essential Diagram for WPF.</Paragraph>
+
+<Paragraph  > <Bold>Ishikawa Diagram </Bold> - This sample demonstrates how a fishbone diagram (cause-and-effect diagram) can be created using Essential Diagram for WPF.</Paragraph>
+
+<Paragraph  > <Bold>Swim Lane Diagram</Bold> - This sample demonstrates how a swim lane diagram can be created using Essential Diagram for WPF.</Paragraph>
+
+<Paragraph > <Bold>Data Flow Diagram </Bold> - This sample demonstrates how a data flow diagram can be created using Essential Diagram for WPF.</Paragraph>
+</FlowDocument> 

@@ -1,0 +1,19 @@
+
+<FlowDocument
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   ColumnWidth="400"
+   FontFamily="Georgia"
+   FontSize="14">
+   <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+            GDCGrouping Excel Export Demo
+        
+   </Paragraph>
+   <Paragraph>
+            Exporting the GridDataControl with Grouping to Excel Spreadsheet. .
+        
+   </Paragraph>
+   <Paragraph TextAlignment="Center">
+      <Image Height="530" Source="Images\GDC.png" Margin="10,10,10,10"/>
+      <Image Height="530" Source="Images\Excel.png" Margin="10,10,10,10"/>
+   </Paragraph>
+</FlowDocument>

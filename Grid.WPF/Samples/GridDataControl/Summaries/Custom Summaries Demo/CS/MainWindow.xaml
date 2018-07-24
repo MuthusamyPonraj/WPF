@@ -1,0 +1,133 @@
+﻿<syncfusion:ChromelessWindow x:Class="CustomSummariesDemo.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:data="clr-namespace:System.Windows.Data;assembly=PresentationFramework"
+                             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                             xmlns:local="clr-namespace:CustomSummariesDemo"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+                             Icon="App.ico"
+                             syncfusion:LayoutControl.SetMetroMode="True">
+
+    <!--  Window Resources Definition  -->
+    <syncfusion:ChromelessWindow.Resources>
+        <ObjectDataProvider x:Key="stdDevAggregate" ObjectType="{x:Type local:CustomAggregate}" />
+    </syncfusion:ChromelessWindow.Resources>
+    <!--  Window DataContext Defination  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:CustomSummaryViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+
+    <i:Interaction.Behaviors>
+        <local:InitialSetupBehavior />
+    </i:Interaction.Behaviors>
+
+    <!--  Code for LayoutControl  -->
+    <syncfusion:LayoutControl HeaderDescriptionText="This sample shows how to set the custom calculation logic for deriving summary information."
+                              HeaderText="Custom Summaries"
+                              LayoutMode="Metro"
+                              UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/default.htm#!documents/42393customsummaries.htm">
+
+
+        <syncfusion:LayoutControl.GridView>
+            <!--  Code for GridDataControl  -->
+            <syncfusion:GridDataControl Name="gridDataControl1"
+                                        AllowDelete="False"
+                                        AllowEdit="False"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        IsGroupsExpanded="{Binding IsGroupExpanded,
+                                                                   UpdateSourceTrigger=PropertyChanged}"
+                                        ItemsSource="{Binding QuotesInfo}"
+                                        ShowAddNewRow="False"
+                                        ShowGroupDropArea="False"
+                                        ShowGroupSummaries="True"
+                                        ShowGroupSummaryInCaption="False"
+                                        VisualStyle="Metro">
+                <!--  Code for Grouped Columns  -->
+                <syncfusion:GridDataControl.GroupedColumns>
+                    <syncfusion:GridDataGroupColumn ColumnName="Industry_IndustryID" />
+                </syncfusion:GridDataControl.GroupedColumns>
+                <!--  Code for GridDataControl's SummaryRows  -->
+                <syncfusion:GridDataControl.SummaryRows>
+                    <syncfusion:GridDataSummaryRow Name="StdDev"
+                                                   Title="'{Name} - {Count} Items'"
+                                                   ShowSummaryInRow="False"
+                                                   TitleColumnCount="2">
+                        <syncfusion:GridDataSummaryRow.SummaryColumns>
+                            <syncfusion:GridDataSummaryColumn Name="StdDevCol"
+                                                              CustomAggregate="{Binding Source={StaticResource stdDevAggregate}}"
+                                                              Format="'StdDev ({StdDev})'"
+                                                              MappingName="Change"
+                                                              SummaryType="Custom">
+                                <syncfusion:GridDataSummaryColumn.ColumnStyle>
+                                    <syncfusion:GridDataStyleInfo HorizontalAlignment="Center"
+                                                                  Background="LightGray"
+                                                                  Foreground="Black" />
+                                </syncfusion:GridDataSummaryColumn.ColumnStyle>
+                            </syncfusion:GridDataSummaryColumn>
+                        </syncfusion:GridDataSummaryRow.SummaryColumns>
+                    </syncfusion:GridDataSummaryRow>
+                </syncfusion:GridDataControl.SummaryRows>
+                <syncfusion:GridDataControl.VisibleColumns>
+                    <syncfusion:GridDataVisibleColumn MappingName="Symbol" />
+                    <syncfusion:GridDataVisibleColumn MappingName="CompanyName" />
+                    <syncfusion:GridDataVisibleColumn MappingName="Price">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn MappingName="Change">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn MappingName="PercentChange">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn MappingName="Open">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn MappingName="High">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn MappingName="Low">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn MappingName="Volume">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn MappingName="Industry_IndustryID">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                </syncfusion:GridDataControl.VisibleColumns>
+            </syncfusion:GridDataControl>
+            <!--  code for LayoutControl's UserOptions  -->
+        </syncfusion:LayoutControl.GridView>
+        <syncfusion:LayoutControl.UserOptionsView>
+            <syncfusion:UserOptions HeaderText="Collapse/Expand Options">
+                <StackPanel Margin="10">
+                    <Button x:Name="ExpandAll"
+                            Margin="0,10,0,0"
+                            Command="{Binding ExpandButton}"
+                            Content="ExpandAll" />
+                    <Button x:Name="CollapseAll"
+                            Margin="0,10,0,0"
+                            Command="{Binding CollapseButton}"
+                            Content="CollapseAll" />
+                </StackPanel>
+            </syncfusion:UserOptions>
+        </syncfusion:LayoutControl.UserOptionsView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

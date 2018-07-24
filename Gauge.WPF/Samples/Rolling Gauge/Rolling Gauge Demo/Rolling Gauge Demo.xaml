@@ -1,0 +1,88 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+RollingGauge Demo
+</Paragraph>
+
+
+
+<Paragraph> 
+This sample demonstrates the entire functionality of the rolling gauge control.
+</Paragraph> 
+
+
+
+<Paragraph TextAlignment="Center">
+	<Image Source="Images\RollingGauge.png" Stretch="None"/>
+</Paragraph>
+
+<Paragraph TextAlignment="Center" FontWeight="Bold" FontFamily="Cambria" FontSize="16">Rolling Gauge</Paragraph>
+
+<Paragraph TextAlignment="Center">
+	<Image Source="Images\NumericGauge.png" Stretch="None"/>
+</Paragraph>
+
+<Paragraph TextAlignment="Center" FontWeight="Bold" FontFamily="Cambria" FontSize="16">Numeric Gauge</Paragraph>
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">Features</Paragraph>
+
+<List Margin="25,0,0,0">
+    <ListItem>
+        <Paragraph>Supports automatic segment count.</Paragraph>
+    </ListItem>
+
+    <ListItem>
+            <Paragraph>Supports both clockwise and counterclockwise rolling.</Paragraph>
+    </ListItem>
+
+</List>
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">Interactive Features</Paragraph>
+
+<List Margin="25,0,0,0">
+        <ListItem>
+            <Paragraph>Specify the type of rolling gauge to be used by selecting the Enable Numeric Values check box.</Paragraph>
+        </ListItem>
+	
+	 <ListItem>
+            <Paragraph>Specify the value of a rolling gauge by selecting the Value text box.</Paragraph>
+        </ListItem>
+
+        <ListItem>
+            <Paragraph>Specify numeric gauge value in the Value field.</Paragraph>
+        </ListItem> 
+
+	<ListItem>
+            <Paragraph>Specify the number of characters to be displayed on the rolling gauge by using the Segment Count text box.</Paragraph>
+	</ListItem>
+
+
+	<ListItem>
+            <Paragraph>Specify the rolling direction of segments on the gauge by using the Direction combo box.</Paragraph>
+	</ListItem>
+
+
+	<ListItem>
+            <Paragraph>Use the Minimum Value text box to set the lowest number shown in the numeric gauge.</Paragraph>
+	</ListItem>
+
+
+	<ListItem>
+            <Paragraph>Use the Maximum Value text box set the highest number shown in the numeric gauge.</Paragraph>
+	</ListItem>
+
+
+	<ListItem>
+            <Paragraph>Use the Unit text box to specify the type of unit of measure shown in the gauge.</Paragraph>
+	</ListItem>
+
+
+	<ListItem>
+            <Paragraph>Specify unit position in the Unit Position combo box.</Paragraph>
+	</ListItem>
+</List>
+
+
+</FlowDocument>

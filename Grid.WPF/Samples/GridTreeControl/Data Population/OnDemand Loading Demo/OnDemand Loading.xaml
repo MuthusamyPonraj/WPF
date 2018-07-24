@@ -1,0 +1,10 @@
+   
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+<Paragraph>
+This sample showcases the On-Demand Loading capabilities of GridTreeControl. With respect to the GridTreeControl, you only have to handle the RequestTreeItems event and provide the requested child items for the given parent item. The sample database has 100,000 records in it, but these records are only loaded as the user expands nodes. The database is accessed through a typed data set created with Visual Studio design tools.
+</Paragraph>
+
+<Paragraph TextAlignment="Center"><Image Source="Images\OnDemandDataBinding.png" Stretch="None" /></Paragraph>
+
+</FlowDocument>

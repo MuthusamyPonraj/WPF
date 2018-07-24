@@ -1,0 +1,116 @@
+﻿<syncfusion:ChromelessWindow x:Class="CSVExportDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:CSVExportDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Icon="App.ico"
+        syncfusion:LayoutControl.SetMetroMode="True">
+
+    <!--  DataContext set here for Window  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:ViewModel />
+</syncfusion:ChromelessWindow.DataContext>
+
+    <syncfusion:LayoutControl HeaderDescriptionText="Exporting the entire Grid content or the contents in the selected ranges of Grid to Comma Separated Value"                              
+                              HeaderText="Export GridDataControl to CSV"  
+                              LayoutMode="Metro"
+                              UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/#!documents/4242griddatacontrolexporttocsv.htm"
+                              UserOptionsVisibility="Visible">
+        <syncfusion:LayoutControl.GridView>
+            <!--  GridDataControl Creating here  -->
+            <syncfusion:GridDataControl x:Name="GDC"
+                                        Grid.Row="1"
+                                        Grid.Column="0"
+                                        AllowEdit="False"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ItemsSource="{Binding OrderCollection}"
+                                        ListBoxSelectionMode="None"
+                                        ShowAddNewRow="False"
+                                        VisualStyle="Metro">
+                <!--  Visible Columns creating here  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Customer ID" MappingName="CustomerID" />
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Employee ID" MappingName="EmployeeID">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Ship Name" MappingName="ShipName" />
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Ship Address" MappingName="ShipAddress" />
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Ship City" MappingName="ShipCity" />
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Ship Region" MappingName="ShipRegion" />
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Ship Postal Code" MappingName="ShipPostalCode" />
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Ship Country" MappingName="ShipCountry" />
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Ship Via" MappingName="ShipVia">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="IntegerEdit" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Order Date" MappingName="OrderDate">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="DateTimeEdit" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Required Date" MappingName="RequiredDate">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="DateTimeEdit" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Shipped Date" MappingName="ShippedDate">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="DateTimeEdit" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Freight" MappingName="Freight">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="CurrencyEdit" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                </syncfusion:GridDataControl.VisibleColumns>
+
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+        <syncfusion:LayoutControl.UserOptionsView>
+            <syncfusion:UserOptions HeaderText="Export Entire Grid">
+                <StackPanel Margin="5" Orientation="Vertical">
+                    <TextBlock Text="Exporting all rows and columns from the Grid Data Control to CSV" TextWrapping="Wrap" />
+                    <Button x:Name="btnExport"
+                            Margin="20"
+                            Command="local:ExportAllCommand.ExportAllToCSV"
+                            CommandTarget="{Binding GridView,
+                                                    RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                                   AncestorType={x:Type syncfusion:LayoutControl}}}"
+                            Content="Export to CSV" />
+
+                </StackPanel>
+            </syncfusion:UserOptions>
+            <syncfusion:UserOptions HeaderText="Export Selected Ranges">
+                <StackPanel Margin="5" Orientation="Vertical">
+                    <TextBlock Text="Exporting selected rows from the Grid Data Control to CSV" TextWrapping="Wrap" />
+                    <Button x:Name="btnExport1"
+                            Margin="20"
+                            Command="local:ExportSelectedCommand.ExportSelectedToCSV"
+                            CommandTarget="{Binding GridView,
+                                                    RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                                   AncestorType={x:Type syncfusion:LayoutControl}}}"
+                            Content="Export to CSV" />
+                </StackPanel>
+            </syncfusion:UserOptions>
+        </syncfusion:LayoutControl.UserOptionsView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

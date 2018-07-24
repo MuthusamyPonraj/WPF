@@ -1,0 +1,193 @@
+﻿<syncfusion:ChromelessWindow x:Class="NestedGridCellEditorsDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Num="clr-namespace:System.Globalization;assembly=mscorlib"
+        xmlns:local="clr-namespace:NestedGridCellEditorsDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Icon="App.ico" syncfusion:LayoutControl.SetMetroMode="True">
+    <!--  Window DataContext Definition  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:ViewModel/>
+    </syncfusion:ChromelessWindow.DataContext>
+
+    <!--  Window Resource Definition  -->
+    <syncfusion:ChromelessWindow.Resources>
+        <local:CitySource x:Key="Cities"/>
+        <local:CountrySource x:Key="Countries"/>
+        <local:EmployeeSource x:Key="Employees"/>
+    </syncfusion:ChromelessWindow.Resources>
+    
+    <syncfusion:LayoutControl HeaderDescriptionText="Nested Grid's parent and child model are populated with cell editors."
+                              HeaderText="Nested Grid With Cell Editors"
+                              LayoutMode="Metro"
+                              UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/documents/42312nestedgroups.htm"
+                              UserOptionsVisibility="Collapsed">
+        <syncfusion:LayoutControl.GridView>
+            
+            <!--  Grid Data Control Definition  -->
+            <syncfusion:GridDataControl x:Name="dataGrid"
+                                        Grid.Row="1"
+                                        UpdateMode="PropertyChanged"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ColumnSizer="Star"
+                                        ItemsSource="{Binding CustomerList}"
+                                        ShowAddNewRow="False"
+                                        ShowErrorTooltips="True"
+                                        ShowGroupDropArea="False"
+                                        VisualStyle="Metro">
+                                
+                <!--  GridDataControl Column Definitions  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+                    
+                    <syncfusion:GridDataVisibleColumn MappingName="CustomerID" Width="80" HeaderText="Customer ID">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle ReadOnly="True"/>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="CompanyName" HeaderText="Company Name"/>
+                    <syncfusion:GridDataVisibleColumn MappingName="ContactName" HeaderText="Contact Title"/>
+                    <syncfusion:GridDataVisibleColumn MappingName="Address" HeaderText="Address" />
+                    
+                    <syncfusion:GridDataVisibleColumn MappingName="City" HeaderText="City" Width="100">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="ComboBox"
+                                                            DropDownStyle="Editable"
+                                                            DisplayMember="ShipCity"
+                                                            ValueMember="ShipCity"
+                                                            ItemsSource="{StaticResource ResourceKey=Cities}" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="Country" HeaderText="Country" Width="100">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="ComboBox"
+                                                            DropDownStyle="Editable"
+                                                            DisplayMember="ShipCountry"
+                                                            ValueMember="ShipCountry"
+                                                            ItemsSource="{StaticResource ResourceKey=Countries}" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="Phone" Width="100">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right"/>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    
+                    <syncfusion:GridDataVisibleColumn MappingName="Fax" Width="100">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right"/>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                </syncfusion:GridDataControl.VisibleColumns>
+
+                <!--  GridDataControl Relation Definition  -->
+                <syncfusion:GridDataControl.Relations >
+                    <syncfusion:GridDataRelation RelationalColumn="Orders" RelationType="MasterDetails" >
+                        <syncfusion:GridDataRelation.TableProperties>
+                            <syncfusion:GridDataTableProperties AutoPopulateColumns="False" 
+                                                                AutoPopulateRelations="False" 
+                                                                ShowAddNewRow="False" 
+                                                                UpdateMode="PropertyChanged" 
+                                                                NotifyPropertyChanges="True">
+                                
+                                <!--  GridDataControl relation column definition  -->
+                                <syncfusion:GridDataTableProperties.VisibleColumns>
+
+                                    <syncfusion:GridDataVisibleColumn MappingName="OrderID" HeaderText="Order ID" Width="75">
+                                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" ReadOnly="True"/>
+                                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataVisibleColumn>
+
+                                    <syncfusion:GridDataVisibleColumn MappingName="CustomerID" Width="80" HeaderText="Customer ID">
+                                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle ReadOnly="True"/>
+                                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataVisibleColumn>
+
+                                    <syncfusion:GridDataVisibleColumn MappingName="EmployeeID" HeaderText="Employee ID" Width="85">
+                                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle CellType="DropDownList"
+                                                            DropDownStyle="Editable"
+                                                            DisplayMember="ID"
+                                                            ValueMember="ID"
+                                                            ItemsSource="{StaticResource ResourceKey=Employees}"
+                                                            HorizontalAlignment="Right"/>
+                                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataVisibleColumn>
+
+                                    <syncfusion:GridDataCurrencyEditVisibleColumn MappingName="Freight" Width="90">
+                                        <syncfusion:GridDataCurrencyEditVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right"/>
+                                        </syncfusion:GridDataCurrencyEditVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataCurrencyEditVisibleColumn>
+
+                                    <syncfusion:GridDataVisibleColumn MappingName="ShipName" HeaderText="Ship Name"/>
+                                    <syncfusion:GridDataVisibleColumn MappingName="ShipAddress" HeaderText="Ship Address" Width="90"/>
+                                    <syncfusion:GridDataVisibleColumn MappingName="ShipCity" HeaderText="Ship City" Width="90">
+                                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle CellType="ComboBox"
+                                                            DropDownStyle="Editable"
+                                                            DisplayMember="ShipCity"
+                                                            ValueMember="ShipCity"
+                                                            ItemsSource="{StaticResource ResourceKey=Cities}" />
+                                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataVisibleColumn>
+
+                                    <syncfusion:GridDataVisibleColumn MappingName="ShipCountry" HeaderText="Ship Country" Width="90">
+                                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle CellType="ComboBox"
+                                                            DropDownStyle="Editable"
+                                                            DisplayMember="ShipCountry"
+                                                            ValueMember="ShipCountry"
+                                                            ItemsSource="{StaticResource ResourceKey=Countries}" />
+                                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataVisibleColumn>
+
+                                    <syncfusion:GridDataUpDownEditVisibleColumn MappingName="ShipVia" Width="75">
+                                        <syncfusion:GridDataUpDownEditVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right">
+                                                <syncfusion:GridDataColumnStyle.NumberFormat>
+                                                    <Num:NumberFormatInfo  NumberDecimalDigits="0"/>
+                                                </syncfusion:GridDataColumnStyle.NumberFormat>
+                                                <syncfusion:GridDataColumnStyle.UpDownEdit>
+                                                    <syncfusion:GridUpDownEditStyleInfo AnimationSpeed="0"/>
+                                                </syncfusion:GridDataColumnStyle.UpDownEdit>
+                                            </syncfusion:GridDataColumnStyle>
+                                        </syncfusion:GridDataUpDownEditVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataUpDownEditVisibleColumn>
+
+                                    <syncfusion:GridDataDateTimeVisibleColumn MappingName="OrderDate" HeaderText="Order Date" Width="90">
+                                        <syncfusion:GridDataDateTimeVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right">
+                                                <syncfusion:GridDataColumnStyle.DateTimeEdit>
+                                                    <syncfusion:GridDateTimeEditStyleInfo DateTimePattern="ShortDate" IsVisibleRepeatButton="False"/>
+                                                </syncfusion:GridDataColumnStyle.DateTimeEdit>
+                                            </syncfusion:GridDataColumnStyle>
+                                        </syncfusion:GridDataDateTimeVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataDateTimeVisibleColumn>
+
+                                    <syncfusion:GridDataDateTimeVisibleColumn MappingName="ShippedDate" HeaderText="Shipped Date" Width="90">
+                                        <syncfusion:GridDataDateTimeVisibleColumn.ColumnStyle>
+                                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right">
+                                                <syncfusion:GridDataColumnStyle.DateTimeEdit>
+                                                    <syncfusion:GridDateTimeEditStyleInfo DateTimePattern="ShortDate" IsVisibleRepeatButton="False"/>
+                                                </syncfusion:GridDataColumnStyle.DateTimeEdit>
+                                            </syncfusion:GridDataColumnStyle>
+                                        </syncfusion:GridDataDateTimeVisibleColumn.ColumnStyle>
+                                    </syncfusion:GridDataDateTimeVisibleColumn>
+
+                                </syncfusion:GridDataTableProperties.VisibleColumns>
+                            </syncfusion:GridDataTableProperties>
+                        </syncfusion:GridDataRelation.TableProperties>
+                    </syncfusion:GridDataRelation>
+                </syncfusion:GridDataControl.Relations>
+                
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

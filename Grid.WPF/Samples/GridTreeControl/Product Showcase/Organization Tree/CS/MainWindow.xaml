@@ -1,0 +1,174 @@
+﻿<syncfusion:ChromelessWindow x:Class="OrganizationTree.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:I="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                             xmlns:local="clr-namespace:OrganizationTree"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+                             Width="1024"
+                             Height="710"
+                             AllowsTransparency="True"
+                             BorderThickness="0"
+                             Foreground="#0F4788"
+                             Icon="App.ico"
+                             ResizeMode="CanResizeWithGrip"
+                             ShowIcon="False"
+                             syncfusion:SkinStorage.MetroBrush="Transparent"
+                             syncfusion:SkinStorage.VisualStyle="Metro"
+                             WindowStartupLocation="CenterScreen">
+
+    <Window.DataContext>
+        <local:ViewModel />
+    </Window.DataContext>
+
+    <Grid Margin="0 -30 0 0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid x:Name="HeaderGrid"
+              Grid.Row="0"
+              Height="30"
+              VerticalAlignment="Top">
+
+            <Border BorderBrush="LightGray" BorderThickness="0,1,0,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Column="0"
+                                IsHitTestVisible="False"
+                                Orientation="Vertical">
+                        <TextBlock Margin="12,5,5,5"
+                                   FontFamily="Segoe UI Light"
+                                   FontSize="18"
+                                   FontWeight="Bold"
+                                   Text="Organization Tree" />
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+
+        <Grid Grid.Row="1" Margin="2">
+            <!--  GridTreeControl Created here  -->
+            <syncfusion:GridTreeControl Name="treeGrid"
+                                        BorderBrush="LightGray"
+                                        BorderThickness="0,0.5,0,0"
+                                        EnableHotRowMarker="False"
+                                        EnableNodeSelection="True"
+                                        ExpandStateAtStartUp="AllNodesExpanded"
+                                        ReadOnly="True"
+                                        SupportNodeImages="True"
+                                        syncfusion:LayoutControl.IgnoreStyle="True"
+                                        VisualStyle="Metro">
+
+                <!--  GridTreeControl Behaviors  -->
+                <I:Interaction.Behaviors>
+                    <local:RequestItemsBehavior />
+                    <local:QueryCoveredRangeBehavior />
+                    <local:RequestTreeNodeImage />
+                </I:Interaction.Behaviors>
+
+                <!--  Code for GridTreeControl Columns  -->
+                <syncfusion:GridTreeControl.Columns>
+                    <syncfusion:GridTreeColumn Width="150" MappingName="Title" />
+
+                    <syncfusion:GridTreeColumn Width="110"
+                                               HeaderText="First Name"
+                                               MappingName="FirstName" />
+
+                    <syncfusion:GridTreeColumn Width="110"
+                                               HeaderText="Last Name"
+                                               MappingName="LastName" />
+                    <syncfusion:GridTreeColumn Width="120" MappingName="Department" />
+
+                    <syncfusion:GridTreeColumn Width="120"
+                                               HeaderText="Employee ID"
+                                               MappingName="EmpID">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridDataStyleInfo HorizontalAlignment="Right" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+
+                    <syncfusion:GridTreeColumn Width="100" MappingName="Salary">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridDataStyleInfo HorizontalAlignment="Right" CellType="CurrencyEdit" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+
+                    <syncfusion:GridTreeColumn Width="100" MappingName="DOJ">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridDataStyleInfo HorizontalAlignment="Right" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+
+                    <syncfusion:GridTreeColumn Width="100" MappingName="Rating">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridDataStyleInfo HorizontalAlignment="Right" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+
+                    <syncfusion:GridTreeColumn Width="100"
+                                               HeaderText="Recent Hike"
+                                               MappingName="Hike">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridDataStyleInfo HorizontalAlignment="Right" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+
+                </syncfusion:GridTreeControl.Columns>
+
+                <syncfusion:GridTreeControl.StyleManager>
+                    <syncfusion:GridTreeStyleManager>
+                        <syncfusion:GridTreeStyleManager.RowAppearance>
+                            <syncfusion:TreeRowAppearance CurrentCellSelectionBackground="#FFDCDCDC"
+                                                          CurrentCellSelectionForeground="#FF000000"
+                                                          HighlightSelectionBackground="#FFDCDCDC"
+                                                          HighlightSelectionForeground="#FF000000"
+                                                          RowHoverBackgroundBrush="#FFF2F2F2"
+                                                          RowHoverForegroundBrush="#FF333333" />
+                        </syncfusion:GridTreeStyleManager.RowAppearance>
+                        <syncfusion:GridTreeStyleManager.HeaderAppearance>
+                            <syncfusion:TreeHeaderAppearance HeaderBackgroundBrush="White"
+                                                             HeaderForegroundBrush="Black"
+                                                             HeaderHoverBackgroundBrush="Transparent"
+                                                             HeaderHoverForegroundBrush="Black"
+                                                             SortWidgetBorderHoverBackgroundBrush="Transparent"
+                                                             SortWidgetBrush="Black">
+                                <syncfusion:TreeHeaderAppearance.HeaderFont>
+                                    <syncfusion:GridFontInfo FontFamily="Verdana"
+                                                             FontSize="12"
+                                                             FontWeight="Bold" />
+                                </syncfusion:TreeHeaderAppearance.HeaderFont>
+                            </syncfusion:TreeHeaderAppearance>
+                        </syncfusion:GridTreeStyleManager.HeaderAppearance>
+                        <syncfusion:GridTreeStyleManager.CellAppearance>
+                            <syncfusion:TreeCellAppearance CellBackgroundBrush="Transparent" CellForegroundBrush="Black">
+                                <syncfusion:TreeCellAppearance.CellBorders>
+                                    <syncfusion:CellBordersInfo Bottom="{StaticResource ValueCellBorder}"
+                                                                Left="{StaticResource ValueCellBorder}"
+                                                                Right="{StaticResource ValueCellBorderRight}"
+                                                                Top="{StaticResource ValueCellBorder}" />
+                                </syncfusion:TreeCellAppearance.CellBorders>
+                                <syncfusion:TreeCellAppearance.CellFont>
+                                    <syncfusion:GridFontInfo FontFamily="Verdana"
+                                                             FontSize="11"
+                                                             FontWeight="Normal" />
+                                </syncfusion:TreeCellAppearance.CellFont>
+                                <syncfusion:TreeCellAppearance.CellTextMargins>
+                                    <syncfusion:CellMarginsInfo Bottom="2"
+                                                                Left="2"
+                                                                Right="2"
+                                                                Top="2" />
+                                </syncfusion:TreeCellAppearance.CellTextMargins>
+                            </syncfusion:TreeCellAppearance>
+                        </syncfusion:GridTreeStyleManager.CellAppearance>
+                        <syncfusion:GridTreeStyleManager.ExpanderAppearance>
+                            <syncfusion:TreeExpanderAppearance ExpanderBackground="Black" ExpanderExpandedBackground="Black" />
+                        </syncfusion:GridTreeStyleManager.ExpanderAppearance>
+                    </syncfusion:GridTreeStyleManager>
+
+                </syncfusion:GridTreeControl.StyleManager>
+            </syncfusion:GridTreeControl>
+        </Grid>
+    </Grid>
+</syncfusion:ChromelessWindow>

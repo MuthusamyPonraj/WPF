@@ -1,0 +1,13 @@
+
+<FlowDocument
+   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+   >
+  
+   <Paragraph>
+           
+This sample showcases the ExcelExporting capability of GridTreeControl. The GridExcelConverter class provides support for exporting data from a GridTreeControl to an Excel spreadsheet for verification and/or computation. This control copies the Grid's styles and formats to Excel automatically. The GridExcelConverter class is derived from GridExcelConverterBase. The XlsIO libraries are used to support the conversion of the GridDataControl contents to Excel. This sample demonstrates the conversion of GridTreeContol content into Excel SpreadSheet.
+   </Paragraph>
+   <Paragraph TextAlignment="Center">
+      <Image  Height="525" Source="Image\ExcelExportingDemo.png" Stretch="None"/>
+   </Paragraph>
+</FlowDocument>

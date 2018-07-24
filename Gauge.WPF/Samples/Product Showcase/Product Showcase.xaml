@@ -1,0 +1,13 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+Product Showcase
+</Paragraph>
+
+<Paragraph  FontFamily="Calibri" FontSize="14">
+Product Showcase demonstrates the flexibility of Essential Gauge by implementing different types of gauges in a single application.
+</Paragraph> 
+
+<Paragraph FontFamily="Calibri" FontSize="14"> <Bold>Automated Dashboard Demo </Bold> - This sample demonstrates how an automobile dashboard can be created by using both the Circular and Digital Gauges.</Paragraph>
+
+</FlowDocument>

@@ -1,0 +1,357 @@
+﻿<Window x:Class="CommandBindingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Behavior="clr-namespace:CommandBindingDemo.Behavior"
+        xmlns:Converters="clr-namespace:CommandBindingDemo.Helpers"
+        xmlns:Interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        x:Name="mainWindow"
+        Title="Command Binding Demo"
+        Width="1024"
+        Height="720"
+        Icon="App.ico"
+        syncfusion:SkinStorage.VisualStyle="{Binding ElementName=style,
+                                                     Path=SelectedItem}"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+
+        <Style TargetType="Image">
+            <Setter Property="Height" Value="16" />
+            <Setter Property="Width" Value="16" />
+        </Style>
+
+        <Converters:GridCellBoldToBoolConverter x:Key="BoldToBoolConverter" />
+        <Converters:GridCellItalicToBoolConverter x:Key="ItalicToBoolConverter" />
+        <Converters:GridCellUnderlineToBoolConverter x:Key="UnderlineToBoolConverter" />
+
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!--  File Menu  -->
+        <Menu HorizontalAlignment="Stretch">
+
+            <MenuItem DataContext="{Binding ElementName=spreadSheetControl}" Header="File">
+                <MenuItem Command="{Binding NewCommand}"
+                          Header="New"
+                          InputGestureText="Ctrl+N">
+                    <MenuItem.Icon>
+                        <Image Source="Images/NewDocumentHS.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+
+            <MenuItem DataContext="{Binding ElementName=spreadSheetControl}" Header="Edit">
+                <MenuItem Command="{Binding Path=CutCommand}"
+                          Header="Cut"
+                          IsCheckable="False">
+                    <MenuItem.Icon>
+                        <Image Source="Images/CutHS.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Command="{Binding Path=CopyCommand}"
+                          Header="Copy"
+                          IsCheckable="False">
+                    <MenuItem.Icon>
+                        <Image Source="Images/CopyHS.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Command="{Binding Path=PasteCommand}"
+                          Header="Paste"
+                          IsCheckable="False">
+                    <MenuItem.Icon>
+                        <Image Source="Images/PasteHS.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Header="View Help" InputGestureText="F1" />
+            </MenuItem>
+        </Menu>
+
+        <syncfusion:ToolBarManager x:Name="toolBarManager" Grid.Row="1">
+
+            <!--  Resources  -->
+            <syncfusion:ToolBarManager.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Height" Value="20" />
+                    <Setter Property="Width" Value="20" />
+                </Style>
+                <Style TargetType="ToggleButton">
+                    <Setter Property="Height" Value="20" />
+                    <Setter Property="Width" Value="20" />
+                </Style>
+            </syncfusion:ToolBarManager.Resources>
+
+            <syncfusion:ToolBarManager.TopToolBarTray>
+                <syncfusion:ToolBarTrayAdv VerticalAlignment="Top"
+                                           DataContext="{Binding ElementName=spreadSheetControl}"
+                                           IsLocked="{Binding IsChecked,
+                                                              ElementName=lockTop}">
+
+                    <syncfusion:ToolBarAdv DataContext="{Binding ElementName=spreadSheetControl}" ToolBarName="Standard" EnableAddRemoveButton="True" >
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding NewCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/NewDocumentHS.png"
+                                syncfusion:ToolBarAdv.Label="New Document"
+                                ToolTip="New Document">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/NewDocumentHS.png" />
+                        </Button>
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding ImportFromExcelCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/openHS.png"
+                                syncfusion:ToolBarAdv.Label="Open Document"
+                                ToolTip="Open Document">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/openHS.png" />
+                        </Button>
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding SaveCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/saveHS.png"
+                                syncfusion:ToolBarAdv.Label="Save Document"
+                                ToolTip="Save">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/saveHS.png" />
+                        </Button>
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding SaveCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/saveAllHS.png"
+                                syncfusion:ToolBarAdv.Label="Save Document"
+                                ToolTip="Save All">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/saveAllHS.png" />
+                        </Button>
+                    </syncfusion:ToolBarAdv>
+
+                    <syncfusion:ToolBarAdv DataContext="{Binding ElementName=spreadSheetControl}" ToolBarName="Edit" EnableAddRemoveButton="True">
+                        <ToggleButton Width="22"
+                                      Height="22"
+                                      Command="{Binding BoldCommand}"
+                                      IsChecked="{Binding Path=GridProperties.CurrentCellStyle.Font.FontWeight,
+                                                          Mode=TwoWay,
+                                                          Converter={StaticResource BoldToBoolConverter}}"
+                                      syncfusion:ToolBarAdv.Icon="Images/boldhs.png"
+                                      syncfusion:ToolBarAdv.Label="Bold"
+                                      ToolTip="Bold">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/boldhs.png" />
+                        </ToggleButton>
+                        <ToggleButton Width="22"
+                                      Height="22"
+                                      Command="{Binding ItalicCommand}"
+                                      IsChecked="{Binding Path=GridProperties.CurrentCellStyle.Font.FontStyle,
+                                                          Mode=TwoWay,
+                                                          Converter={StaticResource ItalicToBoolConverter}}"
+                                      syncfusion:ToolBarAdv.Icon="Images/ItalicHS.png"
+                                      syncfusion:ToolBarAdv.Label="Italic"
+                                      ToolTip="Italic">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/ItalicHS.png" />
+                        </ToggleButton>
+                        <ToggleButton Width="22"
+                                      Height="22"
+                                      Command="{Binding UnderlineCommand}"
+                                      IsChecked="{Binding Path=GridProperties.CurrentCellStyle.Font.TextDecorations,
+                                                          Mode=TwoWay,
+                                                          Converter={StaticResource UnderlineToBoolConverter}}"
+                                      syncfusion:ToolBarAdv.Icon="Images/underline.png"
+                                      syncfusion:ToolBarAdv.Label="Underline"
+                                      ToolTip="Underline">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/underline.png" />
+                        </ToggleButton>
+                        <ComboBox x:Name="style"
+                                  Width="120"
+                                  SelectedIndex="0"
+                                  syncfusion:ToolBarAdv.Label="Visual Style"
+                                  ToolTip="Visual Style">
+                            <System:String>Office2010Blue</System:String>
+                            <System:String>Office2010Black</System:String>
+                            <System:String>Office2010Silver</System:String>
+                            <Interactivity:Interaction.Triggers>
+                                <Interactivity:EventTrigger EventName="SelectionChanged">
+                                    <Behavior:SelectionChangedTrigger TargetObject="{Binding ElementName=spreadSheetControl}" />
+                                </Interactivity:EventTrigger>
+                            </Interactivity:Interaction.Triggers>
+                        </ComboBox>
+                        <syncfusion:ToolBarItemSeparator />
+                        <Button Command="{Binding Path=MergeCommand}"
+                                CommandParameter="MergeAndCenter"
+                                ToolTip="Merge And Center">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/MergeCells.png" />
+                        </Button>
+                        <Button Command="{Binding Path=MergeCommand}"
+                                CommandParameter="UnMerge"
+                                ToolTip="UnMerge Cells">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/UnmergeCells.png" />
+                        </Button>
+                        <syncfusion:ToolBarItemSeparator />
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding IncreaseIndentCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/OutdentHS.png"
+                                syncfusion:ToolBarAdv.Label=" Decrease Indent"
+                                ToolTip="Decrease Indent">
+                            <Button.CommandParameter>
+                                <System:Boolean>false</System:Boolean>
+                            </Button.CommandParameter>
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/OutdentHS.png" />
+                        </Button>
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding IncreaseIndentCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/IndentHS.png"
+                                syncfusion:ToolBarAdv.Label="Increase Indent"
+                                ToolTip="Increase Indent">
+                            <Button.CommandParameter>
+                                <System:Boolean>true</System:Boolean>
+                            </Button.CommandParameter>
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/IndentHS.png" />
+                        </Button>
+                        <syncfusion:ToolBarItemSeparator />
+                        <StackPanel Orientation="Horizontal">
+                            <CheckBox Width="100"
+                                      Content="GridLines"
+                                      IsChecked="{Binding Path=GridProperties.ShowGridLines,
+                                                          Mode=TwoWay}"
+                                      ToolTip="View Gridlines" />
+                            <CheckBox Content="Headings"
+                                      IsChecked="{Binding Path=GridProperties.IsRowColumnHeadersVisible,
+                                                          Mode=TwoWay}"
+                                      ToolTip="View Headings" />
+                        </StackPanel>
+                    </syncfusion:ToolBarAdv>
+
+                    <syncfusion:ToolBarAdv DataContext="{Binding ElementName=spreadSheetControl}" ToolBarName="ClipBoard" EnableAddRemoveButton="True">
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding CutCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/CutHS.png"
+                                syncfusion:ToolBarAdv.Label="Cut"
+                                ToolTip="Cut">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/CutHS.png" />
+                        </Button>
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding CopyCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/CopyHS.png"
+                                syncfusion:ToolBarAdv.Label="Copy"
+                                ToolTip="Copy">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/CopyHS.png" />
+                        </Button>
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding PasteCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/PasteHS.png"
+                                syncfusion:ToolBarAdv.Label="Paste"
+                                ToolTip="Paste">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/PasteHS.png" />
+                        </Button>
+                    </syncfusion:ToolBarAdv>
+
+                    <syncfusion:ToolBarAdv Band="1"
+                                           DataContext="{Binding ElementName=spreadSheetControl}"
+                                           ToolBarName="Extras" EnableAddRemoveButton="True">
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding Path=InsertPictureCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/InsertPictureHS.png"
+                                syncfusion:ToolBarAdv.Label="Insert Picture"
+                                ToolTip="Insert Picture">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/InsertPictureHS.png" />
+                        </Button>
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding Path=HyperlinkCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/InsertHyperlinkHS.png"
+                                syncfusion:ToolBarAdv.Label="Insert Hyperlink"
+                                ToolTip="Insert Hyperlink">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/InsertHyperlinkHS.png" />
+                        </Button>
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding InsertCommentCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/comments.png"
+                                syncfusion:ToolBarAdv.Label="Insert Comment"
+                                ToolTip="Insert Comment">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/comments.png" />
+                        </Button>
+                        <syncfusion:ToolBarItemSeparator />
+                        <Button Width="22"
+                                Height="22"
+                                Command="{Binding ProtectCurrentSheetCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/ProtectFormHS.png"
+                                syncfusion:ToolBarAdv.Label="ProtectCurrent Sheet"
+                                ToolTip="Protect CurrentSheet">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/ProtectFormHS.png" />
+                        </Button>
+                        <Button Margin="0,0,4,0"
+                                Command="{Binding DataValidationCommand}"
+                                syncfusion:ToolBarAdv.Icon="Images/DataValidation.png"
+                                syncfusion:ToolBarAdv.Label="Data Validation"
+                                ToolTip="Data Validation">
+                            <Image Width="16"
+                                   Height="16"
+                                   Source="Images/DataValidation.png" />
+                        </Button>
+                    </syncfusion:ToolBarAdv>
+                </syncfusion:ToolBarTrayAdv>
+            </syncfusion:ToolBarManager.TopToolBarTray>
+
+            <syncfusion:ToolBarManager.RightToolBarTray>
+                <syncfusion:ToolBarTrayAdv IsLocked="{Binding IsChecked, ElementName=lockRight}" />
+            </syncfusion:ToolBarManager.RightToolBarTray>
+
+            <syncfusion:ToolBarManager.BottomToolBarTray>
+                <syncfusion:ToolBarTrayAdv IsLocked="{Binding IsChecked, ElementName=lockBottom}" />
+            </syncfusion:ToolBarManager.BottomToolBarTray>
+
+            <syncfusion:SpreadsheetControl x:Name="spreadSheetControl">
+                <Interactivity:Interaction.Behaviors>
+                    <Behavior:ImportBehavior />
+                </Interactivity:Interaction.Behaviors>
+            </syncfusion:SpreadsheetControl>
+        </syncfusion:ToolBarManager>
+    </Grid>
+</Window>

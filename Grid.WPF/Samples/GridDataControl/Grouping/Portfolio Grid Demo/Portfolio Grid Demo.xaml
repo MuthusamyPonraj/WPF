@@ -1,0 +1,9 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+        <Paragraph>
+      This sample showcases the Portfolio capability of GridDataControl. When you have grid data grouped against more than one column, the groups will be nested in different levels forming a hierarchical, multilevel structure. You can expand or collapse the underlying groups and records from a parent group by clicking the expand/collapse button preceding its group caption. Multicolumn (nested) groups can be easily created by simply adding multiple columns to the Grouped Columns collection. You can also generate multilevel groups by just dragging multiple column headers into the group drop area. This sample shows stock exchange data with conditional formatting applied to the caption summary values.
+        </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\PortFolioGridDemo.png"  Stretch="None" /></Paragraph>
+</FlowDocument>
+

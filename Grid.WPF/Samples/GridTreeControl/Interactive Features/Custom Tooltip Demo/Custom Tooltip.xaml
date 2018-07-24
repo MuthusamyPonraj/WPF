@@ -1,0 +1,11 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+       
+        <Paragraph>
+            This sample showcases the CustomTooltip capabilities of GridTreeControl. The GridTreeControl provides support to associate individual cells with tooltips. A tooltip is a small pop-up window that appears when you mouse hover a visual element. It is used to display additional information about the elements without increasing the window size. Tooltips are mainly used to display some information text. You can also place any style of content such as a group of lines of text, an image, or any control in the ToolTip host. 
+        </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\CustomTooltip.png" Stretch="None" /></Paragraph>
+
+</FlowDocument>
+

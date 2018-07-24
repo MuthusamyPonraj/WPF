@@ -1,0 +1,13 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        GridTreeControl - Excel to Excel
+    </Paragraph>
+    <Paragraph>
+        The following sample demonstrate Exporting feature in GridTree Control.
+    </Paragraph>
+
+	<Paragraph>
+        <Bold>Excel Export Demo</Bold>- This sample shows how GridTree Control Contents are exported to Excel SpreadSheet.
+    </Paragraph>	
+</FlowDocument>

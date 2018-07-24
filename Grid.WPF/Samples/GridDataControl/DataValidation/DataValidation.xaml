@@ -1,0 +1,15 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Grid Data Control - DataValidation
+    </Paragraph>
+    <Paragraph>
+	The GridDataControl provides support to validate the cell value and displays the error icon in the corresponding cell. This validation can be done by using IDataErorInfo or by handling the appropriate event provided by GridDataControl. The following sample showcases the different type of validation.
+    </Paragraph>
+    <Paragraph>
+        <Bold>ErrorInfo Validation Demo</Bold>- This sample showcases how GridDataControl handles the error information, created by IDataErrorInfo.
+    </Paragraph>
+    <Paragraph>
+        <Bold>Custom Validation Demo</Bold>- This sample illustrates how to validate the data at application and display the error information in the GridDataControl.
+    </Paragraph>
+</FlowDocument>

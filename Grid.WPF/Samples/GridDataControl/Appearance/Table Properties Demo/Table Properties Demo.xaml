@@ -1,0 +1,40 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+        <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+            Table Properties Demo
+        </Paragraph>
+<Paragraph>
+There are numerous options to customize the appearance and behavior of the GridDataControl. These options are exposed by Grid.Model.TableProperties.
+</Paragraph>
+        <Paragraph>
+             This sample illustrates the different properties that the GridDataControl supports.
+        </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\TablePropertiesDemo.png" Stretch="None" /></Paragraph>
+<Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+Interactive Features:
+</Paragraph>
+        <List Margin="25,0,0,0"> 
+			<ListItem><Paragraph>Following Table Properties are used in this sample</Paragraph></ListItem>	
+			<ListItem><Paragraph>ShowRowHeader- Indicates whether the row header column should be visible.</Paragraph></ListItem>	
+			<ListItem><Paragraph>ShowRowHeaderArrow- Indicates whether Row Header Arrow should be visible or not. Which used to indicate the Currently selected row.</Paragraph></ListItem>	
+			<ListItem><Paragraph>ShowAddNewRow- Indicates whether the add new row should be visible. </Paragraph></ListItem>			
+			<ListItem><Paragraph>ShowRecordPlusMinus- Indicates whether a PlusMinus cell should appears in the next to the records. It is applicable only for nested tables.</Paragraph></ListItem>		
+
+			<ListItem><Paragraph>AllowSort- Allows user to sort the columns by clicking the column header.</Paragraph></ListItem>	
+			<ListItem><Paragraph>AllowEdit- Indicates whether the data can be edited.</Paragraph></ListItem>	
+			<ListItem><Paragraph>AllowGroup- Indicates whether the data can be grouped. </Paragraph></ListItem>			
+			<ListItem><Paragraph>AllowResizeColumns-Indicates whether the columns can be resized. </Paragraph></ListItem>		
+
+			<ListItem><Paragraph>AllowResizeRows- Indicates whether the rows can be resized.</Paragraph></ListItem>	
+			<ListItem><Paragraph>ShowFilters- Indicates whether the filters are allowed.</Paragraph></ListItem>	
+			<ListItem><Paragraph>ShowGroupDropArea- Indicates whether the group drop area should be visible. </Paragraph></ListItem>							
+
+			<ListItem><Paragraph>AllowDragColumns- Allows the user to re-arrange columns, by dragging the headers.</Paragraph></ListItem>	
+			<ListItem><Paragraph>DragIndicatorInnerBrush- Specifies the inner brush for drag indicator.</Paragraph></ListItem>	
+			<ListItem><Paragraph>DragIndicatorOuterBrush- Specifies the outline brush for drag indicator. </Paragraph></ListItem>		
+						
+		</List>
+</FlowDocument>
+
+

@@ -1,0 +1,139 @@
+﻿<syncfusion:ChromelessWindow x:Class="CellEditorsDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:glob="clr-namespace:System.Globalization;assembly=mscorlib"
+        xmlns:local="clr-namespace:CellEditorsDemo"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Icon="App.ico" syncfusion:LayoutControl.SetMetroMode="True">
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:ViewModel/>
+    </syncfusion:ChromelessWindow.DataContext>
+
+    <syncfusion:LayoutControl UserOptionsVisibility="Collapsed"
+                              HeaderDescriptionText="Using Editors Controls in GridDataControl as Cell Type."                              
+                              HeaderText="Annual Status Report"
+                              LayoutMode="Metro"
+                              UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/documents/4111builtincelltypes.htm">
+        <syncfusion:LayoutControl.GridView>
+            <syncfusion:GridDataControl x:Name="dataGrid" EnableVisualStyleForEditors="True"
+                                        Grid.Row="1" AllowExcelLikeResizing="True"
+                                        ActivateCurrentCellBehavior="DblClickOnCell"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"                                        
+                                        ItemsSource="{Binding OrderList}"
+                                        ShowAddNewRow="False"
+                                        ShowTooltips="True"
+                                        ColumnSizer="Star"
+                                        ShowGroupDropArea="False"
+                                        VisualStyle="Metro">
+                <syncfusion:GridDataControl.VisibleColumns>
+                    <syncfusion:GridDataVisibleColumn MappingName="OrderID" HeaderText="Order ID" Width="65">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" ReadOnly="True"/>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center"/>
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="CustomerID" Width="SizeToHeader">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center"/>
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="Freight" HeaderText="Freight" Width="80">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="CurrencyEdit" NegativeForeground="Red" HorizontalAlignment="Right">
+                            </syncfusion:GridDataColumnStyle>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center"/>
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="Delivery" HeaderText="Delivery Date" Width="80">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="DateTimeEdit" HorizontalAlignment="Right">
+                                <syncfusion:GridDataColumnStyle.DateTimeEdit>
+                                    <syncfusion:GridDateTimeEditStyleInfo DateTimePattern="ShortDate" />
+                                </syncfusion:GridDataColumnStyle.DateTimeEdit>
+                            </syncfusion:GridDataColumnStyle>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center"/>
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="EmployeeID" HeaderText="Employee ID" Width="120">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="UpDownEdit"
+                                                            HorizontalAlignment="Right">
+                                <syncfusion:GridDataColumnStyle.UpDownEdit>
+                                    <syncfusion:GridUpDownEditStyleInfo MinValue="1"
+                                                                        MaxValue="10"
+                                                                        FocusedBackground="Red"
+                                                                        FocusedForeground="White" />
+                                </syncfusion:GridDataColumnStyle.UpDownEdit>
+                            </syncfusion:GridDataColumnStyle>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center"/>
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="Phone" HeaderText="Phone Number">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="MaskEdit" HorizontalAlignment="Right">							
+							</syncfusion:GridDataColumnStyle>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center"/>
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="IsClosed" HeaderText="IsClosed" Width="SizeToCells">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="CheckBox" HorizontalAlignment="Center" IsThreeState="False"/>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center"/>
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="Percent" HeaderText="Percentage">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="PercentEdit" HorizontalAlignment="Right" PercentEditMode="DoubleMode"/>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center"/>
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn MappingName="Doubleval" HeaderText="Discount">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="DoubleEdit" HorizontalAlignment="Right"/>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center"/>
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                </syncfusion:GridDataControl.VisibleColumns>
+
+                <syncfusion:GridDataControl.TableSummaryRows>
+                    <syncfusion:GridDataSummaryRow ShowSummaryInRow="True"
+                                                   Title="Total : {OrderIDCount} Items"
+                                                   TitleColumnCount="2">
+                        <syncfusion:GridDataSummaryRow.SummaryColumns>
+                            <syncfusion:GridDataSummaryColumn Name="OrderIDCount"
+                                                              MappingName="OrderID"
+                                                              SummaryType="CountAggregate"
+                                                              Format="'{Count:d}'" />
+                        </syncfusion:GridDataSummaryRow.SummaryColumns>
+                    </syncfusion:GridDataSummaryRow>
+                </syncfusion:GridDataControl.TableSummaryRows>
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

@@ -1,0 +1,76 @@
+<syncfusion:ChromelessWindow x:Class="TreeGridMinimalSample.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:I="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                             xmlns:local="clr-namespace:TreeGridMinimalSample"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+                             Icon="App.ico"
+                             syncfusion:LayoutControl.SetMetroMode="True">
+
+    <syncfusion:LayoutControl HeaderDescriptionText="This sample shows the minimal XAML code that you need to display a GridTreeControl."
+                              HeaderText="Minimal Tree"
+                              LayoutMode="Metro"
+                              UserOptionsVisibility="Visible">
+
+        <syncfusion:LayoutControl.GridView>
+
+            <!--  GridTreeControl Definition  -->
+            <syncfusion:GridTreeControl Name="treeGrid"
+                                        AllowAutoSizingNodeColumn="False"
+                                        AutoPopulateColumns="True"
+                                        ExpandStateAtStartUp="AllNodesExpanded"
+                                        syncfusion:LayoutControl.SetMetroMode="True"
+                                        VisualStyle="Metro">
+                <!--  GridTreeControl DataContext Definition  -->
+                <syncfusion:GridTreeControl.DataContext>
+                    <local:ViewModel />
+                </syncfusion:GridTreeControl.DataContext>
+                <!--  GridTreeControl RequestTreeItems Behavior  -->
+                <I:Interaction.Behaviors>
+                    <local:RequestTreeItemsBehavior />
+                </I:Interaction.Behaviors>
+                <!--  GridTreeControl Visible Clumns Definition  -->
+                <syncfusion:GridTreeControl.Columns>
+                    <syncfusion:GridTreeColumn Width="135" MappingName="ID" />
+                    <syncfusion:GridTreeColumn Width="130" MappingName="FirstName" />
+                    <syncfusion:GridTreeColumn Width="130" MappingName="LastName" />
+                    <syncfusion:GridTreeColumn Width="130" MappingName="Department" />
+                    <syncfusion:GridTreeColumn Width="130" MappingName="Title" />
+                    <syncfusion:GridTreeColumn Width="130" MappingName="Salary">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="CurrencyEdit" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+                    <syncfusion:GridTreeColumn MappingName="ReportsTo">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridStyleInfo HorizontalAlignment="Right" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+                </syncfusion:GridTreeControl.Columns>
+            </syncfusion:GridTreeControl>
+
+        </syncfusion:LayoutControl.GridView>
+
+        <syncfusion:LayoutControl.UserOptionsView>
+            <syncfusion:UserOptions HeaderText="Toggle Options">
+                <StackPanel x:Name="StkPanel"
+                            Grid.Column="0"
+                            Margin="5"
+                            Orientation="Vertical">
+                    <Button Margin="5"
+                            Command="local:ExpandCommand.ExpandAll"
+                            CommandTarget="{Binding GridView,
+                                                    RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                                   AncestorType={x:Type syncfusion:LayoutControl}}}"
+                            Content="ExpandAllNodes" />
+                    <Button Margin="5"
+                            Command="local:CollapseCommand.CollapseAll"
+                            CommandTarget="{Binding GridView,
+                                                    RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                                   AncestorType={x:Type syncfusion:LayoutControl}}}"
+                            Content="CollapsedAllNodes" />
+                </StackPanel>
+            </syncfusion:UserOptions>
+        </syncfusion:LayoutControl.UserOptionsView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

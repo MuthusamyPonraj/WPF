@@ -1,0 +1,118 @@
+﻿<syncfusion:ChromelessWindow x:Class="SpreadsheetToHTML.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:Behavior="clr-namespace:SpreadsheetToHTML.Behavior"
+                             xmlns:CommandHelper="clr-namespace:SpreadsheetToHTML.Commands"
+                             xmlns:Interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+                             Title="Spreadsheet To HTML"
+                             Width="1024"
+                             Height="720"
+                             Icon="App.ico"
+                             syncfusion:LayoutControl.SetMetroMode="True"
+                             WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid Margin="0,0,0,0" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="95" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <!--  Header Panel Implementation  -->
+            <Border Background="White" >
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Border Name="border1"
+                        Width="26"
+                        Height="45"
+                        Margin="0,6,0,0"
+                        HorizontalAlignment="Left"
+                        VerticalAlignment="Top"
+                        Background="#FF119EDA"
+                        BorderBrush="#FF119EDA"
+                        BorderThickness="1" />
+
+                    <Grid Grid.Column="1" HorizontalAlignment="Stretch">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <TextBlock Grid.Row="0"
+                               Margin="10,10,0,0"
+                               HorizontalAlignment="Left"
+                               FontFamily="Segoe WP"
+                               FontSize="35"
+                               Foreground="#FF119EDA"
+                               Text="Spreadsheet To HTML Demo" />
+                        <TextBlock Grid.Row="1"
+                               Margin="10,0,0,7"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Bottom"
+                               FontFamily="Segoe WP"
+                               FontSize="16"
+                               Text="Export Excel to HTML"
+                               TextWrapping="Wrap" />
+                    </Grid>
+                </Grid>
+            </Border>
+
+            <Grid Grid.Row="1" Margin="35,0,35,35">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="78*" />
+                    <ColumnDefinition Width="22*" />
+                </Grid.ColumnDefinitions>
+
+                <!--  GridView  -->
+                <Border Grid.Column="0">
+                    <syncfusion:SpreadsheetControl Name="spreadsheetControl" syncfusion:SkinStorage.VisualStyle="Office2010Blue">
+                        <Interactivity:Interaction.Behaviors>
+                            <Behavior:ImportBehavior />
+                        </Interactivity:Interaction.Behaviors>
+                    </syncfusion:SpreadsheetControl>
+                </Border>
+
+                <!-- UserOptions  -->
+                <Border Grid.Column="1">
+                    <ItemsControl>
+                        <syncfusion:UserOptions HeaderText="Export Workbook to HTML">
+                            <Button Grid.Row="1"
+                            Height="30"
+                            Margin="5"
+                            Command="CommandHelper:ExportCommand.ExportWorkBookToHTML"
+                            CommandTarget="{Binding ElementName=spreadsheetControl}"
+                            Content="Export To HTML" />
+                        </syncfusion:UserOptions>
+                        <syncfusion:UserOptions Grid.Row="1" HeaderText="Export Worksheet to HTML">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <ComboBox x:Name="Selectedsheet"
+                                  Grid.Row="0"
+                                  Height="30"
+                                  Margin="5"
+                                  SelectedIndex="0">
+                                    <ComboBoxItem>Orders Sheet</ComboBoxItem>
+                                    <ComboBoxItem>Customers Sheet</ComboBoxItem>
+                                    <ComboBoxItem>Products Sheet</ComboBoxItem>
+                                </ComboBox>
+                                <Button Grid.Row="1"
+                                Height="30"
+                                Margin="5"
+                                Command="CommandHelper:ExportCommand.ExportWorksheetToHTML"
+                                CommandParameter="{Binding Path=SelectedValue.Content,
+                                                           ElementName=Selectedsheet}"
+                                CommandTarget="{Binding ElementName=spreadsheetControl}"
+                                Content="Export To HTML" />
+                            </Grid>
+                        </syncfusion:UserOptions>
+                    </ItemsControl>
+                </Border>
+            </Grid>
+        </Grid>
+    </Grid>
+</syncfusion:ChromelessWindow>

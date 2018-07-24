@@ -1,0 +1,13 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+	
+
+    <Paragraph FontFamily="Calibri"  FontSize="14">
+     This sample illustrates the snap-to-grid feature of Diagram.
+    </Paragraph>
+    
+<Paragraph TextAlignment="Center"><Image  
+Source="Image\SnaptoGrid.png" Stretch="None"  
+/></Paragraph>
+
+</FlowDocument>

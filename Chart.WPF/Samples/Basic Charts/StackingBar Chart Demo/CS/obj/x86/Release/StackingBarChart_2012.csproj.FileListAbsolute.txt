@@ -1,0 +1,3 @@
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Basic Charts\StackingBar Chart Demo\CS\obj\x86\Release\StackingBarChart_2012.csprojResolveAssemblyReference.cache
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Basic Charts\StackingBar Chart Demo\CS\obj\x86\Release\App.g.cs
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Basic Charts\StackingBar Chart Demo\CS\obj\x86\Release\StackingBarChartDemo_MarkupCompile.cache

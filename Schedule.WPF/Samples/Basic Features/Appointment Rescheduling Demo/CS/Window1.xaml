@@ -1,0 +1,40 @@
+﻿<Window x:Class="Basic_Schedule_Demo.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:calender="clr-namespace:Syncfusion.Windows.Controls;assembly=Syncfusion.Schedule.WPF"
+        xmlns:schedule="clr-namespace:Syncfusion.Windows.Controls.Schedule;assembly=Syncfusion.Schedule.WPF"
+       WindowState="Normal" WindowStartupLocation="CenterScreen" Icon="App.ico" Height="720" Width="1024" MinHeight="545" MinWidth="745" 
+       Title="Appointment Rescheduling Demo" >
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        <schedule:Schedule x:Name="schedule" AllowAddNew="True"    
+                           AllowDragAndDrop="{Binding ElementName=AllowDragDrop, Path=IsChecked}"
+                           AllowResize="{Binding ElementName=AllowResize, Path=IsChecked}"
+                           ScheduleType="{Binding ElementName=ScheduleTypeSelection, Path=SelectedItem, Mode=TwoWay}">
+           <schedule:Schedule.Appointments>                
+                    <schedule:ScheduleAppointment StartTime="6/21/2010 8:00:00 AM" EndTime="6/21/2010 11:00:00 AM" Subject="Meet the doc" Location="Hutchison road" AllDay="False"/>
+                    <schedule:ScheduleAppointment StartTime="6/22/2010 9:00:00 AM" EndTime="6/22/2010 11:30:00 AM" Subject="Going to Park" Location="Park road" AllDay="False"/>
+                    <schedule:ScheduleAppointment StartTime="6/23/2010 8:00:00 AM" EndTime="6/23/2010 11:00:00 AM" Subject="Visit to Mary's house" Location="Hutchison road" AllDay="False"/>
+                    <schedule:ScheduleAppointment StartTime="6/24/2010 1:00:00 PM" EndTime="6/24/2010 3:00:00 PM"  Subject="Meeting with William" Location="Park road " AllDay="False"/>
+                    <schedule:ScheduleAppointment StartTime="6/25/2010 9:00:00 AM" EndTime="6/25/2010 11:00:00 AM"  Subject="Restart my Home Server" Location="Watling Street" AllDay="False"/>
+                    <schedule:ScheduleAppointment StartTime="6/26/2010 2:00:00 PM" EndTime="6/26/2010 5:00:00 PM"  Subject="Meeting With Team" Location="Office" AllDay="False"/>
+            </schedule:Schedule.Appointments>
+        </schedule:Schedule>
+        <StackPanel Grid.Column="1" Orientation="Vertical">
+            <Grid x:Name="ScheduleTypePanel">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Schedule Types" FontWeight="Bold" VerticalAlignment="Center" Grid.Column="0" Margin="10"></TextBlock>
+                <ComboBox Grid.Column="1" x:Name="ScheduleTypeSelection" SelectedIndex="1" ItemsSource="{Binding ScheduleTypeCollection}" Margin="10" Width="100"></ComboBox>
+            </Grid>
+			<CheckBox x:Name="CalenderVisibilitySelection" IsChecked="false" Content=" Show Calendar Items" Click="CalenderVisibilitySelection_Checked" Margin="10,10,0,10"></CheckBox>
+            <CheckBox x:Name="AllowDragDrop" IsChecked="True" Margin="10,10,0,10" Content="Allow Appointment DragAndDrop"></CheckBox>
+            <CheckBox x:Name="AllowResize" IsChecked="True" Margin="10,10,0,10" Content="Allow Appointment Resize"></CheckBox>
+        </StackPanel>
+    </Grid>
+</Window>

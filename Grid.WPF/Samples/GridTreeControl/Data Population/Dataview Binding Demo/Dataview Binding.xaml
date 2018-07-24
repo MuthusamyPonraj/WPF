@@ -1,0 +1,10 @@
+   
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+<Paragraph>
+This sample showcases how to bind a DataView with built-in relations to the GridTree control. The relation in the DataView will be populated as child nodes. By providing the relational field, the GridTree control will automatically fetch the relation and populate it in a hierarchical view.
+</Paragraph>
+
+<Paragraph TextAlignment="Center"><Image Source="Images\DataviewBinding.png" Stretch="None" /></Paragraph>
+
+</FlowDocument>

@@ -1,0 +1,145 @@
+﻿<syncfusion:ChromelessWindow  x:Class="BasicSortingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:BasicSortingDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Icon="App.ico"
+        syncfusion:LayoutControl.SetMetroMode="True">
+
+    <!--  DataContext Set here for Window  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:ViewModel />
+    </syncfusion:ChromelessWindow.DataContext>    
+    <syncfusion:LayoutControl HeaderDescriptionText="Sort columns in Ascending / Descending order by clicking on the Column Header"                              
+                              HeaderText="Sorting Columns in GridDataControl"
+                              LayoutMode="Metro"
+                              UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/default.htm#!documents/4232sorting.htm"
+                              UserOptionsVisibility="Visible">
+        <syncfusion:LayoutControl.GridView>
+            <!--  -GridDataControl created here  -->
+            <syncfusion:GridDataControl x:Name="dataGrid1"
+                                        Grid.Row="0"
+                                        Grid.Column="1"
+                                        AddNewRowPosition="Top"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        EnableTriStateSorting="{Binding Path=IsChecked,
+                                                                        ElementName=triStateSorting}"
+                                        ItemsSource="{Binding ProductInfo}"
+                                        ShowAddNewRow="False"
+                                        ShowGroupDropArea="False"
+                                        ShowSortNumber="{Binding Path=IsChecked,
+                                                                 ElementName=sortNumber}"
+                                        syncfusion:LayoutControl.IgnoreStyle="True"
+                                        VisualStyle="Metro">
+                <!--  SortColumns created here  -->
+                <syncfusion:GridDataControl.SortColumns>
+                    <syncfusion:GridDataSortColumn ColumnName="ProductID" SortDirection="Descending" />
+                </syncfusion:GridDataControl.SortColumns>
+                <!--  Visible Columns created here  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+                    <syncfusion:GridDataVisibleColumn AllowSort="{Binding Path=IsChecked,
+                                                                          ElementName=SupplierID}"
+                                                      HeaderText="Supplier ID"
+                                                      MappingName="SupplierID">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn AllowSort="{Binding Path=IsChecked,
+                                                                          ElementName=ProductID}"
+                                                      HeaderText="Product ID"
+                                                      MappingName="ProductID">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn AllowSort="{Binding Path=IsChecked,
+                                                                          ElementName=ProductName}"
+                                                      HeaderText="Product Name"
+                                                      MappingName="ProductName">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn AllowSort="{Binding Path=IsChecked,
+                                                                          ElementName=QuantityPerUniColumn}"
+                                                      HeaderText="Quantity Per Unit"
+                                                      MappingName="QuantityPerUnit">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataCurrencyEditVisibleColumn HeaderText="Price" MappingName="UnitPrice">
+
+                        <syncfusion:GridDataCurrencyEditVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataCurrencyEditVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataCurrencyEditVisibleColumn>
+
+                    <syncfusion:GridDataIntegerEditVisibleColumn HeaderText="Units In Stock" MappingName="UnitsInStock">
+                        <syncfusion:GridDataIntegerEditVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataIntegerEditVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataIntegerEditVisibleColumn>
+
+                </syncfusion:GridDataControl.VisibleColumns>
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+        <syncfusion:LayoutControl.UserOptionsView>
+            <syncfusion:UserOptions HeaderText="Tri-State Sorting">
+                <StackPanel Margin="10">
+                    <CheckBox x:Name="triStateSorting"
+                              Margin="5"
+                              Content="Enable TriState Sorting"
+                              IsChecked="True" />
+                </StackPanel>
+            </syncfusion:UserOptions>
+            <syncfusion:UserOptions HeaderText="Show Sort Number">
+                <StackPanel Margin="10">
+                    <CheckBox x:Name="sortNumber"
+                              Margin="5"
+                              Content="Show Sorting Order/Number"
+                              IsChecked="True" />
+                </StackPanel>
+            </syncfusion:UserOptions>
+            <syncfusion:UserOptions HeaderText="Allow Sort for Column">
+                <StackPanel Margin="10">
+                    <CheckBox x:Name="SupplierID"
+                              Margin="5"
+                              Content="Sort Supplier ID column"
+                              IsChecked="True" />
+                    <CheckBox x:Name="ProductID"
+                              Margin="5"
+                              Content="Sort Product ID column"
+                              IsChecked="True" />
+                    <CheckBox x:Name="ProductName"
+                              Margin="5"
+                              Content="Sort Product Name column"
+                              IsChecked="True" />
+                    <CheckBox x:Name="QuantityPerUniColumn"
+                              Margin="5"
+                              Content="Sort Quantity Per Unit column"
+                              IsChecked="True" />
+                </StackPanel>
+            </syncfusion:UserOptions>
+        </syncfusion:LayoutControl.UserOptionsView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow >
+

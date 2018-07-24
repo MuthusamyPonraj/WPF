@@ -1,0 +1,36 @@
+﻿<syncfusion:ChromelessWindow x:Class="TraderGridTestDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:TraderGridTestDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Icon="App.ico"
+        syncfusion:LayoutControl.SetMetroMode="True">
+
+    <!--  Window DataContext  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:ViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+
+    <syncfusion:LayoutControl HeaderDescriptionText="Changing cell values randomly and also record insertions and removals, using a timer event"                              
+                              HeaderText="High Frequency Updates"
+                              LayoutMode="Metro"
+                              UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/default.htm#!documents/4261highfrequencyupdates.htm"
+                              UserOptionsVisibility="Collapsed"
+                              >
+
+        <syncfusion:LayoutControl.GridView>
+            <!--  GridDataControl Definition  -->
+            <syncfusion:GridDataControl x:Name="dataGrid"
+                                        AllowEdit="False"
+                                        AutoFocusCurrentItem="False"
+                                        AutoPopulateRelations="False"
+                                        ColumnSizer="Star"
+                                        ItemsSource="{Binding Table}"
+                                        ShowAddNewRow="False"
+                                        ShowFilters="False"
+                                        ShowRecordPlusMinus="False"
+                                        syncfusion:LayoutControl.IgnoreStyle="True"
+                                        VisualStyle="Metro" />
+        </syncfusion:LayoutControl.GridView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

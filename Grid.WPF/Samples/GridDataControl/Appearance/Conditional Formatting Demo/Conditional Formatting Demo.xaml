@@ -1,0 +1,9 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+		<Paragraph>
+			This sample showcases the Conditional Formatting capability of GridDataControl. Conditional Formatting is a feature that allows you to apply formats to a cell or range of cells, and have that formatting change depending on the value of the cell or the value of a formula. The GridDataControl has in-built support for conditional formatting. This feature allows you to format grid cells based on certain conditions. 
+		</Paragraph>        
+		
+				<Paragraph TextAlignment="Center"><Image Source="Images\ConditionalFormattingDemo.png"  Stretch="None" /></Paragraph>
+								
+</FlowDocument>

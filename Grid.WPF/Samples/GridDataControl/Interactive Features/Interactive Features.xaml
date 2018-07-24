@@ -1,0 +1,23 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph>
+        Here are some samples the demonstrates some of the Interactive features of GridDataControl.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>Selections Demo</Bold>- This sample shows how to enable and access selections in a GridDataControl.
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>ContextMenu Demo</Bold>- This sample shows how to enable and access Context Menu in a GridDataControl.
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>Default ToolTip  Demo</Bold>- This sample illustrates Default Tooltip feature in GridDataControl.
+    </Paragraph>
+
+  <Paragraph>
+        <Bold>Custom ToolTip  Demo</Bold>- This sample illustrates the Custom Tooltip feature in GridDataControl.
+    </Paragraph>
+
+</FlowDocument>

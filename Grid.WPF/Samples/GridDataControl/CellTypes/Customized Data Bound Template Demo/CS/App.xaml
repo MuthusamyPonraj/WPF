@@ -1,0 +1,26 @@
+﻿<Application x:Class="CustomizedDataBoundTemplateDemo.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+
+        <DrawingImage x:Key="falseimage">
+            <DrawingImage.Drawing>
+                <DrawingGroup>
+                    <GeometryDrawing Brush="#FFE20001" Geometry="M1.4201339,28.678798 L10.250147,19.838467 1.2801337,10.888132 C-3.4398732,6.157955 6.0601408,-3.5024065 10.850148,1.3077735 L19.810161,10.278109 28.640174,1.4577792 C33.300181,-3.1923949 43.100195,6.4479659 38.370188,11.178143 L29.550175,20.008473 38.510189,28.968809 C43.310196,33.768988 33.670181,43.269344 28.930174,38.539167 L19.980161,29.578831 11.140148,38.399162 C6.5001414,43.049336 -3.309873,33.398974 1.4201339,28.678798 z" />
+                </DrawingGroup>
+            </DrawingImage.Drawing>
+        </DrawingImage>
+        <DrawingImage x:Key="trueimage">
+            <DrawingImage.Drawing>
+                <DrawingGroup>
+                    <DrawingGroup.Transform>
+                        <MatrixTransform Matrix="1,0,0,1,43.815,41.876" />
+                    </DrawingGroup.Transform>
+                    <GeometryDrawing Brush="#FF90C316" Geometry="M48.851485,1.1564693 L48.851485,1.1564693 C50.801563,3.0065156 50.591554,6.4366013 48.361465,8.7666596 46.731399,10.476702 24.120491,35.247322 22.040407,36.997365 19.980324,38.737409 16.730194,38.437401 15.010125,36.267347 L1.0795649,18.826911 C-0.61050305,16.716858 -0.28048979,13.606781 1.8195946,11.946739 L1.8195946,11.946739 C3.919679,10.256697 7.0198036,10.636706 8.6998711,12.746759 L18.980284,25.617081 41.28118,2.0564918 C43.491269,-0.27356641 46.911407,-0.69357691 48.851485,1.1564693 z" />
+                </DrawingGroup>
+            </DrawingImage.Drawing>
+        </DrawingImage>
+
+    </Application.Resources>
+</Application>

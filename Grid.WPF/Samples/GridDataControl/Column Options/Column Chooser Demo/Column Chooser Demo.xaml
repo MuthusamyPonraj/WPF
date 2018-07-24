@@ -1,0 +1,10 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+        <Paragraph>
+            	This sample showcases the Column Chooser capability of GridDataControl. The GridDataControl supports Column Chooser, through which the user can drag and drop the required column from the column chooser. For example, if the ItemSource contains 15 columns and the user declared only 3 visible columns then activating the Column Chooser shows a window with remaining columns (only header cell) and also enables the user to add and remove columns from the view by dragging and dropping them.
+        </Paragraph>
+
+		<Paragraph TextAlignment="Center"><Image Source="Images\ColumnChooserDemo.png"  Stretch="None" /></Paragraph>
+		
+</FlowDocument>
+

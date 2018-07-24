@@ -1,0 +1,101 @@
+<syncfusion:ChromelessWindow x:Class="LevelStylesDemo.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:I="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                             xmlns:local="clr-namespace:LevelStylesDemo"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+                             Icon="App.ico"
+                             syncfusion:LayoutControl.SetMetroMode="True">
+
+    <syncfusion:LayoutControl Name="layOut"
+                              HeaderDescriptionText="This sample shows how to apply style for each level of GridTreeControl."
+                              HeaderText="Level Styles"
+                              LayoutMode="Metro"
+                              SkinPickerVisibility="Collapsed"
+                              UserOptionsVisibility="Visible">
+
+        <syncfusion:LayoutControl.GridView>
+
+            <!--  GridTreeControl Definition  -->
+            <syncfusion:GridTreeControl Name="grid"
+										syncfusion:LayoutControl.SetMetroMode="True"
+                                        AutoPopulateColumns="False"
+                                        EnableHotRowMarker="True"
+                                        ExpandStateAtStartUp="AllNodesExpanded"                                        
+                                        syncfusion:LayoutControl.IgnoreStyle="True"
+                                        VisualStyle="Metro">
+                <syncfusion:GridTreeControl.DataContext>
+                    <local:ViewModel />
+                </syncfusion:GridTreeControl.DataContext>
+                <!--  GridTreeControl Behavior definition  -->
+                <I:Interaction.Behaviors>
+                    <local:GridTreeFunctionalBehavior />
+                </I:Interaction.Behaviors>
+
+                <!--  GridTreeControl columns definition  -->
+                <syncfusion:GridTreeControl.Columns>
+                    <syncfusion:GridTreeColumn Width="150" MappingName="ID" />
+                    <syncfusion:GridTreeColumn Width="150" MappingName="FirstName" />
+                    <syncfusion:GridTreeColumn Width="150" MappingName="LastName" />
+                    <syncfusion:GridTreeColumn Width="150" MappingName="Department" />
+                    <syncfusion:GridTreeColumn Width="150" MappingName="Title" />
+
+                    <syncfusion:GridTreeColumn Width="150" MappingName="Salary">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridStyleInfo HorizontalAlignment="Center" CellType="CurrencyEdit" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+
+                    <syncfusion:GridTreeColumn Width="150" MappingName="ReportsTo">
+                        <syncfusion:GridTreeColumn.StyleInfo>
+                            <syncfusion:GridStyleInfo HorizontalAlignment="Right" />
+                        </syncfusion:GridTreeColumn.StyleInfo>
+                    </syncfusion:GridTreeColumn>
+                </syncfusion:GridTreeControl.Columns>
+            </syncfusion:GridTreeControl>
+
+        </syncfusion:LayoutControl.GridView>
+
+        <syncfusion:LayoutControl.UserOptionsView>
+            <syncfusion:UserOptions HeaderText="Preferences">
+                <StackPanel Orientation="Vertical">
+                    <CheckBox Name="applyLevelStyles"
+                              Margin="5"
+                              Command="local:ApplyStyleCommand.ApplyStyle"
+                              CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"
+                              CommandTarget="{Binding GridView,
+                                                      RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                                     AncestorType={x:Type syncfusion:LayoutControl}}}"
+                              IsChecked="True">
+                        Apply Level Styles
+                    </CheckBox>
+                    <CheckBox Name="nodeSelectionCheckBox"
+                              Margin="5"
+                              Command="local:NodeSelectionCommand.CheckBoxSelection"
+                              CommandParameter="{Binding RelativeSource={RelativeSource Mode=Self}}"
+                              CommandTarget="{Binding GridView,
+                                                      RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                                     AncestorType={x:Type syncfusion:LayoutControl}}}"
+                              IsChecked="True">
+                        Enable Node Selection
+                    </CheckBox>
+                    <Button Name="expandAllButton"
+                            Margin="5"
+                            Command="local:ExpandAllCommand.ExpandAll"
+                            CommandTarget="{Binding GridView,
+                                                    RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                                   AncestorType={x:Type syncfusion:LayoutControl}}}">
+                        Expand All
+                    </Button>
+                    <Button Margin="5"
+                            Command="local:CollapseAllCommand.CollapseAll"
+                            CommandTarget="{Binding GridView,
+                                                    RelativeSource={RelativeSource Mode=FindAncestor,
+                                                                                   AncestorType={x:Type syncfusion:LayoutControl}}}">
+                        Collapse All
+                    </Button>
+                </StackPanel>
+            </syncfusion:UserOptions>
+        </syncfusion:LayoutControl.UserOptionsView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

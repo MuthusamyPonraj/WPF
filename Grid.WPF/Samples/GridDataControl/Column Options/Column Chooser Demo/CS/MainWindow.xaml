@@ -1,0 +1,158 @@
+﻿<syncfusion:ChromelessWindow x:Class="ColumnChooserDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Chooser="clr-namespace:ColumnChooserDemo.Behavior"
+        xmlns:Interactive="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:local="clr-namespace:ColumnChooserDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Icon="App.ico" syncfusion:LayoutControl.SetMetroMode="True">
+    <!--  DataContext set here for Window  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:ViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+    <syncfusion:LayoutControl HeaderDescriptionText="This sample showcases how to dynamically add/remove columns from Grid view, using Grid’s ColumnChooser window."
+                              HeaderText="GridDataControl ColumnChooser Support"
+                              LayoutMode="Metro"
+                              UserOptionsVisibility="Visible">
+        <syncfusion:LayoutControl.GridView>
+            <!--  GridDataControl Created here  -->
+            <syncfusion:GridDataControl x:Name="grid" 
+                                        AllowGroup="True"
+                                        AllowSort="True"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ItemsSource="{Binding OrdersDetail}"
+                                        ShowAddNewRow="False"
+                                        ShowGroupDropArea="True"
+                                        syncfusion:LayoutControl.IgnoreStyle="True"
+                                        VisualStyle="Metro">
+
+                <syncfusion:GridDataControl.VisibleColumns>
+
+                    <!--  Set IsReadyOnly for columns  -->
+                    <syncfusion:GridDataVisibleColumn AllowSort="True"
+                                                      HeaderText="Customer ID"
+                                                      IsHidden="{Binding IsChecked,
+                                                                         ElementName=HideCustomerIdChkbx}"
+                                                      MappingName="CustomerID" />
+
+                    <syncfusion:GridDataDateTimeVisibleColumn AllowSort="True"
+                                                              HeaderText="Order Date"
+                                                              IsHidden="{Binding IsChecked,
+                                                                                 ElementName=HideOrderDate}"
+                                                              MappingName="OrderDate">
+                        <syncfusion:GridDataDateTimeVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataDateTimeVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataDateTimeVisibleColumn>
+
+                    <syncfusion:GridDataDouleEditVisibleColumn AllowSort="True"
+                                                               HeaderText="Freight"
+                                                               IsHidden="{Binding IsChecked,
+                                                                                  ElementName=HideFrieghtChkbx}"
+                                                               MappingName="Freight">
+                        <syncfusion:GridDataDouleEditVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="DoubleEdit" />
+                        </syncfusion:GridDataDouleEditVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataDouleEditVisibleColumn>
+
+                    <syncfusion:GridDataUnboundVisibleColumn AllowSort="True"
+                                                             Expression="Freight * 100"
+                                                             HeaderText="Freight * 100"
+                                                             IsHidden="{Binding IsChecked,
+                                                                                ElementName=HideFreight100}"
+                                                             MappingName="Multiply">
+                        <syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="DoubleEdit" />
+                        </syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataUnboundVisibleColumn>
+
+                    <syncfusion:GridDataUnboundVisibleColumn AllowSort="True"
+                                                             Expression="Freight ^ 2"
+                                                             HeaderText="Freight Square"
+                                                             MappingName="Contains">
+                        <syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="DoubleEdit" />
+                        </syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataUnboundVisibleColumn>
+
+                    <syncfusion:GridDataUnboundVisibleColumn AllowSort="True"
+                                                             Expression="[Freight] &gt;=80 OR [Freight] &lt;=20"
+                                                             HeaderText="Freight falls beyond 20-80"
+                                                             MappingName="Relational">
+                        <syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" CellType="CheckBox" />
+
+                        </syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataUnboundVisibleColumn>
+
+                    <syncfusion:GridDataUnboundVisibleColumn AllowSort="True"
+                                                             Expression="CustomerID StartsWith S AND CustomerID EndsWith B"
+                                                             HeaderText="CustomerID like 'G...L'"
+                                                             MappingName="StartsWith">
+                        <syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" CellType="CheckBox" />
+                        </syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataUnboundVisibleColumn>
+
+                    <syncfusion:GridDataUnboundVisibleColumn AllowSort="True"
+                                                             Expression="CustomerID Contains FRANS"
+                                                             HeaderText="CustomerID Contains FRANS"
+                                                             MappingName="Contains">
+                        <syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" CellType="CheckBox" />
+                        </syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataUnboundVisibleColumn>
+
+                    <syncfusion:GridDataUnboundVisibleColumn AllowSort="True"
+                                                             Expression="Day(OrderDate)"
+                                                             HeaderText="Day of OrderDate"
+                                                             MappingName="DayFuntion">
+                        <syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="IntegetEdit" />
+                        </syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataUnboundVisibleColumn>
+
+                </syncfusion:GridDataControl.VisibleColumns>
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+        <syncfusion:LayoutControl.UserOptionsView>
+
+            <syncfusion:UserOptions HeaderText="Hide Columns">
+                <StackPanel Margin="5">
+                    <CheckBox Name="HideCustomerIdChkbx"
+                              Margin="10,5,5,5"
+                              Content="Hide Customer ID Column" />
+                    <CheckBox Name="HideFrieghtChkbx"
+                              Margin="10,5,5,5"
+                              Content="Hide Freight Column" />
+                    <CheckBox Name="HideOrderDate"
+                              Margin="10,5,5,5"
+                              Content="Hide Order Date Column" />
+                    <CheckBox Name="HideFreight100"
+                              Margin="10,5,5,5"
+                              Content="Hide Freight * 100" />
+                </StackPanel>
+            </syncfusion:UserOptions>
+
+            <syncfusion:UserOptions HeaderText="Show Column Chooser">
+                <StackPanel>
+                    <CheckBox Name="Cannaddhiddencol"
+                              Margin="15,10,5,10"
+                              Content="Add Hidden Columns"
+                              IsChecked="{Binding CanAddHiddenColumns}" />
+                    <Button x:Name="Columnchooserbutton"
+                            Height="Auto"
+                            Margin="15,10,5,10"
+                            Content="Show Column Chooser">
+                        <Interactive:Interaction.Triggers>
+                            <Interactive:EventTrigger EventName="Click">
+                                <Chooser:ColumnChooserBehavior TargetObject="{Binding GridView, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type syncfusion:LayoutControl}}}" />
+                            </Interactive:EventTrigger>
+                        </Interactive:Interaction.Triggers>
+                    </Button>
+                </StackPanel>
+            </syncfusion:UserOptions>
+        </syncfusion:LayoutControl.UserOptionsView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

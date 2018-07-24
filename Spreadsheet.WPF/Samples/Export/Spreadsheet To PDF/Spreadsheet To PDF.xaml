@@ -1,0 +1,14 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+       
+		
+        <Paragraph>
+			This sample showcases the Excel-to-PDF conversion support in Spreadsheet control.
+        </Paragraph>
+
+		<Paragraph TextAlignment="Center">
+			<Image Source="Image\SpreadsheetToPDF.png" Stretch="None" />
+		</Paragraph>
+		
+</FlowDocument>
+

@@ -1,0 +1,31 @@
+﻿<syncfusion:RibbonWindow x:Class="LocalizationDemo.MainWindow"
+                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                         xmlns:Behavior="clr-namespace:LocalizationDemo.Behavior"
+                         xmlns:Interactivity="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                         xmlns:skin="clr-namespace:Syncfusion.Windows.Controls;assembly=Syncfusion.Shared.Wpf"
+                         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+                         Title="Localization Demo"
+                         Width="1024"
+                         Height="720"
+                         Icon="App.ico"
+                         syncfusion:SkinStorage.VisualStyle="Office2010Blue"
+                         WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <syncfusion:SpreadsheetRibbon x:Name="spreadsheetRibbon"
+                                      Grid.Row="0"
+                                      DataContext="{Binding ElementName=spreadsheetControl}" />
+
+        <syncfusion:SpreadsheetControl x:Name="spreadsheetControl" Grid.Row="1">
+            <Interactivity:Interaction.Behaviors>
+                <Behavior:ImportBehavior />
+            </Interactivity:Interaction.Behaviors>
+        </syncfusion:SpreadsheetControl>
+
+    </Grid>
+</syncfusion:RibbonWindow>

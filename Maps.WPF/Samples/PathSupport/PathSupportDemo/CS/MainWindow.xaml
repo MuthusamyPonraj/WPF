@@ -1,0 +1,749 @@
+﻿<SampleLayout:SampleLayoutWindow x:Class="Path_Support_Demo_2010.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:maps="http://schemas.syncfusion.com/wpf" xmlns:SampleLayout="clr-namespace:Syncfusion.Windows.SampleLayout;assembly=Syncfusion.Chart.Wpf.SampleLayout"
+        Title="Path Support Demo" WindowStartupLocation="CenterScreen"   xmlns:local="clr-namespace:Path_Support_Demo_2010">
+    <SampleLayout:SampleLayoutWindow.Resources>
+        <local:EnableDisableCerter x:Key="enableConverter"/>
+        <local:SelectedIndexToBrushConvertor x:Key="brushconverter"/>
+        <local:SelectedIndexToPathLabelFontStyle x:Key="SelectedIndexToPathLabelFontStyle"/>
+        <maps:BooleanToVisibilityConverter x:Key="visibilityconverter"/>
+        <local:SelectedValueToLabelPoint x:Key="selectedValueToLabelPoint"/>
+    </SampleLayout:SampleLayoutWindow.Resources>
+        <Grid>
+            <maps:MapControl Name="Map" ShapeStroke="#FFFFE258" ShapeFill="#FFE2A000" EnableHoverEffects="True" ShapeHoverFill="#FFE26700" ShapeHoverStroke="#FFE26700" ShowNavigationControl="False" ShowLatLonPoints="False">
+                <maps:MapControl.LayeredContent>
+                    <maps:ShapeFileLayer AllowLabelIntersection="{Binding ElementName=AllowLabelInteractions_Chkbox,Path=IsChecked,Mode=TwoWay}" Uri="Path_Support_Demo_2010.ShapeFiles.world.shp"   Name="shapeControl" EnableLabel="{Binding IsChecked,ElementName=EnableLabel_ChkBox,Mode=TwoWay}">
+                        <maps:ShapeFileLayer.MapPathCollection>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-1.69811226286976" Y="50.974923725795"></Point>
+                                    <Point X="-22.6748049378263" Y="40.9860224520062"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-22.6748049378263" Y="40.9860224520062"></Point>
+                                    <Point X="-25.6714753199629" Y="35.4921267514223"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-25.6714753199629" Y="35.4921267514223"></Point>
+                                    <Point X="-28.1687006384101" Y="28.9993409234596"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-28.1687006384101" Y="28.9993409234596"></Point>
+                                    <Point X="-31.6648160842362" Y="21.0082199044286"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-31.6648160842362" Y="21.0082199044286"></Point>
+                                    <Point X="-32.6637062116151" Y="15.5143242038447"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-32.6637062116151" Y="15.5143242038447"></Point>
+                                    <Point X="-32.6637062116151" Y="12.5176538217081"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-32.6637062116151" Y="12.5176538217081"></Point>
+                                    <Point X="-30.6659259568573" Y="7.02375812112425"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-30.6659259568573" Y="7.02375812112425"></Point>
+                                    <Point X="-21.1764697467579" Y="-9.95737404431674"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-21.1764697467579" Y="-9.95737404431674"></Point>
+                                    <Point X="-21.1764697467579" Y="-12.9540444264534"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-21.1764697467579" Y="-12.9540444264534"></Point>
+                                    <Point X="-22.1753598741368" Y="-20.445720381795"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-22.1753598741368" Y="-20.445720381795"></Point>
+                                    <Point X="-27.6692555747207" Y="-32.4324019103416"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-27.6692555747207" Y="-32.4324019103416"></Point>
+                                    <Point X="-33.1631512753045" Y="-38.9251877383043"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-33.1631512753045" Y="-38.9251877383043"></Point>
+                                    <Point X="-45.1498328038511" Y="-48.4146439484036"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-45.1498328038511" Y="-48.4146439484036"></Point>
+                                    <Point X="-57.1365143323976" Y="-54.4079847126769"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-57.1365143323976" Y="-54.4079847126769"></Point>
+                                    <Point X="-64.1287452240498" Y="-55.9063199037452"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-64.1287452240498" Y="-55.9063199037452"></Point>
+                                    <Point X="-66.625970542497" Y="-55.9063199037452"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-66.625970542497" Y="-55.9063199037452"></Point>
+                                    <Point X="-180" Y="-52.9096495216086"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-158.523862261354" Y="-53.9085396489875"></Point>
+                                    <Point X="-180" Y="-41.4224130567515"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-2.19755732655921" Y="50.974923725795"></Point>
+                                    <Point X="-21.6759148104474" Y="14.0159890127764"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-21.6759148104474" Y="14.0159890127764"></Point>
+                                    <Point X="-25.1720302562734" Y="5.02597786636647"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-25.1720302562734" Y="5.02597786636647"></Point>
+                                    <Point X="-27.6692555747207" Y="-5.96181353480119"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-27.6692555747207" Y="-5.96181353480119"></Point>
+                                    <Point X="-30.1664808931679" Y="-15.4512697449006"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-30.1664808931679" Y="-15.4512697449006"></Point>
+                                    <Point X="-30.1664808931679" Y="-22.9429457002422"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-30.1664808931679" Y="-22.9429457002422"></Point>
+                                    <Point X="-29.6670358294784" Y="-30.4346216555838"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-29.6670358294784" Y="-30.4346216555838"></Point>
+                                    <Point X="-27.6692555747207" Y="-33.4312920377204"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-27.6692555747207" Y="-33.4312920377204"></Point>
+                                    <Point X="-23.6736950652051" Y="-36.4279624198571"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-23.6736950652051" Y="-36.4279624198571"></Point>
+                                    <Point X="-13.1853487277269" Y="-39.9240778656832"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-13.1853487277269" Y="-39.9240778656832"></Point>
+                                    <Point X="-3.19644745393808" Y="-41.4224130567515"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-3.19644745393808" Y="-41.4224130567515"></Point>
+                                    <Point X="2.79689331033521" Y="-41.4224130567515"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="2.79689331033521" Y="-41.4224130567515"></Point>
+                                    <Point X="8.29078901091907" Y="-39.9240778656832"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="8.29078901091907" Y="-39.9240778656832"></Point>
+                                    <Point X="21.2763606668445" Y="-41.9218581204409"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="21.2763606668445" Y="-41.9218581204409"></Point>
+                                    <Point X="30.2663718132544" Y="-40.4235229293726"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="30.2663718132544" Y="-40.4235229293726"></Point>
+                                    <Point X="39.7558280233538" Y="-39.9240778656832"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="39.7558280233538" Y="-39.9240778656832"></Point>
+                                    <Point X="52.2419546155898" Y="-38.9251877383043"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="52.2419546155898" Y="-38.9251877383043"></Point>
+                                    <Point X="72.2197571631674" Y="-38.4257426746148"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="72.2197571631674" Y="-38.4257426746148"></Point>
+                                    <Point X="102.186460984534" Y="-41.4224130567515"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="102.186460984534" Y="-41.4224130567515"></Point>
+                                    <Point X="107.680356685118" Y="-41.9218581204409"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="107.680356685118" Y="-41.9218581204409"></Point>
+                                    <Point X="113.174252385702" Y="-41.9218581204409"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="113.174252385702" Y="-41.9218581204409"></Point>
+                                    <Point X="127.158714169006" Y="-41.4224130567515"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="127.158714169006" Y="-41.4224130567515"></Point>
+                                    <Point X="132.65260986959" Y="-41.4224130567515"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="132.65260986959" Y="-41.4224130567515"></Point>
+                                    <Point X="134.650390124348" Y="-40.922967993062"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="134.650390124348" Y="-40.922967993062"></Point>
+                                    <Point X="138.146505570174" Y="-41.4224130567515"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="138.146505570174" Y="-41.4224130567515"></Point>
+                                    <Point X="139.145395697552" Y="-42.4213031841304"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="139.145395697552" Y="-42.4213031841304"></Point>
+                                    <Point X="140.144285824931" Y="-43.9196383751987"></Point>
+                                </maps:MapPath.PathPoints>
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="140.144285824931" Y="-43.9196383751987"></Point>
+                                    <Point X="142.142066079689" Y="-44.4190834388881"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="142.142066079689" Y="-44.4190834388881"></Point>
+                                    <Point X="144.639291398136" Y="-45.9174186299564"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="144.639291398136" Y="-45.9174186299564"></Point>
+                                    <Point X="149.134296971341" Y="-46.9163087573353"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="149.134296971341" Y="-46.9163087573353"></Point>
+                                    <Point X="150.13318709872" Y="-45.9174186299564"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="150.13318709872" Y="-45.9174186299564"></Point>
+                                    <Point X="151.132077226099" Y="-44.4190834388881"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="151.132077226099" Y="-44.4190834388881"></Point>
+                                    <Point X="152.630412417167" Y="-41.4224130567515"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="152.630412417167" Y="-41.4224130567515"></Point>
+                                    <Point X="152.630412417167" Y="-40.922967993062"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="152.630412417167" Y="-40.922967993062"></Point>
+                                    <Point X="151.631522289788" Y="-38.4257426746148"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="151.631522289788" Y="-38.4257426746148"></Point>
+                                    <Point X="150.63263216241" Y="-37.426852547236"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="150.63263216241" Y="-37.426852547236"></Point>
+                                    <Point X="149.633742035031" Y="-36.9274074835465"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="149.633742035031" Y="-36.9274074835465"></Point>
+                                    <Point X="149.134296971341" Y="-37.426852547236"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="138.146505570174" Y="-40.922967993062"></Point>
+                                    <Point X="144.139846334447" Y="-38.4257426746148"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="144.139846334447" Y="-38.4257426746148"></Point>
+                                    <Point X="146.137626589205" Y="-39.9240778656832"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="146.137626589205" Y="-39.9240778656832"></Point>
+                                    <Point X="147.635961780273" Y="-39.4246328019937"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="147.635961780273" Y="-39.4246328019937"></Point>
+                                    <Point X="149.134296971341" Y="-37.426852547236"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="98.6903455387078" Y="-40.922967993062"></Point>
+                                    <Point X="114.67258757677" Y="-30.4346216555838"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="114.67258757677" Y="-30.9340667192732"></Point>
+                                    <Point X="114.67258757677" Y="-33.9307371014099"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="114.67258757677" Y="-33.9307371014099"></Point>
+                                    <Point X="114.17314251308" Y="-34.9296272287887"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="114.17314251308" Y="-34.9296272287887"></Point>
+                                    <Point X="115.172032640459" Y="-36.9274074835465"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="115.172032640459" Y="-36.9274074835465"></Point>
+                                    <Point X="119.667038213664" Y="-41.4224130567515"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="150.13318709872" Y="-36.9274074835465"></Point>
+                                    <Point X="156.126527862993" Y="-41.4224130567515"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="156.126527862993" Y="-41.4224130567515"></Point>
+                                    <Point X="158.623753181441" Y="-44.9185285025776"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="158.623753181441" Y="-44.9185285025776"></Point>
+                                    <Point X="163.118758754646" Y="-46.4168636936459"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="163.118758754646" Y="-46.4168636936459"></Point>
+                                    <Point X="165.615984073093" Y="-47.9151988847142"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="165.615984073093" Y="-47.9151988847142"></Point>
+                                    <Point X="167.613764327851" Y="-48.4146439484036"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="167.613764327851" Y="-48.4146439484036"></Point>
+                                    <Point X="170.610434709987" Y="-48.4146439484036"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="170.610434709987" Y="-48.4146439484036"></Point>
+                                    <Point X="172.608214964745" Y="-48.4146439484036"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="172.608214964745" Y="-48.4146439484036"></Point>
+                                    <Point X="174.605995219503" Y="-47.9151988847142"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="174.605995219503" Y="-47.9151988847142"></Point>
+                                    <Point X="176.60377547426" Y="-47.9151988847142"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="176.60377547426" Y="-47.9151988847142"></Point>
+                                    <Point X="179.101000792708" Y="-47.9151988847142"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="149.633742035031" Y="-36.4279624198571"></Point>
+                                    <Point X="157.125417990372" Y="-36.9274074835465"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="157.125417990372" Y="-36.9274074835465"></Point>
+                                    <Point X="161.120978499888" Y="-38.4257426746148"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="161.120978499888" Y="-38.4257426746148"></Point>
+                                    <Point X="168.612654455229" Y="-38.9251877383043"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="168.612654455229" Y="-38.9251877383043"></Point>
+                                    <Point X="172.108769901056" Y="-38.9251877383043"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="172.108769901056" Y="-38.9251877383043"></Point>
+                                    <Point X="173.607105092124" Y="-40.4235229293726"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="173.607105092124" Y="-40.4235229293726"></Point>
+                                    <Point X="175.105440283192" Y="-42.4213031841304"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="175.105440283192" Y="-42.4213031841304"></Point>
+                                    <Point X="176.60377547426" Y="-42.4213031841304"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="176.60377547426" Y="-42.4213031841304"></Point>
+                                    <Point X="178.102110665329" Y="-42.4213031841304"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="178.102110665329" Y="-42.4213031841304"></Point>
+                                    <Point X="179.600445856397" Y="-42.4213031841304"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="53.9164596470455" Y="-39.018405426404"></Point>
+                                    <Point X="49.8770859325753" Y="-36.0806790886075"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="49.8770859325753" Y="-36.0806790886075"></Point>
+                                    <Point X="52.8148122703718" Y="-38.6511896341794"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="52.8148122703718" Y="-38.6511896341794"></Point>
+                                    <Point X="50.2443017247999" Y="-41.5889159719759"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="50.2443017247999" Y="-41.5889159719759"></Point>
+                                    <Point X="50.6115175170245" Y="-40.8544843875268"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-11.0807355767018" Y="33.6903214340591"></Point>
+                                    <Point X="-11.4479513689264" Y="33.6903214340591"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-22.0972093434387" Y="12.7590212772591"></Point>
+                                    <Point X="-19.8939145900913" Y="13.8606686539328"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-22.4644251356632" Y="13.4934528617083"></Point>
+                                    <Point X="-23.5660725123369" Y="15.3295318228311"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-32.7464673179509" Y="11.2901581083609"></Point>
+                                    <Point X="-33.4808989024001" Y="8.35243177056439"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-33.4808989024001" Y="8.35243177056439"></Point>
+                                    <Point X="-33.4808989024001" Y="7.98521597833984"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-33.4808989024001" Y="7.98521597833984"></Point>
+                                    <Point X="-32.3792515257264" Y="11.2901581083609"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                            <maps:MapPath PathStrokeThickness="2" PathColor="#FF8A5100">
+                                <maps:MapPath.PathPoints>
+                                    <Point X="-32.0120357335018" Y="11.2901581083609"></Point>
+                                    <Point X="-29.4415251879299" Y="10.9229423161363"></Point>
+                                </maps:MapPath.PathPoints>
+
+                            </maps:MapPath>
+                        </maps:ShapeFileLayer.MapPathCollection>
+                        <maps:ShapeFileLayer.SymbolCollection>
+                            <maps:MapSymbols Latitude="51" Longitude="-1" SymbolDescription="Portsmouth">
+                                <maps:MapSymbols.Symbol>
+                                    <Ellipse Height="7" Width="7" Stroke="Black" StrokeThickness="1" Fill="Yellow"></Ellipse>
+                                </maps:MapSymbols.Symbol>
+                            </maps:MapSymbols>
+                            <maps:MapSymbols Latitude="-55" Longitude="-68" SymbolDescription="Cape Horn">
+                                <maps:MapSymbols.Symbol>
+                                    <Ellipse Height="7" Width="7" Stroke="Black" StrokeThickness="1" Fill="Yellow"></Ellipse>
+                                </maps:MapSymbols.Symbol>
+                            </maps:MapSymbols>
+                            <maps:MapSymbols Latitude="-30" Longitude="114" SymbolDescription="Perth">
+                                <maps:MapSymbols.Symbol>
+                                    <Ellipse Height="7" Width="7" Stroke="Black" StrokeThickness="1" Fill="Yellow"></Ellipse>
+                                </maps:MapSymbols.Symbol>
+                            </maps:MapSymbols>
+                            <maps:MapSymbols Latitude="-37" Longitude="143" SymbolDescription="Melbourne">
+                                <maps:MapSymbols.Symbol>
+                                    <Ellipse Height="7" Width="7" Stroke="Black" StrokeThickness="1" Fill="Yellow"></Ellipse>
+                                </maps:MapSymbols.Symbol>
+                            </maps:MapSymbols>
+                            <maps:MapSymbols Latitude="-36" Longitude="150" SymbolDescription="Sydney">
+                                <maps:MapSymbols.Symbol>
+                                    <Ellipse Height="7" Width="7" Stroke="Black" StrokeThickness="1" Fill="Yellow"></Ellipse>
+                                </maps:MapSymbols.Symbol>
+                            </maps:MapSymbols>
+                        </maps:ShapeFileLayer.SymbolCollection>
+                        <maps:ShapeFileLayer.LabelCollections>
+                            <maps:MapLabel LabelText="Cape Horn" Latitude="-61" Longitude="-68" LabelFontFamily="Resources/Fonts/SEGOEWP-SEMIBOLD.TTF#Segoe WP SemiBold">
+
+                            </maps:MapLabel>
+                            <maps:MapLabel LabelText="Perth" Latitude="-24.261" Longitude="114.092" LabelFontFamily="Resources/Fonts/SEGOEWP-SEMIBOLD.TTF#Segoe WP SemiBold"/>
+                            <maps:MapLabel LabelText="Sydney" Latitude="-33.676" Longitude="168" LabelFontFamily="Resources/Fonts/SEGOEWP-SEMIBOLD.TTF#Segoe WP SemiBold" />
+                            <maps:MapLabel LabelText="Melbourne" Latitude="-30.907" Longitude="132.369" LabelFontFamily="Resources/Fonts/SEGOEWP-SEMIBOLD.TTF#Segoe WP SemiBold" />
+                            <maps:MapLabel LabelText="Portsmouth" Latitude="52" Longitude="25" LabelFontFamily="Resources/Fonts/SEGOEWP-SEMIBOLD.TTF#Segoe WP SemiBold"/>
+                        </maps:ShapeFileLayer.LabelCollections>
+                    </maps:ShapeFileLayer>
+                </maps:MapControl.LayeredContent>
+            </maps:MapControl>
+        </Grid>
+    <SampleLayout:SampleLayoutWindow.UserOptionsLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Expander Header="General Options">
+                <Grid VerticalAlignment="Top">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="26*" />
+                        <RowDefinition Height="26*" />
+                        <RowDefinition Height="26*" />
+                        <RowDefinition Height="26*"/>
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="82*"/>
+                        <ColumnDefinition Width="62*" />
+                        <ColumnDefinition Width="48*"/>
+                    </Grid.ColumnDefinitions>
+                       <TextBlock TextWrapping="Wrap"   Text="Create Dynamic Path" Grid.Row="3" Margin="5,5,2,5" />
+                    <CheckBox Content="" Name="CreateDynamicPath" Margin="8,5,5,5" IsChecked="{Binding IsDynamicCreatePath,Mode=TwoWay,ElementName=shapeControl}" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="1" />
+                </Grid>
+            </Expander>
+            <Expander Header="Edit Selected Path" Grid.Row="1" IsExpanded="{Binding SelectedMapPath,ElementName=shapeControl,Mode=TwoWay,Converter={StaticResource enableConverter}}" IsEnabled="{Binding SelectedMapPath,ElementName=shapeControl,Mode=TwoWay,Converter={StaticResource enableConverter}}">
+                <Grid Name="Edit_Selected_Path" DataContext="{Binding SelectedMapPath,ElementName=shapeControl,Mode=TwoWay}" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.55*"/>
+                        <ColumnDefinition Width="0.45*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Path Text" Grid.Row="0" Grid.Column="0" Margin="5" />
+                    <TextBox Text="{Binding PathLabel,Mode=TwoWay}" Grid.Column="1" Grid.Row="0" Margin="5" Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top"  />
+                    <TextBlock Text="Path Font Size" Grid.Row="1" Grid.Column="0" Margin="5" />
+                    <TextBox Text="{Binding PathLabelFontSize,Mode=TwoWay}" Grid.Column="1" Grid.Row="1" Margin="5"  Width="75"   Height="25" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock Text="Path Font Style" Grid.Row="2" Grid.Column="0" Margin="5" />
+                    <ComboBox Name="PathLabelFontStyle" SelectedIndex="{Binding PathLabelFontStyle,Mode=TwoWay, Converter={StaticResource SelectedIndexToPathLabelFontStyle}}" Grid.Column="1" Grid.Row="2" Margin="5"  Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <ComboBoxItem>Normal</ComboBoxItem>
+                        <ComboBoxItem>Italic</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Text="Path Label Position" Grid.Row="3" Grid.Column="0" Margin="5"  />
+                    <ComboBox Name="PathLabelPositioncombo" SelectedIndex="{Binding PathLabelPosition,Mode=TwoWay,Converter={StaticResource selectedValueToLabelPoint}}" Grid.Column="1" Grid.Row="3" Margin="5"  Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <ComboBoxItem>OnMiddlePoint</ComboBoxItem>
+                        <ComboBoxItem>OnPoint</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Text="Path Label Foreground" TextWrapping="Wrap"   Grid.Row="4" Grid.Column="0" Margin="5"  />
+                    <ComboBox Name="PathLabelForeground" SelectedIndex="{Binding PathLabelForeground,Mode=TwoWay,Converter={StaticResource brushconverter}}" Grid.Column="1" Grid.Row="4" Margin="5"  Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <ComboBoxItem>White</ComboBoxItem>
+                        <ComboBoxItem>Black</ComboBoxItem>
+                        <ComboBoxItem>Cyan</ComboBoxItem>
+                        <ComboBoxItem>Blue</ComboBoxItem>
+                        <ComboBoxItem>Red</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Text="Path Color" Grid.Row="5" Grid.Column="0" Margin="5"  />
+                    <ComboBox Name="PathColor" SelectedIndex="{Binding PathColor,Mode=TwoWay,Converter={StaticResource brushconverter}}" Grid.Column="1" Grid.Row="5" Margin="5"  Width="75" Height="25" HorizontalAlignment="Left" VerticalAlignment="Top">
+                        <ComboBoxItem>White</ComboBoxItem>
+                        <ComboBoxItem>Black</ComboBoxItem>
+                        <ComboBoxItem>Cyan</ComboBoxItem>
+                        <ComboBoxItem>Blue</ComboBoxItem>
+                        <ComboBoxItem>Red</ComboBoxItem>
+                    </ComboBox>
+                </Grid>
+            </Expander>
+        </Grid>
+    </SampleLayout:SampleLayoutWindow.UserOptionsLayout>
+  </SampleLayout:SampleLayoutWindow>

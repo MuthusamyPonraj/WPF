@@ -1,0 +1,12 @@
+﻿   
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+<Paragraph>
+This sample showcases the folder directory model with GridTreeControl. The information is loaded on demand as the user opens each parent folder.
+</Paragraph>
+
+<Paragraph TextAlignment="Center"><Image Source="Images\FileExplorerDemo.png" Stretch="None" /></Paragraph>
+
+</FlowDocument>
+
+

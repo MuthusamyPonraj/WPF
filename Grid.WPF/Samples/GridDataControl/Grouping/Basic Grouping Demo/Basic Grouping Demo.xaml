@@ -1,0 +1,10 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+        <Paragraph>
+            This sample showcases the Grouping capability of GridDataControl. The GridDataControl supports grouping which allows you to wrap a set of records that belong to the same category into a separate block, called a group. The GridDataControl enables you to group data by one or more columns. When grouping is applied, the records with identical values for the grouped columns will be combined together forming a hierarchical structure. Each group is identified by its group caption section that can be expanded to bring the underlying records into view. 
+        </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\BasicGroupingDemo.png"  Stretch="None" /></Paragraph>
+
+</FlowDocument>
+

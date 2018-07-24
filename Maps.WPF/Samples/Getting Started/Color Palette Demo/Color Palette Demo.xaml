@@ -1,0 +1,40 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        ColorPalette Demo
+    </Paragraph>
+
+    <Paragraph>
+        This sample demonstrates the color-palette feature of Essential Maps.
+    </Paragraph>
+
+    <Paragraph TextAlignment="Center">
+        <Image Source="Image\ColorPalette.png" Stretch="None"/>
+    </Paragraph>
+	<Paragraph  FontFamily="Cambria" FontSize="16" TextAlignment="Center">
+Fig: <Bold> Color Palette Demo </Bold>
+</Paragraph>
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Features
+    </Paragraph>
+    <List Margin="25,0,0,0">
+        <ListItem>
+            <Paragraph>Color Palette Support.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Ability to enable and disable the color palette.</Paragraph>
+        </ListItem>
+            </List>
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Interactions
+    </Paragraph>
+    <List Margin="25,0,0,0">
+        <ListItem>
+            <Paragraph>Enable the color palette by selecting the <Bold> Enable ColorPalette </Bold> check box.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>
+              Select the color palette from the <Bold> ColorPalette </Bold> combo box. Five different palettes are available with different sets of colors. When selecting a palette, the fill, border, and border thickness of the shape will change.
+            </Paragraph>
+        </ListItem>        
+    </List>
+</FlowDocument>

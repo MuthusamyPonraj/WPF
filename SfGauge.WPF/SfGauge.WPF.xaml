@@ -1,0 +1,14 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Syncfusion Essential Gauge WPF
+    </Paragraph>
+
+    <Paragraph  >
+        The Syncfusion WPF Gauge library allows the use of XAML and C# coding to draw various circular gauge designs. Essential Gauge includes sophisticated customization support and provides endless control customization possibilities. Users can display several data points and ranges in a concise manner within a compact area. Essential Gauge enables easy and effective understanding through clear and concise depiction of data.
+    </Paragraph>
+
+    
+
+</FlowDocument>

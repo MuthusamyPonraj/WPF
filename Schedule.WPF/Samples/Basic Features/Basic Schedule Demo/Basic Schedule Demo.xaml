@@ -1,0 +1,25 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+        <Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+            Basic Schedule Demo
+        </Paragraph>
+        <Paragraph>
+           This sample demonstrates schedule control's fundamental features and functionalities.
+        </Paragraph>
+		<Paragraph TextAlignment="Center"><Image Source="Images\Basic Demo.png" Width="700" Height="600" /></Paragraph>
+		<Paragraph TextAlignment="Center" FontFamily="Cambria" FontSize="14">Figure 1(a): Basic Day View Demo</Paragraph>
+		<Paragraph TextAlignment="Center"><Image Source="Images\Basic MontView Demo.png" Width="700" Height="600" /></Paragraph>
+		<Paragraph TextAlignment="Center" FontFamily="Cambria" FontSize="14">Figure 1(b): Basic Month View Demo</Paragraph>
+		<Paragraph TextAlignment="Center"><Image Source="Images\Basic ScheduleView Demo.png" Width="700" Height="600" /></Paragraph>
+		<Paragraph TextAlignment="Center" FontFamily="Cambria" FontSize="14">Figure 1(c): Basic ScheduleView Demo</Paragraph>
+		<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+		Features:
+		</Paragraph>
+        <List Margin="25,0,0,0">
+			<ListItem><Paragraph>Schedule control can be viewed in day view, week view , workweek view, schedule or horizontal view and month view </Paragraph></ListItem>
+			<ListItem><Paragraph>Calender items visibility and header title bar visibility can be enabled or disabled</Paragraph></ListItem>			
+			<ListItem><Paragraph>Time intervals per hour can be set to various values in schedule control</Paragraph></ListItem>
+			<ListItem><Paragraph>Working days can be customized by the user in schedule control</Paragraph></ListItem>
+        </List>
+</FlowDocument>
+

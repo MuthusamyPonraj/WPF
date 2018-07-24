@@ -1,0 +1,101 @@
+﻿<syncfusion:ChromelessWindow x:Class="UnBoundRowDemo.MainWindow"
+                             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                             xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                             xmlns:local="clr-namespace:UnBoundRowDemo"
+                             xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+                             Icon="App.ico"
+                             syncfusion:LayoutControl.SetMetroMode="True">
+
+    <!--  Window DataContext  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:ViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+
+    <Grid>
+        <syncfusion:LayoutControl HeaderDescriptionText="This sample shows the summary details by using GridTreeControl Unbound Row support."
+                                  HeaderText="UnboundRow"
+                                  LayoutMode="Metro"
+                                  SkinPickerVisibility="Collapsed"
+                                  UserOptionsVisibility="Collapsed">
+            <syncfusion:LayoutControl.GridView>
+
+                <!--  GridTreeControl Definition  -->
+                <syncfusion:GridTreeControl AutoPopulateColumns="False"
+                                            AutosizingNodeColumnOption="BasedOnLevel"
+                                            ChildPropertyName="Employee_Relation"
+                                            EnableHotRowMarker="False"
+                                            EnableRenderCheckIfGlyphNeeded="True"
+                                            ExpandGlyphType="Themed"
+                                            ExpandStateAtStartUp="AllNodesExpanded"
+                                            FooterRows="2"
+                                            ItemsSource="{Binding EmployeeTable}"
+                                            ReadOnly="False"
+                                            SupportNodeImages="True"
+                                            syncfusion:LayoutControl.SetMetroMode="True"
+                                            UnboundRowPosition="Bottom"
+                                            UnboundRowsCount="2"
+                                            VisualStyle="Metro">
+
+                    <!--  UnboundRow Summary Calculation behavior  -->
+                    <i:Interaction.Behaviors>
+                        <local:UnboundRowSummaryBehavior />
+                    </i:Interaction.Behaviors>
+
+                    <!--  GridTreeControl Columns Definition  -->
+                    <syncfusion:GridTreeControl.Columns>
+                        <syncfusion:GridTreeColumn HeaderText="Employee ID" MappingName="EmployeeID" />
+                        <syncfusion:GridTreeColumn Width="220" MappingName="Title" />
+                        <syncfusion:GridTreeColumn HeaderText="Birth Date" MappingName="BirthDate">
+                            <syncfusion:GridTreeColumn.StyleInfo>
+                                <syncfusion:GridStyleInfo HorizontalAlignment="Right" Format="MM/dd/yyyy" />
+                            </syncfusion:GridTreeColumn.StyleInfo>
+                        </syncfusion:GridTreeColumn>
+                        <syncfusion:GridTreeColumn Width="85" MappingName="Gender">
+                            <syncfusion:GridTreeColumn.StyleInfo>
+                                <syncfusion:GridStyleInfo HorizontalAlignment="Center" />
+                            </syncfusion:GridTreeColumn.StyleInfo>
+                        </syncfusion:GridTreeColumn>
+                        <syncfusion:GridTreeColumn HeaderText="Hire Date" MappingName="HireDate">
+                            <syncfusion:GridTreeColumn.StyleInfo>
+                                <syncfusion:GridStyleInfo HorizontalAlignment="Right" Format="MM/dd/yyyy" />
+                            </syncfusion:GridTreeColumn.StyleInfo>
+                        </syncfusion:GridTreeColumn>
+                        <syncfusion:GridTreeColumn Width="145"
+                                                   HeaderText="Vacation Hours"
+                                                   MappingName="VacationHours">
+                            <syncfusion:GridTreeColumn.StyleInfo>
+                                <syncfusion:GridStyleInfo HorizontalAlignment="Right" />
+                            </syncfusion:GridTreeColumn.StyleInfo>
+                        </syncfusion:GridTreeColumn>
+                        <syncfusion:GridTreeColumn Width="145"
+                                                   HeaderText="SickLeave Hours"
+                                                   MappingName="SickLeaveHours">
+                            <syncfusion:GridTreeColumn.StyleInfo>
+                                <syncfusion:GridStyleInfo HorizontalAlignment="Right" />
+                            </syncfusion:GridTreeColumn.StyleInfo>
+                        </syncfusion:GridTreeColumn>
+                        <syncfusion:GridTreeColumn Width="125"
+                                                   HeaderText="Marital Status"
+                                                   MappingName="MaritalStatus">
+                            <syncfusion:GridTreeColumn.StyleInfo>
+                                <syncfusion:GridStyleInfo HorizontalAlignment="Center" />
+                            </syncfusion:GridTreeColumn.StyleInfo>
+                        </syncfusion:GridTreeColumn>
+                        <syncfusion:GridTreeColumn Width="130"
+                                                   HeaderText="Manager ID"
+                                                   MappingName="ManagerID">
+                            <syncfusion:GridTreeColumn.StyleInfo>
+                                <syncfusion:GridStyleInfo HorizontalAlignment="Right" />
+                            </syncfusion:GridTreeColumn.StyleInfo>
+                        </syncfusion:GridTreeColumn>
+                    </syncfusion:GridTreeControl.Columns>
+
+                </syncfusion:GridTreeControl>
+            </syncfusion:LayoutControl.GridView>
+            <syncfusion:LayoutControl.UserOptionsView>
+                <syncfusion:UserOptions />
+            </syncfusion:LayoutControl.UserOptionsView>
+        </syncfusion:LayoutControl>
+    </Grid>
+</syncfusion:ChromelessWindow>

@@ -1,0 +1,39 @@
+﻿<Window x:Class="ResizerHandleDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf" 
+        Title="MainWindow" Height="350" Width="525">
+    
+    <syncfusion:SampleBrowserLayout x:Name="Resizer" PropertyPanelHeader="ResizerHandleDemo">
+        <syncfusion:SampleBrowserLayout.Content >
+    <Grid>
+        <syncfusion:DiagramControl x:Name="diagramcontrol" IsSymbolPaletteEnabled="True"  >
+            <syncfusion:DiagramControl.Model >
+                <syncfusion:DiagramModel LayoutType="None" x:Name="diagrammodel"></syncfusion:DiagramModel>
+            </syncfusion:DiagramControl.Model>
+            <syncfusion:DiagramControl.View >
+                <syncfusion:DiagramView x:Name="diagramview" IsPageEditable="True" >
+                    <syncfusion:DiagramView.HorizontalRuler >
+                        <syncfusion:HorizontalRuler Name="h_ruler"/>
+                    </syncfusion:DiagramView.HorizontalRuler>
+                    <syncfusion:DiagramView.VerticalRuler >
+                        <syncfusion:VerticalRuler Name="v_ruler" />
+                    </syncfusion:DiagramView.VerticalRuler>
+                </syncfusion:DiagramView>
+            </syncfusion:DiagramControl.View>
+        </syncfusion:DiagramControl>
+    </Grid>
+        </syncfusion:SampleBrowserLayout.Content>
+        <syncfusion:SampleBrowserLayout.PropertyPanelContent >
+            <StackPanel Orientation="Vertical" >
+                <Label Name="L1" Content="ResizerHandle" Width="100" Height="30"></Label>
+                <ComboBox x:Name="Resizerhandle" SelectionChanged="ResizerSelection_SelectionChanged" Width="75" Height="30"> 
+                    <ComboBoxItem x:Name="R1" Content="Resizer1" ToolTip="Resizer1"  ></ComboBoxItem>
+                    <ComboBoxItem x:Name="R2" Content="Resizer2" ToolTip="Resizer2 "  ></ComboBoxItem>
+                    <ComboBoxItem x:Name="R3" ToolTip="Resizer3" Content="Resizer3"  ></ComboBoxItem> 
+                </ComboBox>
+              
+            </StackPanel>
+        </syncfusion:SampleBrowserLayout.PropertyPanelContent>
+    </syncfusion:SampleBrowserLayout>
+</Window>

@@ -1,0 +1,15 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+        
+        <Paragraph>
+            This sample showcases the CellEditors capability of GridTreeControl. The GridTreeControl allows certain controls to be included in the grid cells. This greatly improves the usability and appearance of the GridTree control. This attribute of a grid cell is referred to as its cell type. The GridTree control supports binding different cell types that are available in our control library. 
+        </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\CellEditors.png" Stretch="None" /></Paragraph>
+	
+</FlowDocument>
+
+
+
+
+

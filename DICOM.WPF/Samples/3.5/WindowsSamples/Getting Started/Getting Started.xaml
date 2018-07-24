@@ -1,0 +1,14 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  
+<Paragraph>
+Essential DICOM is a library that is used to read Standard image formats and convert it into a DICOM image format.
+</Paragraph>
+<Paragraph>
+This category deals with how to manipulate the DICOM image format. Here is a list of samples with a short description of each.
+</Paragraph>
+<List>
+<ListItem><Paragraph><Bold>Image To DICOM</Bold>  - This sample demonstrates how a standard image format has been converted to a DICOM image format using Essential DICOM.
+</Paragraph></ListItem>
+</List>
+</FlowDocument>

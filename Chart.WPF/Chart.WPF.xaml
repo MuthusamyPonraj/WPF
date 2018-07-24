@@ -1,0 +1,123 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+		 
+<Paragraph  Style="{DynamicResource HeaderParagraphStyle}">
+Syncfusion Essential Chart WPF
+</Paragraph>
+
+<Paragraph >
+Essential Chart for WPF is a business-oriented charting component useful for visualizing data in advanced, innovative ways. It is one of the first of its kind for the WPF platform. It supports a wide range of chart types with rich user-interaction support.
+</Paragraph> 
+<Paragraph>
+<Figure HorizontalAnchor="PageRight" VerticalAnchor="PageTop" WrapDirection="Left">
+
+<BlockUIContainer>
+<Grid>
+
+<StackPanel Orientation="Vertical">
+
+<Border CornerRadius="5,5,0,0" Margin="0,5,0,5">
+
+<TextBlock Margin="2,10,0,10" VerticalAlignment="Center" Style="{DynamicResource HeaderTextStyle}"> Featured Samples</TextBlock>
+</Border>
+<WrapPanel  Margin="10">
+
+							<StackPanel Orientation="Vertical"  Margin="10">
+                                <Button>
+                                    <Image Tag="Basic Charts\Line Chart Demo"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\LineChart.png" Stretch="None"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Line Chart</TextBlock>
+                            </StackPanel>
+							
+							<StackPanel Orientation="Vertical"  Margin="10">
+                                <Button>
+                                    <Image Tag="Financial Charts\BoxAndWhisker Chart Demo"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\BoxAndWhisker.png" Stretch="None"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">BoxAndWhisker Chart</TextBlock>
+                            </StackPanel>
+
+
+							
+                           
+                            <StackPanel Orientation="Vertical" Margin="10">
+                                <Button>
+                                    <Image Tag="Accumulation Charts\Pie Chart Demo"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\PieChart.png" Stretch="None"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">Pie Chart Demo</TextBlock>
+                            </StackPanel>
+							
+							<StackPanel Orientation="Vertical"  Margin="10">
+                                <Button>
+                                    <Image Tag="Basic Charts\StackingArea100 Chart Demo"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\stackingarea100.png" Stretch="None"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5">StackingArea100 Chart Demo</TextBlock>
+                            </StackPanel>		
+
+							<StackPanel Orientation="Vertical"  Margin="10" >
+                                <Button>
+                                    <Image Tag="Product Showcase\Chart Technical Indicator Demo" Cursor="Hand" HorizontalAlignment="Center" Source="Images\Technical Indicator.png" Stretch="None"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5" >Technical Indicator</TextBlock>
+                            </StackPanel>	
+							
+							<StackPanel Orientation="Vertical"  Margin="10" >
+                                <Button>
+                                    <Image Tag="Data Binding\Observable Collection Binding Demo"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\Datacollection.png" Stretch="None"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5" >ObservableCollection</TextBlock>
+                            </StackPanel>	
+							
+							<StackPanel Orientation="Vertical"  Margin="10" >
+                                <Button>
+                                    <Image Tag="TimeLine Control\TimeLine Control Demo" Cursor="Hand" HorizontalAlignment="Center" Source="Images\TimeLineControl.png" Stretch="None" Height="98"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5" >TimeLine control Demo</TextBlock>
+                            </StackPanel>	
+							
+                            <StackPanel Orientation="Vertical"  Margin="10" >
+                                <Button>
+                                    <Image Tag="Spark Line\Sparkline Demo" Cursor="Hand" HorizontalAlignment="Center" Source="Images\sparkline.png" Stretch="None" Height="98"/>
+                                </Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5" >Sparkline</TextBlock>
+                            </StackPanel>
+										
+						
+							 
+
+	
+		<StackPanel Orientation="Vertical"  Margin="10" >
+			<Button>
+				<Image Tag="Statistical Analysis\Utility Functions"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\UtilityFunctionsDemo.png" Stretch="None" />
+			</Button>
+			<TextBlock HorizontalAlignment="Center" Margin="5">Utility Functions</TextBlock>
+		</StackPanel>			
+
+<StackPanel Orientation="Vertical"  Margin="10" >
+			<Button>
+				<Image Tag="Chart Performance\High Volume Data Demo"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\HighVolumeData.png" Stretch="None" />
+			</Button>
+			<TextBlock HorizontalAlignment="Center" Margin="5">High Volume Data Demo</TextBlock>
+		</StackPanel>		
+		<StackPanel Orientation="Vertical"  Margin="10" >
+			<Button>
+				<Image Tag="Chart Performance\Realtime Update Demo"  Cursor="Hand" HorizontalAlignment="Center" Source="Images\RealTimeUpdate.png" Stretch="None" />
+			</Button>
+			<TextBlock HorizontalAlignment="Center" Margin="5">Realtime Update Demo</TextBlock>
+		</StackPanel>		
+
+                        </WrapPanel>
+
+
+
+                    </StackPanel>
+</Grid>
+</BlockUIContainer>
+</Figure>
+
+</Paragraph>
+
+
+
+
+
+</FlowDocument>

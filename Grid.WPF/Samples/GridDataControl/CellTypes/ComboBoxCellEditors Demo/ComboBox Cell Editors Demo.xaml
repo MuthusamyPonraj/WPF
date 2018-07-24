@@ -1,0 +1,9 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+        <Paragraph>
+            This sample showcases the ComboBoxCellEditors capability of GridDataControl. The GridDataControl supports two different type of combo box cells namely "ComboBox" and "DropDownList", these two cell types internally supports three drop down styles. Based on the scenario can have different drop down styles for the cells. This sample will showcase how to use these cells in GridDataControl.
+        </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\ComboImage.png" Stretch="None" /></Paragraph>
+</FlowDocument>
+

@@ -1,0 +1,26 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        GridDataControl - Visual Style
+    </Paragraph>
+    <Paragraph>
+        The following samples illustrate Visual Style support in GridDataControl.
+    </Paragraph>
+
+	<Paragraph>
+        <Bold>Grid Visual Style Demo</Bold>- This sample showcases the in-built GridDataControl skins.
+    </Paragraph>
+	
+    <Paragraph>
+        <Bold>Blend Styling Demo</Bold>- This sample demonstrates editing GridDataControl styles with Expression Blend..
+    </Paragraph>
+	
+	 <Paragraph>
+        <Bold>Nested Grid Visual Style Demo</Bold>- This Sample demonstrates support of Visual Style in Nested Grid.
+    </Paragraph>
+	
+	<Paragraph>
+        <Bold>Touch Styling Demo</Bold>- This Sample demonstrates support of Touch Style in the GridDataControl.
+    </Paragraph>
+		
+	</FlowDocument>

@@ -1,0 +1,98 @@
+﻿<Window x:Class="XMLDataBindingDemo_2008.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="XML Data Binding" Height="700" Width="1000" WindowStartupLocation="CenterScreen"
+    xmlns:local="clr-namespace:XMLDataBindingDemo_2008"  syncfusion:SkinStorage.VisualStyle="Office2010Blue"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" Style="{StaticResource windowStyle}"
+    WindowState="Maximized" Icon="App.ico" FontFamily="Callibri" FontSize="12" FontWeight="Bold">
+
+    <!--Resources-->
+    <Window.Resources>
+        <ResourceDictionary>
+            <!--Gets the resources from the Shared Library-->
+            <ResourceDictionary.MergedDictionaries>
+
+                <!--ResourceDictionary Path for Vector Images-->
+                <ResourceDictionary Source="/Syncfusion.Shared.WPF;component/SkinManager/SkinManager.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!--Brush-->
+            <LinearGradientBrush x:Key="myBack" EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFE1EDFA" Offset="0.095"/>
+                <GradientStop Color="#FFD2E0EF" Offset="0.839"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <!--Grid Area-->
+    <Grid x:Name="myOuterGrid">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="9.3*"/>
+        </Grid.RowDefinitions>
+        <Grid.Resources>
+
+            <!--The XMl data which is to be binded.-->
+            <XmlDataProvider x:Key="myCompany" XPath="Employee" IsAsynchronous="False">
+                <x:XData>
+                    <Employee xmlns="" Name="John Galt" ID="1234" DOJ="12/11/1999" POST="Vice-President" EMAIl="john@inc.com" PH="(712) 555-7773">
+                        <Employee Name="Hank Reard" ID="1532" DOJ="2/10/2000" POST="Project Manager" EMAIl="reard@inc.com" PH="(712) 555-3453">
+                            <Employee Name="Dagny Tart" ID="3214" DOJ="8/4/2002" POST="Senior Developer" EMAIl="dagny@inc.com" PH="(712) 555-1233">
+                                <Employee Name="Dean Brisk" ID="4214" DOJ="2/12/2003" POST="Junior Developer" EMAIl="dean@inc.com" PH="(712) 555-3287"/>
+                                <Employee Name="Will Henry" ID="4215" DOJ="2/13/2003" POST="Junior Developer" EMAIl="will@inc.com" PH="(712) 555-5467" />
+                            </Employee>
+                            <Employee Name="Steve Bull" ID="2984" DOJ="5/9/2002" POST="Designer" EMAIl="sbull@inc.com" PH="(712) 555-9638"/>
+                        </Employee>
+                        <Employee Name="Sarah Fuller"  ID="7593" DOJ="5/22/2000" POST="HR Manager" EMAIl="sarah@inc.com" PH="(712) 555-3278"/>
+                        <Employee Name="Tim Howay" ID="3425" DOJ="2/2/2003" POST="ProjectManager" EMAIl="tim@inc.com" PH="(712) 555-3267">
+                            <Employee Name="Mike Smith" ID="4324" DOJ="3/16/2004" POST="Senior Developer" EMAIl="mike@inc.com" PH="(712) 555-1096">
+                                <Employee Name="Richard Halt" ID="4274" DOJ="1/1/2005" POST="Junior Developer" EMAIl="halt@inc.com" PH="(712) 555-1435"/>
+                                <Employee Name="Robert King" ID="4464" DOJ="5/22/2005" POST="Junior Developer" EMAIl="king@inc.com" PH="(712) 555-1233" />
+                            </Employee>
+                            <Employee Name="James Ven" ID="4532" DOJ="11/15/2006" POST="Designer" EMAIl="ven@inc.com" PH="(712) 555-9845"/>
+                        </Employee>
+                    </Employee>
+                </x:XData>
+            </XmlDataProvider>
+
+        </Grid.Resources>
+
+        <!--Header Area-->
+        <Grid Background="{StaticResource myBack}">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <TextBlock Margin="1030,0,0,8" FontWeight="Normal" Foreground="#FF284360" FontSize="32" Text="XML Data Binding" FontFamily="Segoe UI"  HorizontalAlignment="Right" VerticalAlignment="Center" />
+            <Path Margin="20,0,0,4" Data="M27.573,21.885726 C26.039659,21.885726 24.796639,23.128786 24.796639,24.662178 L24.796639,37.3311 C24.796639,38.864491 26.039659,40.107552 27.573,40.107552 L40.064701,40.107552 C41.598042,40.107552 42.841061,38.864491 42.841061,37.3311 L42.841061,24.662178 C42.841061,23.128786 41.598042,21.885726 40.064701,21.885726 z M3.9060001,2.3436508 C2.9710598,2.3436508 2.2131386,3.1015863 2.2131386,4.0365477 L2.2131386,11.76122 C2.2131386,12.69618 2.9710598,13.454117 3.9060001,13.454117 L11.522699,13.454117 C12.457641,13.454117 13.21556,12.69618 13.21556,11.76122 L13.21556,4.0365477 C13.21556,3.1015863 12.457641,2.3436508 11.522699,2.3436508 z M2.7341995,0 L12.8898,0 C14.399857,0 15.624,1.2241688 15.624,2.7342587 L15.624,12.737741 C15.624,14.247831 14.399857,15.472 12.8898,15.472 L8.75,15.472 8.75,29.653 21.167,29.653 21.167,22.526347 C21.167,20.049711 23.174645,18.042 25.6512,18.042 L42.306801,18.042 C44.783356,18.042 46.791,20.049711 46.791,22.526347 L46.791,38.932653 C46.791,41.40929 44.783356,43.417 42.306801,43.417 L25.6512,43.417 C23.174645,43.417 21.167,41.40929 21.167,38.932653 L21.167,32.403 7.3190002,32.403 C6.5596085,32.403 5.9440002,31.787392 5.9440002,31.028 5.9440002,30.933076 5.953619,30.840399 5.9719353,30.75089 L6,30.641743 6,15.472 2.7341995,15.472 C1.2241421,15.472 0,14.247831 0,12.737741 L0,2.7342587 C0,1.2241688 1.2241421,0 2.7341995,0 z" Fill="#FF8FABCA" HorizontalAlignment="Right" Height="39.417"  Stretch="Fill"  VerticalAlignment="Center" Width="46.791"/>
+            </StackPanel>
+                <!--<TextBlock Text="XML Data Binding Sample" VerticalAlignment="Center" FontSize="25" HorizontalAlignment="Center"/>-->
+        </Grid>
+
+        <!--Control Area-->
+        <syncfusion:DiagramControl  Grid.Row="1">
+            <!-- Model to add nodes and connections-->
+            <syncfusion:DiagramControl.Model>
+                <syncfusion:DiagramModel  x:Name="diagramModel"   LayoutType="DirectedTreeLayout"    
+                                         ItemsSource="{Binding Source={StaticResource myCompany}}" 
+                                         ItemTemplate="{StaticResource xmlDataTemplate}">
+                </syncfusion:DiagramModel>
+            </syncfusion:DiagramControl.Model>
+
+            <!--View to display nodes and connections added through model.-->
+            <syncfusion:DiagramControl.View >
+                <syncfusion:DiagramView IsPageEditable="False"  Name="view" Bounds="0,0,1300,100"  ShowHorizontalGridLine="True" ShowVerticalGridLine="True" >
+
+                    <!--Horizontal ruler declaration-->
+                    <syncfusion:DiagramView.HorizontalRuler>
+                        <syncfusion:HorizontalRuler />
+                    </syncfusion:DiagramView.HorizontalRuler>
+
+                    <!--VerticalRuler declaration-->
+                    <syncfusion:DiagramView.VerticalRuler>
+                        <syncfusion:VerticalRuler />
+                    </syncfusion:DiagramView.VerticalRuler>
+                </syncfusion:DiagramView>
+            </syncfusion:DiagramControl.View>
+        </syncfusion:DiagramControl>
+    </Grid>
+
+</Window>
+

@@ -1,0 +1,129 @@
+﻿<syncfusion:ChromelessWindow x:Class="ObservableCollectionDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:commands="clr-namespace:ObservableCollectionDemo.Commands"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:view="clr-namespace:ObservableCollectionDemo.ViewModel"
+        Icon="App.ico" syncfusion:LayoutControl.SetMetroMode="True">
+    <!--  DataContext set here for Window  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <view:GridViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+
+    <syncfusion:ChromelessWindow.Resources>
+        <LinearGradientBrush x:Key="gridViewbackground" StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Offset="0.08" Color="#FF119EDA" />
+            <GradientStop Offset="0.479" Color="#FF2C9ECE" />
+            <GradientStop Offset="0.973" Color="#FF119EDA" />
+        </LinearGradientBrush>
+    </syncfusion:ChromelessWindow.Resources>
+
+    <syncfusion:LayoutControl GridViewBackground="{StaticResource gridViewbackground}"
+                              HeaderDescriptionText="This sample shows how to bind an Observable collection to GridDataControl and perform CRUD operation."
+                              HeaderText="Zip Code Data of cities"
+                              LayoutMode="Metro">
+        <syncfusion:LayoutControl.GridView>
+            <!--  GridDataControl Creating here  -->
+            <syncfusion:GridDataControl x:Name="grid"
+                                        AllowEdit="False"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ColumnSizer="Star"
+                                        IsSynchronizedWithCurrentItem="True"
+                                        ItemsSource="{Binding Path=ZipCodes}"
+                                        NotifyPropertyChanges="True"
+                                        SelectedItem="{Binding Path=SelectedZipCode}"
+                                        ShowAddNewRow="False"
+                                        ShowGroupDropArea="True"
+                                        UpdateMode="PropertyChanged"
+					PersistGroupsExpandState="True"
+                                        VisualStyle="Metro">
+                <!--  Visisble Column creating here  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Zip Code" MappingName="ZipCode">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="City Name" MappingName="City">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="State Code" MappingName="StateCode">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="State Abbereviation" MappingName="StateAbbereviation">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="State Name" MappingName="StateName">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Latitude" MappingName="Latitude">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Longitude" MappingName="Longitude">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Class" MappingName="Class">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                </syncfusion:GridDataControl.VisibleColumns>
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+        <syncfusion:LayoutControl.UserOptionsView>
+            <syncfusion:UserOptions HeaderBackground="{StaticResource gridViewbackground}" HeaderText="Record Manipulation">
+                <StackPanel Orientation="Vertical">
+                    <Button Margin="10"
+                            commands:ZipCodeAddCommand.Command="{Binding AddZipCode}"
+                            Content="Add New Record" />
+
+                    <Button Margin="10"
+                            commands:ZipCodeEditCommand.Command="{Binding EditZipCode}"
+                            commands:ZipCodeEditCommand.CommandParameter="{Binding Path=SelectedZipCode,
+                                                                                   Mode=TwoWay}"
+                            Content="Edit Record" />
+
+                    <Button Margin="10"
+                            commands:ZipCodeDeleteCommand.Command="{Binding DeleteZipCode}"
+                            commands:ZipCodeDeleteCommand.CommandParameter="{Binding Path=SelectedZipCode,
+                                                                                     Mode=TwoWay}"
+                            Content="Delete Record" />
+                </StackPanel>
+            </syncfusion:UserOptions>
+        </syncfusion:LayoutControl.UserOptionsView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

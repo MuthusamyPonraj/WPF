@@ -1,0 +1,62 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Paragraph  Style="{DynamicResource HeaderParagraphStyle}">
+        Syncfusion Essential Edit WPF
+    </Paragraph>
+    <Paragraph  >
+        Essential Edit for WPF can be used as a basic editor that includes all the basic editor features such as
+        <Run FontWeight="Bold">text editing, cutting, copying and pasting</Run> . It enables users to open and save files from and to a variety of file formats. The edit control has built-in commands that can be bound with command bindings to perform various operations such as
+        <Run FontWeight="Bold">Open, New, Save, Copy, Cut, Paste, Select All</Run> , and so on.
+    </Paragraph>
+
+    <Paragraph  >
+        Essential Edit for WPF provides built-in support for common .NET programming languages such as C#, Visual Basic, XAML, XML, and SQL. With built-in language support, the edit control also provides syntax highlighting and expand-collapse support.
+    </Paragraph>
+
+    <Paragraph  >
+        Support for automatic IntelliSense with C# languages is built-in, and the control comes with a custom IntelliSense mode for all supported languages. Essential Edit for WPF provides full-fledged customization options to users so they can create custom language configurations and implement custom expand-collapse operations for those custom languages.
+    </Paragraph>
+
+    <Paragraph>
+        <Figure HorizontalAnchor="PageRight" VerticalAnchor="PageTop" WrapDirection="Left">
+            <BlockUIContainer>
+                <Grid>
+                   
+                    <StackPanel Orientation="Vertical">
+                        <Border CornerRadius="5,5,0,0" Margin="0,5,0,5">
+                           
+                            <TextBlock Margin="2,10,0,10"  VerticalAlignment="Center" Style="{DynamicResource HeaderTextStyle}"> Featured Samples</TextBlock>
+                        </Border>
+                        <WrapPanel Margin="10">
+
+                            <StackPanel Orientation="Vertical"  Margin="10">
+							    <Button>
+                                <Image Source="Images\EditControlDemoIcon.png"  Margin="5" Tag="Edit Control Features\Edit Control Demo" Cursor="Hand"/>
+								</Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5" > Edit Control</TextBlock>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Vertical"  Margin="10">
+							 <Button>
+                                <Image  Source="Images\IronPythonDemoIcon.png"  Margin="5" Tag="Custom Language Configurations\IronPython Demo" Cursor="Hand"/>
+								</Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5"> IronPython</TextBlock>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Vertical"  Margin="10">
+							 <Button>
+                                <Image Source="Images\IntellisenseDemoIcon.png"  Margin="5" Tag="IntelliSense\IntelliSense Demo" Cursor="Hand"/>
+								</Button>
+                                <TextBlock HorizontalAlignment="Center" Margin="5"> IntelliSense</TextBlock>
+                            </StackPanel>
+
+                        </WrapPanel>
+                    </StackPanel>
+                </Grid>
+            </BlockUIContainer>
+        </Figure>
+
+    </Paragraph>
+
+</FlowDocument>

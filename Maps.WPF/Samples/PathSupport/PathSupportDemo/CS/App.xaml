@@ -1,0 +1,6 @@
+﻿<Application x:Class="Path_Support_Demo_2010.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml" xmlns:local="clr-namespace:Path_Support_Demo_2010">
+   
+</Application>

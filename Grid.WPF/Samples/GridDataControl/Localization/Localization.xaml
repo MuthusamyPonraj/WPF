@@ -1,0 +1,14 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        GridDataControl - Localization
+    </Paragraph>
+    <Paragraph>
+        The GridDataControl supports Resource Localization. The following sample illustrates how to localize the different region of the Grid.
+    </Paragraph>
+
+    <Paragraph>
+        <Bold>Localization Demo</Bold>- This sample showcases how the GridDataControl accepts resource files (resx) for localized string constants.
+    </Paragraph>
+
+</FlowDocument>

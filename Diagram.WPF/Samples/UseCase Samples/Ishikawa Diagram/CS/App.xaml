@@ -1,0 +1,186 @@
+﻿<Application x:Class="IshikawaDiagram_2008.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    StartupUri="Window1.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+
+            <!--Style for the node.-->
+            <Style TargetType="{x:Type syncfusion:Node}" x:Key="{x:Type syncfusion:Node}">
+                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                <Setter Property="LabelHorizontalAlignment" Value="Center"/>
+                <Setter Property="LabelVerticalAlignment" Value="Center"/>
+                <Setter Property="LabelFontSize" Value="13"/>
+                <Setter Property="LabelTextWrapping" Value="Wrap"/>
+                <Setter Property="Foreground" Value="Black"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <Setter Property="IsPortEnabled" Value="False"/>
+                <Style.Triggers>
+                    <Trigger Property="Level"  Value="0">
+                        <Setter Property="CustomPathStyle">
+                            <Setter.Value>
+                                <Style TargetType="{x:Type Path}">
+                                    <Setter Property="Fill" Value="LightBlue" />
+                                </Style>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                    <Trigger Property="Level"  Value="1">
+                        <Setter Property="CustomPathStyle">
+                            <Setter.Value>
+                                <Style TargetType="{x:Type Path}">
+                                    <Setter Property="Fill" Value="PaleGreen" />
+                                </Style>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                    <Trigger Property="Level"  Value="2">
+                        <Setter Property="CustomPathStyle">
+                            <Setter.Value>
+                                <Style TargetType="{x:Type Path}">
+                                    <Setter Property="Fill" Value="Red" />
+                                </Style>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                    <Trigger Property="Level"  Value="3">
+                        <Setter Property="CustomPathStyle">
+                            <Setter.Value>
+                                <Style TargetType="{x:Type Path}">
+                                    <Setter Property="Fill" Value="Salmon" />
+                                </Style>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                    <Trigger Property="Level"  Value="4">
+                        <Setter Property="CustomPathStyle">
+                            <Setter.Value>
+                                <Style TargetType="{x:Type Path}">
+                                    <Setter Property="Fill" Value="LightGray" />
+                                </Style>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+
+                    <Trigger Property="Level"  Value="5">
+                        <Setter Property="CustomPathStyle">
+                            <Setter.Value>
+                                <Style TargetType="{x:Type Path}">
+                                    <Setter Property="Fill" Value="Salmon" />
+                                </Style>
+                            </Setter.Value>
+                        </Setter>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+            
+            <Style TargetType="{x:Type syncfusion:LineConnector}" x:Key="{x:Type syncfusion:LineConnector}">
+            <Setter Property="LabelWidth" Value="85"/>
+            <Setter Property="LabelTextWrapping" Value="Wrap"/>
+            </Style>
+            
+            <!--Drawing Brush for Node Id-->
+            <LinearGradientBrush x:Key="Redbrush" EndPoint="1,0.5" StartPoint="0,0.5">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Color="#FFED1C24" Offset="0"/>
+                    <GradientStop Color="#FFED193A" Offset="0.164841"/>
+                    <GradientStop Color="#FFF6A09A" Offset="0.642853"/>
+                    <GradientStop Color="#FFED1C24" Offset="1"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+            
+            <!--Drawing Brush for Cause-->
+            <LinearGradientBrush x:Key="Lightblue" StartPoint="0.52485,0.0237617" EndPoint="0.52485,1.02376">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Color="#FF66B4D5" Offset="0"/>
+                    <GradientStop Color="#FF85BEE0" Offset="0.428571"/>
+                    <GradientStop Color="#FFA4C9EB" Offset="1"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+            
+            <!--Drawing Brush for Effect-->
+            <LinearGradientBrush x:Key="Bluebrush" StartPoint="0.483433,-0.0303992" EndPoint="0.483433,1.00668">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Color="#FF4F8CC3" Offset="0"/>
+                    <GradientStop Color="#FF4072A4" Offset="0.502304"/>
+                    <GradientStop Color="#FF315885" Offset="1"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <!--Node Id shape-->
+            <Path  Stretch="Fill" x:Key="id" Fill="{StaticResource Redbrush}"  
+                   Data="M 20,40 A 20,20 0 0 1 20,0 H 40 A 20,20 0 0 1 40,40 Z"
+				   ToolTip="NodeId"/>
+            
+            <!--Effect Shape-->
+            <Ellipse Stretch="Fill" x:Key="ellipse"  Fill="{StaticResource Bluebrush}"
+                     ToolTip="Effect" />
+           
+            <!--Cause Shape--> 
+            <Path  Stretch="Fill" x:Key="roundedrect" Fill="{StaticResource Lightblue}"
+				   Data="M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z"
+				   ToolTip="Cause"  />
+            
+            <!--Arrow Drawing Image-->
+            <DrawingImage x:Key="Arr">
+                <DrawingImage.Drawing>
+                    <DrawingGroup>
+                        <DrawingGroup.Children>
+                            <GeometryDrawing Brush="#FF808080" Geometry="F1 M -0.372013,6.9241L 189.589,6.52823L 189.598,10.9219L -0.362857,11.3178L -0.372013,6.9241 Z "/>
+                            <GeometryDrawing Brush="#FF808080" Geometry="F1 M 189.322,14.8632L 200.079,8.68203L 189.347,2.45737L 189.322,14.8632 Z "/>
+                        </DrawingGroup.Children>
+                    </DrawingGroup>
+                </DrawingImage.Drawing>
+            </DrawingImage>
+
+            <!--Arrow Border-->
+            <Border x:Key="Arrow">
+                <Image Source="{StaticResource Arr}" Stretch="Fill"/>
+            </Border>
+
+            <!--Style for the window-->
+            <Style TargetType="Window" x:Key="windowStyle">
+                <Style.Triggers>
+                    <!--Window Background if Visual Style is Default-->
+                    <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Default">
+                        <Setter Property="Background" Value="WhiteSmoke"/>
+                        <Setter Property="Foreground" Value="Black"></Setter>
+                    </Trigger>
+
+                    <!--Window Background if Visual Style is Blend-->
+                    <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Blend">
+                        <Setter Property="Foreground" Value="#FFFFFFFF"></Setter>
+                        <Setter Property="Background" Value="#FF333333"></Setter>
+
+                    </Trigger>
+
+                    <!--Window Background if Visual Style is Office2007Silver-->
+                    <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Office2007Silver">
+                        <Setter Property="Background" Value="#FFE8EAEC"></Setter>
+                        <Setter Property="Foreground" Value="Black"></Setter>
+                    </Trigger>
+
+                    <!--Window Background if Visual Style is Office2007Blue-->
+                    <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Office2007Blue">
+                        <Setter Property="Background" Value="#FFEAF2FB"></Setter>
+                        <Setter Property="Foreground" Value="Black"></Setter>
+                    </Trigger>
+
+                    <!--Window Background if Visual Style is Office2003-->
+                    <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Office2003">
+                        <Setter Property="Background" Value="#FFEAF2FB"></Setter>
+                        <Setter Property="Foreground" Value="Black"></Setter>
+                    </Trigger>
+
+                    <!--Window Background if Visual Style is Office2007Black-->
+                    <Trigger Property="syncfusion:SkinStorage.VisualStyle" Value="Office2007Black">
+                        <Setter Property="Background" Value="#FFCED3DA"/>
+                        <Setter Property="Foreground" Value="Black"></Setter>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

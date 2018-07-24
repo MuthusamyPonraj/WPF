@@ -1,0 +1,4065 @@
+﻿<DiagramPage
+  IsPolyLineEnabled="False"
+  StyleRef="{x:Null}"
+  LineStyleRef="{x:Null}"
+  OrientationRef="TopBottom"
+  HorizontalSpacingref="10"
+  VerticalSpacingref="80"
+  SubTreeSpacingref="10"
+  LayoutTyperef="None"
+  ReferenceCount="5"
+  Background="#00FFFFFF"
+  Margin="0,0,0,0"
+  AllowDrop="True"
+  Focusable="True"
+  av:FocusManager.IsFocusScope="True" xmlns="http://schemas.syncfusion.com/wpf" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:s="clr-namespace:System;assembly=mscorlib">
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="1"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="97"
+    OffsetY="98.039999999999992"
+    Name="Nodef018ec4c9b9b440aad91b32b446b59ae"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="1">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="1"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="2"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="98"
+    OffsetY="196.04"
+    Name="Node3f308921469c477e96b7349ad50e2025"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="2">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="2"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="3"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="497"
+    OffsetY="394.03999999999996"
+    Name="Node4d94bb31392a4e02a8cfc511d12891e2"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="1">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="3"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="4"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="198"
+    OffsetY="296.03999999999996"
+    Name="Node9a4379cd47fe4254b86a5ff4cf6c1e4a"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="2">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="4"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="5"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="199"
+    OffsetY="98.039999999999992"
+    Name="Node731bec20995d4e0e826fb50639780179"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="1">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="5"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="6"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="198"
+    OffsetY="398.04"
+    Name="Node5903919e6a5e45a0843fb245e3263203"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="2">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="6"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="7"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="298"
+    OffsetY="296.04"
+    Name="Nodeb8ba2d16a9cd41c9968928981f7553a6"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="1">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="7"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="8"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="96"
+    OffsetY="295.04"
+    Name="Nodea5322a77c62d473ca4c6e931125de6ee"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="2">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="8"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="9"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="198"
+    OffsetY="196.04"
+    Name="Nodec7a0238b68c44cb3a731af1b76ae9d4b"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="1">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="24.960000000000008"
+        PortNodeReference="9"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0"
+        IsHitTestVisible="True">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="10"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="397"
+    OffsetY="293.03999999999996"
+    Name="Node79239f763f3646c2a4e3835e173d4cc8"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="2">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="10"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="11"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="297"
+    OffsetY="396.04"
+    Name="Nodeab887f26c1ca48dd97cb99304581e42e"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="1">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="11"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="12"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="97"
+    OffsetY="399.03999999999996"
+    Name="Node4d865adf11f444f295aa9e0f66190829"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="2">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="12"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="13"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="296"
+    OffsetY="196.04"
+    Name="Node08e76918b44b40ae8ce3d91f9b272f55"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="1">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="13"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="14"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="498"
+    OffsetY="498.03999999999996"
+    Name="Nodead4d9e7050734380afe9bc6b2cc6fdae"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="2">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="14"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="15"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="398"
+    OffsetY="196.04"
+    Name="Node9d422bb180db4caebc782e5975560f03"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="1">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="15"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="16"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="299"
+    OffsetY="497.03999999999996"
+    Name="Node1bf6dc185c8f4db98a9f0431ffc3dca2"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="2">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="16"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="17"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="399"
+    OffsetY="396.03999999999996"
+    Name="Nodea616f7ba25334433af7673fb3f86123c"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="1">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="17"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <Node
+    ContentHitTestVisible="False"
+    ResizeThisNode="False"
+    ReferenceNo="18"
+    IsDragConnectionOver="False"
+    AllowVirtualization="True"
+    IsGrouped="False"
+    OldZIndex="0"
+    NewZIndex="0"
+    Row="0"
+    Column="0"
+    OffsetX="397"
+    OffsetY="497.03999999999996"
+    Name="Node55f6f526afdf4d46b8f77d4f61fbff64"
+    Width="50"
+    Height="50"
+     
+    av:Panel.ZIndex="2">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="18"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </Node.ContextMenu>
+    <av:Path
+      Stretch="Fill"
+      Stroke="#FF191970"
+      StrokeThickness="1"
+      Margin="3,3,3,3"
+      HorizontalAlignment="Stretch"
+      VerticalAlignment="Stretch"
+      x:Uid=""
+      IsHitTestVisible="False">
+      <av:Path.Fill>
+        <av:LinearGradientBrush
+          StartPoint="0,0"
+          EndPoint="0,1">
+          <av:LinearGradientBrush.GradientStops>
+            <av:GradientStop
+              Color="#FFFAFBE9"
+              Offset="0" />
+            <av:GradientStop
+              Color="#FF6495ED"
+              Offset="1" />
+          </av:LinearGradientBrush.GradientStops>
+        </av:LinearGradientBrush>
+      </av:Path.Fill>
+      <av:Path.Style>
+        <av:Style
+          TargetType="av:Path">
+          <av:Style.Resources>
+            <av:ResourceDictionary />
+          </av:Style.Resources>
+          <av:Setter
+            Property="av:Path.Data">
+            <av:Setter.Value>
+              <av:StreamGeometry>M0.5,80.5C0.5,36.3172200135365,36.3172200135365,0.5,80.5,0.5L451.5,0.5C495.682779986463,0.5,531.5,36.3172200135365,531.5,80.5L531.5,443.5C531.5,487.682779986463,495.682779986463,523.5,451.5,523.5L80.5,523.5C36.3172200135365,523.5,0.5,487.682779986463,0.5,443.5z</av:StreamGeometry>
+            </av:Setter.Value>
+          </av:Setter>
+        </av:Style>
+      </av:Path.Style>
+    </av:Path>
+  </Node>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="122.744899749756,196.039993286133"
+    StartPointPosition="122.255100250244,148.039993286133"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="122.255096435547,148.039993286133"
+    HeadDecoratorAngle="-90.5846438896258"
+    TailDecoratorPosition="122.744903564453,196.039993286133"
+    TailDecoratorAngle="89.415356110374219"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="1"
+    TailNodeReferenceNo="2"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="3"
+    AllowVirtualization="True"
+    Name="Line86fc5fc3eaa44be794df6bc658fb6eed"
+    Cursor="Arrow"
+    av:Panel.ZIndex="18">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M122.255100250244,148.039993286133L122.744899749756,196.039993286133" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="198,221.039993286133"
+    StartPointPosition="148,221.039993286133"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="148,221.039993286133"
+    HeadDecoratorAngle="-180"
+    TailDecoratorPosition="198,221.039993286133"
+    TailDecoratorAngle="0"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="2"
+    TailNodeReferenceNo="9"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="4"
+    AllowVirtualization="True"
+    Name="Line7313bd087ba644a5aab963167fa53d15"
+    Cursor="Arrow"
+    av:Panel.ZIndex="19">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M148,221.039993286133L198,221.039993286133" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="223.255104064941,196.039993286133"
+    StartPointPosition="223.744895935059,148.039993286133"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="223.744903564453,148.039993286133"
+    HeadDecoratorAngle="-89.415356110374219"
+    TailDecoratorPosition="223.255096435547,196.039993286133"
+    TailDecoratorAngle="90.5846438896258"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="5"
+    TailNodeReferenceNo="9"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="5"
+    AllowVirtualization="True"
+    Name="Line252188398ec84826abbc21457b4ff3b8"
+    Cursor="Arrow"
+    av:Panel.ZIndex="20">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M223.744895935059,148.039993286133L223.255104064941,196.039993286133" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="198,320.794906616211"
+    StartPointPosition="146,320.285110473633"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="146,320.285095214844"
+    HeadDecoratorAngle="-179.43826961728826"
+    TailDecoratorPosition="198,320.794921875"
+    TailDecoratorAngle="0.56173038271175824"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="8"
+    TailNodeReferenceNo="4"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="6"
+    AllowVirtualization="True"
+    Name="Line0264a78b55b54574a02343f92c2074f3"
+    Cursor="Arrow"
+    av:Panel.ZIndex="21">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M146,320.285110473633L198,320.794906616211" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="198,423.287536621094"
+    StartPointPosition="147,423.79248046875"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="147,423.79248046875"
+    HeadDecoratorAngle="179.4327410761442"
+    TailDecoratorPosition="198,423.287536621094"
+    TailDecoratorAngle="-0.56725892385579879"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="12"
+    TailNodeReferenceNo="6"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="7"
+    AllowVirtualization="True"
+    Name="Line753dc5facf6748609e9f09d962461d32"
+    Cursor="Arrow"
+    av:Panel.ZIndex="22">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M147,423.79248046875L198,423.287536621094" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="398.800430297852,295.761993408203"
+    StartPointPosition="344.199554443359,243.318008422852"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="344.199554443359,243.318008422852"
+    HeadDecoratorAngle="-136.15431187065562"
+    TailDecoratorPosition="398.800415039063,295.761993408203"
+    TailDecoratorAngle="43.845688129344381"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="13"
+    TailNodeReferenceNo="10"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="8"
+    AllowVirtualization="True"
+    Name="Line4653928d02b5420688e547d29e828688"
+    Cursor="Arrow"
+    av:Panel.ZIndex="23">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M344.199554443359,243.318008422852L398.800430297852,295.761993408203" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="245.531455993652,400.05583190918"
+    StartPointPosition="300.468551635742,344.024185180664"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="300.468566894531,344.024169921875"
+    HeadDecoratorAngle="-45.565136484856673"
+    TailDecoratorPosition="245.531463623047,400.055847167969"
+    TailDecoratorAngle="134.43486351514335"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="7"
+    TailNodeReferenceNo="6"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="9"
+    AllowVirtualization="True"
+    Name="Linedce356d826684c468652ec9cf82a8469"
+    Cursor="Arrow"
+    av:Panel.ZIndex="24">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M300.468551635742,344.024185180664L245.531455993652,400.05583190918" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="223,296.040008544922"
+    StartPointPosition="223,246.039993286133"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="223,246.039993286133"
+    HeadDecoratorAngle="-90"
+    TailDecoratorPosition="223,296.040008544922"
+    TailDecoratorAngle="90"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="9"
+    TailNodeReferenceNo="4"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="10"
+    AllowVirtualization="True"
+    Name="Line6067bbcb2aca447e9f879bbd9f65f204"
+    Cursor="Arrow"
+    av:Panel.ZIndex="25">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M223,246.039993286133L223,296.040008544922" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="397,318.797592163086"
+    StartPointPosition="348,320.282424926758"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="348,320.282409667969"
+    HeadDecoratorAngle="178.26434947152546"
+    TailDecoratorPosition="397,318.797607421875"
+    TailDecoratorAngle="-1.7356505284745487"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="7"
+    TailNodeReferenceNo="10"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="11"
+    AllowVirtualization="True"
+    Name="Lineb11dbfaa0ad64280a9b46dcfa5411060"
+    Cursor="Arrow"
+    av:Panel.ZIndex="26">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M348,320.282424926758L397,318.797592163086" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="347,421.040008544922"
+    StartPointPosition="399,421.040008544922"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="399,421.040008544922"
+    HeadDecoratorAngle="0"
+    TailDecoratorPosition="347,421.040008544922"
+    TailDecoratorAngle="180"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="17"
+    TailNodeReferenceNo="11"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="12"
+    AllowVirtualization="True"
+    Name="Line0189ca8d2d2a4f8db41bf5849dbdda42"
+    Cursor="Arrow"
+    av:Panel.ZIndex="27">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M399,421.040008544922L347,421.040008544922" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="344.415802001953,397.949569702148"
+    StartPointPosition="399.584167480469,341.130447387695"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="399.584167480469,341.130432128906"
+    HeadDecoratorAngle="-45.844525482191528"
+    TailDecoratorPosition="344.415802001953,397.949584960938"
+    TailDecoratorAngle="134.15547451780847"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="10"
+    TailNodeReferenceNo="11"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="13"
+    AllowVirtualization="True"
+    Name="Line739d801ceb5f43f09fa261f39236cb98"
+    Cursor="Arrow"
+    av:Panel.ZIndex="28">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M399.584167480469,341.130447387695L344.415802001953,397.949569702148" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="509.499984741211,394.040008544922"
+    StartPointPosition="435.500015258789,246.039993286133"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="435.5,246.039993286133"
+    HeadDecoratorAngle="-116.56504964980132"
+    TailDecoratorPosition="509.5,394.040008544922"
+    TailDecoratorAngle="63.434950350198676"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="15"
+    TailNodeReferenceNo="3"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="14"
+    AllowVirtualization="True"
+    Name="Linef469fb4bb81c47698f73a10629078ddc"
+    Cursor="Arrow"
+    av:Panel.ZIndex="29">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M435.500015258789,246.039993286133L509.499984741211,394.040008544922" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="500.587829589844,499.946350097656"
+    StartPointPosition="446.412170410156,444.133636474609"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="446.412170410156,444.133636474609"
+    HeadDecoratorAngle="-134.14728012382733"
+    TailDecoratorPosition="500.587829589844,499.946350097656"
+    TailDecoratorAngle="45.852719876172678"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="17"
+    TailNodeReferenceNo="14"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="15"
+    AllowVirtualization="True"
+    Name="Line0e7e550efeff496fad1b7b9248986b42"
+    Cursor="Arrow"
+    av:Panel.ZIndex="30">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M446.412170410156,444.133636474609L500.587829589844,499.946350097656" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="422.257736206055,293.040008544922"
+    StartPointPosition="422.742263793945,246.039993286133"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="422.742248535156,246.039993286133"
+    HeadDecoratorAngle="-89.4093905303293"
+    TailDecoratorPosition="422.257751464844,293.040008544922"
+    TailDecoratorAngle="90.59060946967071"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="15"
+    TailNodeReferenceNo="10"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="16"
+    AllowVirtualization="True"
+    Name="Lineb93f57f3a89a43e387e9859a8adcee4d"
+    Cursor="Arrow"
+    av:Panel.ZIndex="31">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M422.742263793945,246.039993286133L422.257736206055,293.040008544922" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="397,522.039978027344"
+    StartPointPosition="349,522.039978027344"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="349,522.039978027344"
+    HeadDecoratorAngle="-180"
+    TailDecoratorPosition="397,522.039978027344"
+    TailDecoratorAngle="0"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="16"
+    TailNodeReferenceNo="18"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="17"
+    AllowVirtualization="True"
+    Name="Linea039736d395d49a8abbaa224900e1ad7"
+    Cursor="Arrow"
+    av:Panel.ZIndex="32">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M349,522.039978027344L397,522.039978027344" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="301.014984130859,499.513153076172"
+    StartPointPosition="245.98503112793,445.566848754883"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="245.98503112793,445.566833496094"
+    HeadDecoratorAngle="-135.56971517302256"
+    TailDecoratorPosition="301.014984130859,499.513153076172"
+    TailDecoratorAngle="44.430284826977463"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="6"
+    TailNodeReferenceNo="16"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="18"
+    AllowVirtualization="True"
+    Name="Line5c5c4324f1a94a769f0801c41ea6b952"
+    Cursor="Arrow"
+    av:Panel.ZIndex="33">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M245.98503112793,445.566848754883L301.014984130859,499.513153076172" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="323.504943847656,497.040008544922"
+    StartPointPosition="322.495056152344,446.040008544922"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="322.495056152344,446.040008544922"
+    HeadDecoratorAngle="-91.1344066875838"
+    TailDecoratorPosition="323.504943847656,497.040008544922"
+    TailDecoratorAngle="88.865593312416209"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="11"
+    TailNodeReferenceNo="16"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    IsGrouped="False"
+    ReferenceNo="19"
+    AllowVirtualization="True"
+    Name="Linecb8941e78c0743748cdc5804cf3298c9"
+    Cursor="Arrow"
+    av:Panel.ZIndex="34">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M322.495056152344,446.040008544922L323.504943847656,497.040008544922" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="300.239837646484,298.28010559082"
+    StartPointPosition="245.760154724121,243.79988861084"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="245.760162353516,243.799896240234"
+    HeadDecoratorAngle="-134.99972712347787"
+    TailDecoratorPosition="300.239837646484,298.280090332031"
+    TailDecoratorAngle="45.000272876522125"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="9"
+    TailNodeReferenceNo="7"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    ReferenceNo="0"
+    AllowVirtualization="True"
+    Cursor="Arrow"
+    av:Panel.ZIndex="35">
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M245.760154724121,243.79988861084L300.239837646484,298.28010559082" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="121.759616851807,399.040008544922"
+    StartPointPosition="121.240383148193,345.040008544922"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="121.240386962891,345.040008544922"
+    HeadDecoratorAngle="-90.550899000471134"
+    TailDecoratorPosition="121.759613037109,399.040008544922"
+    TailDecoratorAngle="89.449100999528881"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="8"
+    TailNodeReferenceNo="12"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    ReferenceNo="1"
+    AllowVirtualization="True"
+    Cursor="Arrow"
+    av:Panel.ZIndex="36">
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M121.240383148193,345.040008544922L121.759616851807,399.040008544922" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="298.355712890625,198.162574768066"
+    StartPointPosition="246.64429473877,145.91739654541"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="246.644287109375,145.917388916016"
+    HeadDecoratorAngle="-134.70582572674542"
+    TailDecoratorPosition="298.355712890625,198.162567138672"
+    TailDecoratorAngle="45.294174273254576"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="5"
+    TailNodeReferenceNo="13"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    ReferenceNo="2"
+    AllowVirtualization="True"
+    av:Panel.ZIndex="37">
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M246.64429473877,145.91739654541L298.355712890625,198.162574768066" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="522.759613037109,498.040008544922"
+    StartPointPosition="522.240386962891,444.040008544922"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="522.240356445313,444.040008544922"
+    HeadDecoratorAngle="-90.550963736507853"
+    TailDecoratorPosition="522.759643554688,498.040008544922"
+    TailDecoratorAngle="89.449036263492147"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="3"
+    TailNodeReferenceNo="14"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    ReferenceNo="3"
+    AllowVirtualization="True"
+    Cursor="Arrow"
+    av:Panel.ZIndex="38">
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M522.240386962891,444.040008544922L522.759613037109,498.040008544922" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="344.647857666016,443.91389465332"
+    StartPointPosition="399.352172851563,499.166091918945"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="399.352172851563,499.166076660156"
+    HeadDecoratorAngle="45.285487985153026"
+    TailDecoratorPosition="344.647857666016,443.913879394531"
+    TailDecoratorAngle="-134.71451201484697"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="18"
+    TailNodeReferenceNo="11"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    ReferenceNo="4"
+    AllowVirtualization="True"
+    Cursor="Arrow"
+    av:Panel.ZIndex="39">
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M399.352172851563,499.166091918945L344.647857666016,443.91389465332" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+    <LineConnector.ContextMenu>
+      <av:ContextMenu>
+        <av:MenuItem
+          Header="Order">
+          <av:MenuItem
+            Header="Bring To Front" />
+          <av:MenuItem
+            Header="Bring Forward" />
+          <av:MenuItem
+            Header="Send Backward" />
+          <av:MenuItem
+            Header="Send To Back" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Grouping">
+          <av:MenuItem
+            Header="Group" />
+          <av:MenuItem
+            Header="Ungroup" />
+        </av:MenuItem>
+        <av:MenuItem
+          Header="Delete" />
+      </av:ContextMenu>
+    </LineConnector.ContextMenu>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="248,422.534957885742"
+    StartPointPosition="297,421.545059204102"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="297,421.545043945313"
+    HeadDecoratorAngle="-1.157368368564039"
+    TailDecoratorPosition="248,422.534973144531"
+    TailDecoratorAngle="178.84263163143598"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="11"
+    TailNodeReferenceNo="6"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    ReferenceNo="5"
+    AllowVirtualization="True"
+    Cursor="Arrow"
+    av:Panel.ZIndex="41">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M297,421.545059204102L248,422.534957885742" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+  </LineConnector>
+  <LineConnector
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="498,510.353408813477"
+    StartPointPosition="347,433.726577758789"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="347,433.7265625"
+    HeadDecoratorAngle="-153.09391661209284"
+    TailDecoratorPosition="498,510.353393554688"
+    TailDecoratorAngle="26.906083387907163"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="11"
+    TailNodeReferenceNo="14"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    IsDirected="False"
+    ReferenceNo="6"
+    AllowVirtualization="True"
+    Cursor="Arrow"
+    av:Panel.ZIndex="42">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M347,433.726577758789L498,510.353408813477" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+  </LineConnector>
+</DiagramPage>

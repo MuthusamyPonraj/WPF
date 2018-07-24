@@ -1,0 +1,43 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Virtualization Demo
+    </Paragraph>
+
+    <Paragraph >
+        This sample implements virtualization to improve the performance while zooming and loading in a map. Only the shapes that are shown will be loaded; other parts of the map outside of the viewing area will be unloaded from the panel.
+    </Paragraph>
+    <Paragraph TextAlignment="Center">
+        <Image Source="Image\VirtualizationDemo.png" Stretch="None"/>
+    </Paragraph>
+	<Paragraph  FontFamily="Cambria" FontSize="16" TextAlignment="Center">
+Fig: <Bold> Virtualization Demo </Bold>
+</Paragraph>
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Features
+    </Paragraph>
+    <List Margin="25,0,0,0">
+        <ListItem>
+            <Paragraph>Enable and disable the virtualization feature.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Only the shapes that are shown will be loaded; other shapes outside of the viewing area will be unloaded from the panel.</Paragraph>
+        </ListItem>
+
+    </List>
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Interactions
+    </Paragraph>
+    <List Margin="25,0,0,0">
+        <ListItem>
+            <Paragraph>Select or clear the
+                <Bold>EnableVirtualization</Bold> check box to enable or disable virtualization in the map.
+            </Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Zoom and pan in the map until some of shapes are outside of the view port of the map.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>Now zoom or pan the map. The zooming and panning performance has been improved.</Paragraph>
+        </ListItem>
+    </List>
+</FlowDocument>

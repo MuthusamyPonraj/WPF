@@ -1,0 +1,127 @@
+﻿<syncfusion:ChromelessWindow x:Class="ListDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ListDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Icon="App.ico" syncfusion:LayoutControl.SetMetroMode="True">
+    <!--  DataContext set here for Window  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:GridViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+    <syncfusion:ChromelessWindow.Resources>
+        <LinearGradientBrush x:Key="gridViewbackground" StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Offset="0.08" Color="#FF119EDA" />
+            <GradientStop Offset="0.479" Color="#FF2C9ECE" />
+            <GradientStop Offset="0.973" Color="#FF119EDA" />
+        </LinearGradientBrush>
+    </syncfusion:ChromelessWindow.Resources>
+
+    <syncfusion:LayoutControl GridViewBackground="{StaticResource gridViewbackground}"
+                              HeaderDescriptionText="This sample shows how to bind a list of objects as an items source of GridDataControl."
+                              HeaderText="Product Details"
+                              LayoutMode="Metro"
+                              UserOptionsVisibility="Collapsed">
+
+        <syncfusion:LayoutControl.GridView>
+            <!--  Code for Creating GridDataControl  -->
+            <syncfusion:GridDataControl x:Name="grid"
+                                        Grid.Row="1"
+                                        AllowEdit="True"
+                                        AlternatingRowBackground="{Binding AlternatingRowBackground}"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ColumnSizer="Star"
+                                        ContextMenuOptions="Custom"
+                                        EnableContextMenu="True"
+                                        ItemsSource="{Binding Path=ProductDetails}"
+                                        NotifyPropertyChanges="True"
+                                        SelectedItem="{Binding SelectedProduct,
+                                                               Mode=TwoWay,
+                                                               NotifyOnSourceUpdated=True,
+                                                               NotifyOnTargetUpdated=True}"
+                                        ShowAddNewRow="False"
+                                        ShowGroupDropArea="True"
+                                        VisualStyle="Metro">
+                <!--  Code for Creating Visible Columns  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Product ID" MappingName="ProductID">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Product Name" MappingName="Name">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Product Number" MappingName="ProductNumber">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Safety Stock Level" MappingName="SafetyStockLevel">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Recorder Point" MappingName="ReorderPoint">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Days To Manufacture" MappingName="DaysToManufacture">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Make Flag" MappingName="MakeFlag">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Finished Goods Flag" MappingName="FinishedGoodsFlag">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                </syncfusion:GridDataControl.VisibleColumns>
+
+                <syncfusion:GridDataControl.RecordContextMenuItems>
+                    <local:MenuCollection>
+                        <MenuItem Header="Add" local:ProductAddCommand.Command="{Binding AddProduct}">
+                            <MenuItem.Icon>
+                                <Image Source="Icons/Add.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Edit" local:ProductEditCommand.Command="{Binding EditProduct}">
+                            <MenuItem.Icon>
+                                <Image Source="Icons/Edit.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Delete"
+                                  local:ProductDeleteCommand.Command="{Binding DeleteProduct}"
+                                  local:ProductDeleteCommand.CommandParameter="{Binding Path=SelectedProduct,
+                                                                                        Mode=TwoWay}">
+                            <MenuItem.Icon>
+                                <Image Source="Icons/Delete.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </local:MenuCollection>
+                </syncfusion:GridDataControl.RecordContextMenuItems>
+
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

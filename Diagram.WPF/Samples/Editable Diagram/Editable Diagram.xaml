@@ -1,0 +1,35 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="400" FontSize="14" FontFamily="Georgia">
+     
+
+
+<Paragraph  FontFamily="Calibri"  FontSize="14">
+The following features are available in the diagram control.
+</Paragraph> 
+
+<Paragraph > <Bold>Rulers and Units </Bold> - This sample demonstrates the functionalities of rulers. It also demonstrates how different measurement units can be used.</Paragraph>
+
+<Paragraph > <Bold>Serialization</Bold> - This sample demonstrates how a diagram page can be saved and loaded.</Paragraph>
+
+<Paragraph > <Bold>Intermediate Points</Bold> - This sample demonstrates how to intermediate points can be used to draw poly line and orthogonal lines.</Paragraph>
+
+<Paragraph > <Bold>Layers  </Bold> - This sample demonstrates how to add nodes and lineconnectors into layers and change the visible property of its content.</Paragraph>
+
+<Paragraph > <Bold>InPort OutPort  </Bold> - This sample demonstrates how custom ports can be added to nodes, and it also shows how to restrict connections  to those ports.</Paragraph>
+
+<Paragraph > <Bold>Zoom and Pan  </Bold> - This sample demonstrates how a diagram page can be zoomed and panned.</Paragraph>
+
+<Paragraph  > <Bold>Animate </Bold> - This sample demonstrates various animations applied to the nodes dynamically in Essential Diagram for WPF.</Paragraph>
+
+<Paragraph > <Bold>Expand and Collapse  </Bold> - This sample demonstrates how expanding and collapsing of nodes is possible in diagram control.</Paragraph>
+
+<Paragraph > <Bold>Snap To Grid  </Bold> - This sample illustrates the snap-to-grid feature of the Essential Diagram WPF.</Paragraph>
+
+<Paragraph > <Bold>Localization  </Bold> - This sample illustrates the Localization support for Essential Diagram WPF.</Paragraph>
+
+<Paragraph > <Bold>Resizer  </Bold> - This sample illustrates the Resize Handler Style of Essential Diagram WPF.</Paragraph>
+
+<Paragraph > <Bold>Print and Export  </Bold> - This sample demonstrates the print and export feature of Essential Diagram for WPF.</Paragraph>
+
+<Paragraph > <Bold>Line Routing  </Bold> - This sample demonstrates the line-routing feature of Essential Diagram for WPF.</Paragraph>
+</FlowDocument> 

@@ -1,0 +1,4 @@
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\User Interaction\Series Mouse Events Demo\CS\obj\x86\Release\MouseEvents_2012.csprojResolveAssemblyReference.cache
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\User Interaction\Series Mouse Events Demo\CS\obj\x86\Release\App.baml
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\User Interaction\Series Mouse Events Demo\CS\obj\x86\Release\App.g.cs
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\User Interaction\Series Mouse Events Demo\CS\obj\x86\Release\ChartSeriesMouseEvents_MarkupCompile.cache

@@ -1,0 +1,9 @@
+<FlowDocument FontFamily="Georgia" FontSize="14" ColumnWidth="400" AllowDrop="True" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+
+<Paragraph FontFamily="Calibri"  FontSize="14">This sample illustrates DataBinding feature of Diagram.</Paragraph>
+
+<Paragraph TextAlignment="Center"><Image  
+Source="Images\BusinessObjectBinding.png" Stretch="None"  
+/>
+</Paragraph>
+</FlowDocument>

@@ -1,0 +1,9 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+        <Paragraph>
+            This sample showcases the CustomTooltip capability of GridDataControl. The GridDataControl has support to associate tooltips with individual cells. A tooltip is a small pop-up box that appears when you move the pointer over a visual element. It is used to display additional information about the elements without increasing the window size. They are mainly used to display some text data. 
+        </Paragraph>
+ 				<Paragraph TextAlignment="Center"><Image Source="Images\ToolTipDemo.png"  Stretch="None" /></Paragraph>
+       
+</FlowDocument>
+

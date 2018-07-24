@@ -1,0 +1,14 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        GridDataControl - Serialization
+    </Paragraph>
+    <Paragraph>
+        The following samples illustrate Serialization Feature.
+    </Paragraph>
+
+      <Paragraph>
+        <Bold>GridDataControl Serialization Demo</Bold>- This sample illustrate Serialization of GridDataTable Properties in GridDataControl.
+    </Paragraph>
+	
+	</FlowDocument>

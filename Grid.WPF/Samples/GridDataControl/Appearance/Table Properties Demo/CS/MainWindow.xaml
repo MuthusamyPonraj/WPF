@@ -1,0 +1,110 @@
+﻿<syncfusion:ChromelessWindow x:Class="TablePropertiesDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"     
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:local="clr-namespace:TablePropertiesDemo" 
+        Icon="App.ico" 
+        syncfusion:LayoutControl.SetMetroMode="True">
+    <syncfusion:ChromelessWindow.Resources>
+        <local:ColorToBrushConverter x:Key="conv" />
+    </syncfusion:ChromelessWindow.Resources>
+    <syncfusion:LayoutControl 
+        HeaderDescriptionText="This sample shows the table Properties in the GridDataControl."
+        HeaderText="Table Properties Demo"
+        UserOptionsVisibility="Visible"        
+        LayoutMode="Metro"
+        UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/documents/423163tableoptions.htm" >
+        <syncfusion:LayoutControl.GridView>
+            <syncfusion:GridDataControl x:Name="dataGrid"  Grid.Column="0"                                      
+                                        ItemsSource="{Binding GDCSource}" 
+                                        AlternatingRowCount="2" 
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"                                       
+                                        UpdateMode="PropertyChanged"
+                                        NotifyPropertyChanges="True"
+                                        ColumnSizer="Star"
+                                        ShowRowHeader="{Binding IsChecked,ElementName=chkShowRowHeader,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                        ShowAddNewRow="{Binding IsChecked,ElementName=chkShowAddNewRow,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                        ShowRecordPlusMinus="{Binding IsChecked,ElementName=chkShowNestedPlusMinus,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"
+                                        ShowFilters="{Binding IsChecked, ElementName=chkShowFilters, UpdateSourceTrigger=PropertyChanged,  Mode=TwoWay}"
+                                        AllowSort="{Binding Path=IsChecked, ElementName=chkAllowSort}"
+                                        AllowEdit="{Binding Path=IsChecked,ElementName=chkAllowEdit}" 
+                                        AllowGroup="{Binding Path=IsChecked,ElementName=chkAllowGroup}"
+                                        AllowResizeColumns="{Binding Path=IsChecked,ElementName=chkAllowResizeColumns}"   
+                                        ShowRowHeaderArrow="{Binding Path=IsChecked,ElementName=chkShowRowHeaderArrow}" 
+                                        AllowResizeRows="{Binding Path=IsChecked,ElementName=chkAllowResizeRows}"
+                                        IsDeferredScrollingEnabled="{Binding IsChecked,ElementName=chkDeferredScrollingMode,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                                        AllowDragColumns="{Binding IsChecked,ElementName=chkAllowDragColumns,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"                                        
+                                        DragIndicatorInnerBrush="{Binding Color, ElementName=dragIndicatorInnerBrush, Converter={StaticResource conv}}"
+                                        DragIndicatorOuterBrush="{Binding Color, ElementName=dragIndicatorOuterBrush, Converter ={StaticResource conv}}"
+										VisualStyle="Metro">
+                <syncfusion:GridDataControl.Relations>
+                    <!-- Create relations between List objects in XAML and define their relation type -->
+                    <syncfusion:GridDataRelation RelationalColumn="OrderDetails" RelationType="MasterDetails">
+                        <syncfusion:GridDataRelation.TableProperties>
+                            <!-- Specify common set of properties that the child table should show. Check out Expanded/Collapsed events thru C# code  -->
+                            <syncfusion:GridDataTableProperties AutoPopulateColumns="False" AlternatingRowBackground="BlanchedAlmond" RowBackground="Beige">
+                                <syncfusion:GridDataTableProperties.VisibleColumns>
+                                    <syncfusion:GridDataVisibleColumn MappingName="OrderID" HeaderText="Child Order ID"/>
+                                    <syncfusion:GridDataVisibleColumn MappingName="ProductID" HeaderText="Child Product ID"/>
+                                </syncfusion:GridDataTableProperties.VisibleColumns>
+                            </syncfusion:GridDataTableProperties>
+                        </syncfusion:GridDataRelation.TableProperties>
+                    </syncfusion:GridDataRelation>
+                </syncfusion:GridDataControl.Relations>
+
+                <syncfusion:GridDataControl.VisibleColumns>
+                    <!-- Set IsReadyOnly for columns  -->
+                    <syncfusion:GridDataVisibleColumn MappingName="OrderID" IsReadOnly="False" HeaderText="Order ID"/>
+                    <syncfusion:GridDataVisibleColumn MappingName="CustomerID" HeaderText="Customer ID"/>
+                    <syncfusion:GridDataVisibleColumn MappingName="EmployeeID" HeaderText="Employee ID"/>
+                    <syncfusion:GridDataVisibleColumn MappingName="OrderDate" HeaderText="Order Date">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="DateTimeEdit" HorizontalAlignment="Right">
+                                <syncfusion:GridDataColumnStyle.DateTimeEdit>
+                                    <syncfusion:GridDateTimeEditStyleInfo DateTimePattern="ShortDate" />
+                                </syncfusion:GridDataColumnStyle.DateTimeEdit>
+                            </syncfusion:GridDataColumnStyle>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn MappingName="RequiredDate" HeaderText="Required Date">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="DateTimeEdit" HorizontalAlignment="Right">
+                                <syncfusion:GridDataColumnStyle.DateTimeEdit>
+                                    <syncfusion:GridDateTimeEditStyleInfo DateTimePattern="ShortDate" />
+                                </syncfusion:GridDataColumnStyle.DateTimeEdit>
+                            </syncfusion:GridDataColumnStyle>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn MappingName="ShipCountry" HeaderText="Ship Country"/>
+                </syncfusion:GridDataControl.VisibleColumns>
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+        <syncfusion:LayoutControl.UserOptionsView>
+            <syncfusion:UserOptions HeaderText="Table Options">
+                <StackPanel x:Name="StkPanel" Grid.Column="0" Margin="5">
+                    <CheckBox IsChecked="True" Content="Show Row Header" x:Name="chkShowRowHeader" Margin="5" />
+                    <CheckBox IsChecked="True" Content="Show Row Header Arrow" x:Name="chkShowRowHeaderArrow" Margin="5" />
+                    <CheckBox IsChecked="False" Content="Show AddNew Row" x:Name="chkShowAddNewRow" Margin="5" />
+                    <CheckBox IsChecked="True" Content="Show Nested Plus Minus" x:Name="chkShowNestedPlusMinus" Margin="5" />
+                    <CheckBox IsChecked="True" Content="Allow Sort" x:Name="chkAllowSort" Margin="5" />
+                    <CheckBox IsChecked="True" Content="Allow Edit" x:Name="chkAllowEdit" Margin="5"/>
+                    <CheckBox IsChecked="True" Content="Allow Group" x:Name="chkAllowGroup" Margin="5" />
+                    <CheckBox IsChecked="True" Content="Allow Resize Columns" x:Name="chkAllowResizeColumns" Margin="5" />
+                    <CheckBox IsChecked="True" Content="Allow Resize Rows" x:Name="chkAllowResizeRows" Margin="5" />
+                    <CheckBox IsChecked="True" Content="Show Filters" x:Name="chkShowFilters" Margin="5" />
+                    <CheckBox IsChecked="False" Content="Deferred Scrolling Model" x:Name="chkDeferredScrollingMode" Margin="5" />
+                    <TextBlock Text="Drag Columns" FontWeight="Bold" Margin="0,5,5,5"/>
+                    <CheckBox IsChecked="True" Content="Allow Drag Columns" x:Name="chkAllowDragColumns" Margin="5" />
+
+                    <TextBlock Text="Drag Indicator Inner Brush:"  FontWeight="Bold" Margin="0,5,5,5"/>
+                    <syncfusion:ColorPicker x:Name="dragIndicatorInnerBrush" Brush="WhiteSmoke" Width="180" BorderBrush="#67FFFFFF" BorderThickness="1" HorizontalAlignment="Center" Margin="5"/>
+
+                    <TextBlock Text="Drag Indicator Outer brush:" FontWeight="Bold" Margin="0,5,5,5"/>
+                    <syncfusion:ColorPicker  x:Name="dragIndicatorOuterBrush" Brush="#607FFF00" Width="180" BorderBrush="#67FFFFFF" BorderThickness="1" HorizontalAlignment="Center" Margin="5"/>
+                </StackPanel>
+            </syncfusion:UserOptions>
+        </syncfusion:LayoutControl.UserOptionsView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

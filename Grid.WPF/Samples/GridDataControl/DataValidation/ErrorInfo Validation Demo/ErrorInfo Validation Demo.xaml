@@ -1,0 +1,9 @@
+﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+        <Paragraph>
+            This sample showcases the Data Error Validation capability of GridDataControl. This is achieved by implementing IDataErrorInfo, an interface that provides functionality to display custom error information.
+        </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\ErrorInfoValidationDemo.png" Stretch="None" /></Paragraph>
+</FlowDocument>
+

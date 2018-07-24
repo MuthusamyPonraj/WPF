@@ -1,0 +1,68 @@
+﻿<SampleLayout:SampleLayoutWindow x:Class="Imagery_Service_Demo.BingMapKeyDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" UserOptionsVisibility="Collapsed" xmlns:local="clr-namespace:Imagery_Service_Demo" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:SampleLayout="clr-namespace:Syncfusion.Windows.SampleLayout;assembly=Syncfusion.Chart.Wpf.SampleLayout"
+    Title="Prerequesties" Height="500" Width="750" Background="#FFE7E9EC"  WindowStyle="ToolWindow" WindowStartupLocation="CenterScreen">
+    <SampleLayout:SampleLayoutWindow.Resources>
+        <local:BingMapViewModel x:Key="viewModel"/>
+    </SampleLayout:SampleLayoutWindow.Resources>
+        <Grid DataContext="{StaticResource viewModel}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <TextBlock TextWrapping="Wrap" FontSize="15" Text="To run the Bing Map sample, close this window and enter the Bing Map Key in the User option of the sample then click LoadBingMap Button" Foreground="#FF000000" Grid.Row="0"  />
+            <Grid Grid.Row="1" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <TextBlock  Text=" " Foreground="#FF000000"  FontWeight="ExtraBlack" Grid.Row="0" Height="30"  FontSize="15"/>
+                <TextBlock  VerticalAlignment="Top" FontWeight="Bold" Text="1. Internet connection:" Foreground="#FF000000" Grid.Row="1" Grid.ColumnSpan="2" />
+                <TextBlock Foreground="#FF000000" Text="Since the images are accessed through websites, the internet connection is a must to run the sample" Grid.Row="1" TextWrapping="WrapWithOverflow" Width="470" Grid.ColumnSpan="2" Height="50"  Margin="170,0,0,0"/>
+                <TextBlock  VerticalAlignment="Top" FontWeight="Bold" Text="2.	Bing Map Key: " Foreground="#FF000000" Grid.Row="2" Grid.ColumnSpan="2" />
+                <TextBlock Foreground="#FF000000"  Text="This is the credential to use the Bing map with an application. Since Bing maps are implemented using Bing Map SOAP services, Bing Map Key must use the Bing Map SOAP services." Grid.Row="2" Width="475" TextWrapping="WrapWithOverflow" Grid.ColumnSpan="2"  Margin="170,0,0,0" />
+            </Grid>
+            <Grid Grid.Row="2" VerticalAlignment="Top">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="310" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <TextBlock  Text="Notes" Foreground="#FF000000"  FontWeight="ExtraBlack" Grid.Row="0" FontSize="15"/>
+                <TextBlock  Text="1.	To know more about the Bing Map Key visit" Foreground="#FF000000" Grid.Row="1" Grid.ColumnSpan="2" />
+                <TextBlock  FontWeight="Bold" Foreground="#FF000000"   Text="" Grid.Row="1" Grid.ColumnSpan="2"  Margin="295,0,0,0">
+                                    <Hyperlink NavigateUri="http://msdn.microsoft.com/en-us/library/ff428642.aspx" Command="{Binding NavigateURLCommand}" CommandParameter="http://msdn.microsoft.com/en-us/library/ff428642.aspx">
+                                        http://msdn.microsoft.com/en-us/library/ff428642.aspx
+                                    </Hyperlink>
+                </TextBlock>
+                <TextBlock  Text="2.	To get the Bing Map Key visit " Foreground="#FF000000" Grid.Row="2" Grid.ColumnSpan="2" />
+                <TextBlock  FontWeight="Bold"  Foreground="#FF000000"  Text="" Grid.Row="2" Grid.ColumnSpan="2" Margin="210,0,0,0">
+                                    <Hyperlink NavigateUri="http://www.bingmapsportal.com/" TargetName="none" Command="{Binding NavigateURLCommand}" CommandParameter="http://www.bingmapsportal.com/">
+                                         http://www.bingmapsportal.com/
+                                    </Hyperlink>
+                </TextBlock>
+                <TextBlock  Text="3. To know about  the license details  visit " Foreground="#FF000000" Grid.Row="3" Grid.ColumnSpan="2" />
+                <TextBlock  FontWeight="Bold"  Foreground="#FF000000" Text=""  Grid.Row="3" Grid.ColumnSpan="2"  Margin="270,0,0,0">
+                                     <Hyperlink NavigateUri="http://www.microsoft.com/maps/product/licensing.aspx" TargetName="none" Command="{Binding NavigateURLCommand}" CommandParameter="http://www.microsoft.com/maps/product/licensing.aspx">
+                                         http://www.microsoft.com/maps/product/licensing.aspx
+                                     </Hyperlink>
+                </TextBlock>
+
+            </Grid>
+        </Grid>
+</SampleLayout:SampleLayoutWindow>

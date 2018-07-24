@@ -1,0 +1,2 @@
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Chart Legend\Legend Configuration Demo\CS\obj\x86\Release\LegendConfigurationDemo_2012.csprojResolveAssemblyReference.cache
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Chart Legend\Legend Configuration Demo\CS\obj\x86\Release\LegendConfigurationDemo_MarkupCompile.cache

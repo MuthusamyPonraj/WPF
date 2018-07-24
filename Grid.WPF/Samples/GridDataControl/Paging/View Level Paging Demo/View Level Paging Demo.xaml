@@ -1,0 +1,11 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+		<Paragraph>
+			This sample showcases the View level paging capability of GridDataControl.  In view level Paging ItemsSource for the page load when the GridDataControl loads. In this type sorting, filtering and grouping is applicable for the Current view element.
+		 </Paragraph>        
+		 
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\image.png" Stretch="None" /></Paragraph>
+
+</FlowDocument>
+

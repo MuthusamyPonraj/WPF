@@ -1,0 +1,9 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    >
+        <Paragraph>
+            This sample showcases the Column Options capability of GridDataControl. The GridDatacontrol provides support to customize the individual columns in the grid by using the Column Options feature. The customization options are wrapped up into a panel that pops up on clicking the ColumnOptions icon in the column header, so that the users can work with them in an interactive manner. 
+        </Paragraph>
+
+				<Paragraph TextAlignment="Center"><Image Source="Images\ColumnOptionsDemo.png" Stretch="None" /></Paragraph>
+</FlowDocument>
+

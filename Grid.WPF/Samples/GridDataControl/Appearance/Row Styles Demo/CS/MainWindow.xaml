@@ -1,0 +1,178 @@
+﻿<syncfusion:ChromelessWindow x:Class="RowStylesDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        xmlns:view="clr-namespace:RowStylesDemo"
+        Icon="App.ico"
+        syncfusion:LayoutControl.SetMetroMode="True">
+    <!--  DataContext set here for Window  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <view:ViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+    <syncfusion:LayoutControl HeaderDescriptionText="This sample shows a way to style row appearence by setting RowStyle property in XAML."
+                              HeaderPanelVisibility="Visible"
+                              HeaderText="Row Styles Demo"
+                              LayoutMode="Metro"
+                              UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/documents/423161rowstyles.htm"
+                              UserOptionsVisibility="Visible">
+        <syncfusion:LayoutControl.GridView>
+            <!--  GridDataControl Created here  -->
+            <syncfusion:GridDataControl x:Name="grid"
+                                        AllowEdit="False"
+                                        AlternatingRowBackground="{Binding Path=Brush,
+                                                                           ElementName=alternatingRowBackgroundPicker}"
+                                        AlternatingRowForeground="{Binding Path=Brush,
+                                                                           ElementName=AlternatingRowForegroundPicker}"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        HighlightSelectionAlphaBlend="Orange"
+                                        HighlightSelectionBackground="Red"
+                                        HighlightSelectionForeground="Tomato"
+                                        ItemsSource="{Binding Path=SupplierDetatils}"
+                                        NotifyPropertyChanges="True"
+                                        RowBackground="{Binding Path=Brush,
+                                                                ElementName=rowBackgroundPicker}"
+                                        RowForeground="{Binding Path=Brush,
+                                                                ElementName=ForegroundPicker}"
+                                        ShowAddNewRow="False"
+                                        ShowGroupDropArea="True"
+                                        ShowHoveringBackground="{Binding Path=IsChecked,
+                                                                         ElementName=HoveringBackground}"
+                                        
+                                        VisualStyle="Metro">
+                <!--  Visible Column Created here  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+                    <syncfusion:GridDataVisibleColumn Width="SizeToHeader"
+                                                      HeaderText="Supplier ID"
+                                                      MappingName="SupplierID">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Company Name" MappingName="CompanyName">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Contact Name" MappingName="ContactName">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Contact Title" MappingName="ContactTitle">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Address" MappingName="Address">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="City" MappingName="City">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Region" MappingName="Region">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn Width="SizeToHeader"
+                                                      HeaderText="Postal Code"
+                                                      MappingName="PostalCode">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn Width="SizeToHeader"
+                                                      HeaderText="Country"
+                                                      MappingName="Country">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Phone" MappingName="Phone">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Fax" MappingName="Fax">
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                </syncfusion:GridDataControl.VisibleColumns>
+            </syncfusion:GridDataControl>
+
+        </syncfusion:LayoutControl.GridView>
+        <syncfusion:LayoutControl.UserOptionsView>
+            <syncfusion:UserOptions HeaderText="Row Styles">
+                <!--  <ScrollViewer>  -->
+                <StackPanel x:Name="pStck" Orientation="Vertical">
+
+
+                    <StackPanel x:Name="stck1"  Orientation="Horizontal" >
+                        <TextBlock Text="Background:" VerticalAlignment="Center"/>
+                        <syncfusion:ColorPicker x:Name="rowBackgroundPicker"
+                                                Width="120"
+                                                Margin="5"
+                                                Color="White"
+                                                 />
+                    </StackPanel>
+
+                    <StackPanel  Orientation="Horizontal">
+                        <TextBlock Text="Foreground:" VerticalAlignment="Center" />
+                        <syncfusion:ColorPicker x:Name="ForegroundPicker"
+                                                Width="120"
+                                                Margin="5"
+                                                Brush="Black" />
+
+                    </StackPanel>
+                    
+                    <CheckBox x:Name="HoveringBackground"
+                                  Margin="5"
+                                  Content="HoveringBackground"
+                                  IsChecked="False" />
+
+                </StackPanel>
+
+            </syncfusion:UserOptions>
+            <syncfusion:UserOptions HeaderText="Alternate Row Styles">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal" >
+
+                        <TextBlock Text="Background:" VerticalAlignment="Center"/>
+                        <syncfusion:ColorPicker x:Name="alternatingRowBackgroundPicker"
+                                                Width="120"
+                                                Margin="5"
+                                                Color="#FFF09609"                                               
+                                                />
+                        </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Foreground:"  VerticalAlignment="Center"/>
+                        <syncfusion:ColorPicker x:Name="AlternatingRowForegroundPicker"
+                                                Width="120"
+                                                Margin="5"
+                                                Brush="Linen" />
+                    </StackPanel>
+
+                </StackPanel>
+            </syncfusion:UserOptions>
+        </syncfusion:LayoutControl.UserOptionsView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

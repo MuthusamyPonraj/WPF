@@ -1,0 +1,46 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Commands Demo
+    </Paragraph>
+    <Paragraph>
+        This sample demonstrates the commands available in Essential Maps.
+    </Paragraph>
+    <Paragraph TextAlignment="Center">
+        <Image Source="Image\CommandsDemo.png" Stretch="None"/>
+    </Paragraph>
+	<Paragraph  FontFamily="Cambria" FontSize="16" TextAlignment="Center">
+Fig: <Bold> Commands Demo </Bold>
+</Paragraph>
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Features
+    </Paragraph>
+    <List Margin="25,0,0,0">
+        <ListItem>
+            <Paragraph>Command bindings.</Paragraph>
+        </ListItem>
+    </List>
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Interactions
+    </Paragraph>
+    <List Margin="25,0,0,0">
+        <ListItem>
+            <Paragraph>To execute a pan command, click on the top, right, bottom, or left buttons; doing so will pan the map in the selected direction.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>To execute a zoom-in command, click
+                <Bold>ZoomIn</Bold>, which will zoom in on the map.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>	To execute a zoom-out command, click
+                <Bold>ZoomOut</Bold>, which will zoom out on the map.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>To reset the default zoom level, click
+                <Bold>ZoomReset</Bold>.</Paragraph>
+        </ListItem>
+        <ListItem>
+            <Paragraph>To revert to the original map position after panning, click
+                <Bold>PanReset</Bold>.</Paragraph>
+        </ListItem>
+    </List>
+</FlowDocument>

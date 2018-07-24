@@ -1,0 +1,10 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+       
+        <Paragraph>
+            	This sample showcases the Spreadsheet control. It provides various formatting options such as setting fonts, alignment, number formatting, conditional formats, freeze panes, comments and cell backgrounds. It enables you to create, manipulate and save an Excel sheet in native Excel format, like .xls or .xlsx, without any dependency on Microsoft Excel.
+        </Paragraph>
+		<Paragraph TextAlignment="Center"><Image Source="Images\ExcelEditorDemo.png" Stretch="None" /></Paragraph>
+	
+</FlowDocument>
+

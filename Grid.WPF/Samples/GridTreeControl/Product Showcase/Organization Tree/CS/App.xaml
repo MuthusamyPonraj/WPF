@@ -1,0 +1,13 @@
+﻿<Application x:Class="OrganizationTree.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Pen Brush="Black"
+         Thickness="0.1"
+         x:Key="ValueCellBorder" />
+        <Pen Brush="Black"
+         Thickness="0.1"
+         x:Key="ValueCellBorderRight" />
+    </Application.Resources>
+</Application>

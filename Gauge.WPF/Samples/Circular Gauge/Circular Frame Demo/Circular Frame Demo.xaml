@@ -1,0 +1,49 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+Circular Frame Demo
+</Paragraph>
+<Paragraph>
+
+This sample demonstrates Essential Gauge's support for different frame types, such as circular center gradient, circular with dark outer frames, circular with inner left gradient, circular with inner top gradient, full circle, and half circle. The "start and stop" button in the sample can be used to change the pointer value dynamically. The pointer value is changed continuously based on a random value generated each time.</Paragraph> 
+<Paragraph TextAlignment="Center">
+<Image Source="Image\Circular Gauge Frame Demo.png" Stretch="None"/></Paragraph>
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+Features:
+</Paragraph>
+
+<List Margin="25,0,0,0">
+
+<ListItem>
+<Paragraph>Different frame types are available.</Paragraph>
+</ListItem>
+
+<ListItem>
+<Paragraph>Different frame types enable users to design the gauge control to suit their needs.</Paragraph>
+</ListItem>
+<ListItem>
+<Paragraph>Several other customization options have been provided to enhance the look and feel of the gauge control.</Paragraph>
+</ListItem>
+
+
+</List>
+
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+Interactive Features:
+</Paragraph>
+
+	<List Margin="25,0,0,0">
+		<ListItem>
+			<Paragraph>Clicking on the "Start" button under the Live Data group box makes the pointer value continuously change based on the random value generated each time. This illustrates how the pointer values can be dynamically affected.</Paragraph>
+		</ListItem>
+
+		<ListItem>
+			<Paragraph>Clicking on the "Stop" button stops the pointer on the last specified pointer value on each of the controls.</Paragraph>
+		</ListItem>
+		<ListItem>
+			<Paragraph>User can apply different visual styles to the window.</Paragraph>
+		</ListItem>		 
+	</List>
+</FlowDocument>

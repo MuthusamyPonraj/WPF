@@ -1,0 +1,16 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="400">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Labels And Symbols
+    </Paragraph>
+    <Paragraph >
+       The following samples illustrates the label and symbols feature in Essential Maps.
+ Labels are used to show text on a map. Symbols are used to mark locations in a map. Symbol palette support has been provided to allow symbols to be added. Label and symbol text are customizable.
+    </Paragraph>
+    <Paragraph>
+        <Bold> Olympic Venues Demo </Bold>  - This Sample shows the Olympic games venues from 1896 - 2016.
+    </Paragraph>
+    <Paragraph>
+        <Bold> Weather Report Demo </Bold>  - This Sample shows the sample weather report of the United States.
+    </Paragraph>
+</FlowDocument> 

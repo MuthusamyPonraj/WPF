@@ -1,0 +1,166 @@
+﻿<syncfusion:ChromelessWindow x:Class="UnBoundRowDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:glob="clr-namespace:System.Globalization;assembly=mscorlib"
+        xmlns:I="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:local="clr-namespace:UnBoundRowDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Icon="App.ico"
+        syncfusion:LayoutControl.SetMetroMode="True">
+    <syncfusion:ChromelessWindow.Resources>
+        <local:StringToImageConverter x:Key="Imageconverter" />
+    </syncfusion:ChromelessWindow.Resources>
+
+    <syncfusion:LayoutControl HeaderDescriptionText="UnboundRows are used to display the summary details of the selected rows."
+                              HeaderText="List of Countries by Population"
+                              LayoutMode="Metro"
+                              UserGuideUri="http://help.syncfusion.com/UG/User%20Interface/WPF/Grid/documents/42210unboundrows.htm"
+                              UserOptionsVisibility="Collapsed">
+        <syncfusion:LayoutControl.GridView>
+            <!--  GridDataControl Created here  -->
+            <syncfusion:GridDataControl x:Name="gdc" EnableVisualStyleForEditors="True"
+                                        ActivateCurrentCellBehavior="ClickOnCell"
+                                        AllowEdit="True"
+                                        AllowSort="False"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ColumnSizer="Star"
+                                        ItemsSource="{Binding CountryInfo}"
+                                        NotifyPropertyChanges="True"
+                                        ShowAddNewRow="False"
+                                        UnboundRowPosition="Bottom"
+                                        UpdateMode="PropertyChanged"
+                                        VisualStyle="Metro">
+                <!--  DataContext Set here for GridDataControl  -->
+                <syncfusion:GridDataControl.DataContext>
+                    <local:ViewModel />
+                </syncfusion:GridDataControl.DataContext>
+
+                <!--  Behaviors for Summary Calculation  -->
+                <I:Interaction.Behaviors>
+                    <local:SummaryCalculationBehavior />
+                </I:Interaction.Behaviors>
+                <!--  Visible Column added here  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+                    <syncfusion:GridDataUnboundVisibleColumn Width="20"
+                                                             HeaderText="Status"
+                                                             MappingName="Status">
+                        <syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle CellType="CheckBox" IsThreeState="False" />
+                        </syncfusion:GridDataUnboundVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataUnboundVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn Width="150"
+                                                      HeaderText="Country"
+                                                      MappingName="CountryName">
+                        <syncfusion:GridDataVisibleColumn.CellItemTemplate>
+                            <DataTemplate>
+                                <Grid HorizontalAlignment="Left">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="1.5*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Border Grid.Column="0" BorderBrush="Black">
+                                        <Image Width="50"
+                                               Height="50"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Center"
+                                               Source="{Binding Path=Record.Data.Image,
+                                                                Converter={StaticResource Imageconverter}}" />
+                                    </Border>
+                                    <TextBlock Grid.Column="1"
+                                               Margin="10,0,0,0"
+                                               HorizontalAlignment="Left"
+                                               VerticalAlignment="Center"
+                                               Text="{Binding Path=Record.Data.CountryName}" />
+                                </Grid>
+                            </DataTemplate>
+                        </syncfusion:GridDataVisibleColumn.CellItemTemplate>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Population " MappingName="Population">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="DoubleEdit">
+                                <syncfusion:GridDataColumnStyle.NumberFormat>
+                                    <glob:NumberFormatInfo NumberDecimalDigits="0" NumberGroupSeparator="," />
+                                </syncfusion:GridDataColumnStyle.NumberFormat>
+                            </syncfusion:GridDataColumnStyle>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn HeaderText="Area (Sq. Km.)" MappingName="Area">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="DoubleEdit">
+                                <syncfusion:GridDataColumnStyle.NumberFormat>
+                                    <glob:NumberFormatInfo NumberDecimalDigits="0" NumberGroupSeparator="," />
+                                </syncfusion:GridDataColumnStyle.NumberFormat>
+                            </syncfusion:GridDataColumnStyle>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <syncfusion:GridDataVisibleColumn Width="175"
+                                                      HeaderText="Population Density(Sq.Km.)"
+                                                      MappingName="PopulationDensity">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" CellType="DoubleEdit">
+                                <syncfusion:GridDataColumnStyle.NumberFormat>
+                                    <glob:NumberFormatInfo NumberDecimalDigits="2" NumberGroupSeparator="" />
+                                </syncfusion:GridDataColumnStyle.NumberFormat>
+                            </syncfusion:GridDataColumnStyle>
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataVisibleColumn>
+                    <!--  Following code Explains how to set DataTemplates in UnBound Column  -->
+                    <syncfusion:GridDataUnboundVisibleColumn Width="150"
+                                                             HeaderText="Rank Details"
+                                                             MappingName="RankDetails">
+                        <syncfusion:GridDataUnboundVisibleColumn.CellItemTemplate>
+                            <DataTemplate>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="2*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*" />
+                                        <RowDefinition Height="*" />
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Row="0"
+                                               Grid.Column="0"
+                                               Margin="6,0,0,0"
+                                               VerticalAlignment="Bottom"
+                                               Text="Rank In Population: " />
+                                    <TextBlock Grid.Row="0"
+                                               Grid.Column="1"
+                                               Margin="6,0,0,0"
+                                               VerticalAlignment="Bottom"
+                                               Text="{Binding Path=Record.Data.RankInPopulation}" />
+                                    <TextBlock Grid.Row="1"
+                                               Grid.Column="0"
+                                               Margin="6,0,0,0"
+                                               VerticalAlignment="Top"
+                                               Text="Rank In Area: " />
+                                    <TextBlock Grid.Row="1"
+                                               Grid.Column="1"
+                                               Margin="6,0,0,0"
+                                               VerticalAlignment="Top"
+                                               Text="{Binding Path=Record.Data.RankinArea}" />
+                                </Grid>
+                            </DataTemplate>
+                        </syncfusion:GridDataUnboundVisibleColumn.CellItemTemplate>
+                        <syncfusion:GridDataVisibleColumn.HeaderStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Center" />
+                        </syncfusion:GridDataVisibleColumn.HeaderStyle>
+                    </syncfusion:GridDataUnboundVisibleColumn>
+                </syncfusion:GridDataControl.VisibleColumns>
+            </syncfusion:GridDataControl>
+        </syncfusion:LayoutControl.GridView>
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

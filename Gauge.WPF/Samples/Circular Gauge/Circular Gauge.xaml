@@ -1,0 +1,18 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Paragraph FontWeight="Bold" FontFamily="Cambria" FontSize="16">
+Circular Gauge
+</Paragraph>
+
+<Paragraph  FontFamily="Calibri" FontSize="14">
+Circular gauges are perfect for presenting values of a specific range. They can be used to create sophisticated dashboards, clocks, industrial equipment, medical equipment, and much more. The following features can be used to present and customize a circular gauge.
+</Paragraph> 
+
+
+
+<Paragraph FontFamily="Calibri" FontSize="14"> <Bold>Gauge Control Demo </Bold> - This sample demonstrates how you can host a circular gauge control in a WPF application with a complete properties list.</Paragraph>
+<Paragraph FontFamily="Calibri" FontSize="14" > <Bold> Circular Frame Demo</Bold> - This sample demonstrates how you can host and customize the circular frame in a circular gauge control.</Paragraph>
+<Paragraph FontFamily="Calibri" FontSize="14" > <Bold> Multi-Scale Demo</Bold> - This sample demonstrates how you can embed a multi-scale in a circular gauge control.</Paragraph>
+<Paragraph FontFamily="Calibri" FontSize="14" > <Bold> Speedometer Demo</Bold> - This sample demonstrates how you can create a real-time speedometer using a circular gauge control.</Paragraph>
+
+</FlowDocument>

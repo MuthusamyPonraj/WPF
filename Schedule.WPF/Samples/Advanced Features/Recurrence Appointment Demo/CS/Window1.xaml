@@ -1,0 +1,25 @@
+﻿<Window x:Class="Basic_Schedule_Demo.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:calender="clr-namespace:Syncfusion.Windows.Controls;assembly=Syncfusion.Schedule.WPF"
+        xmlns:schedule="clr-namespace:Syncfusion.Windows.Controls.Schedule;assembly=Syncfusion.Schedule.WPF"
+       WindowState="Normal" WindowStartupLocation="CenterScreen" Icon="App.ico" Height="720" Width="1024" MinHeight="545" MinWidth="745" 
+       Title="Recurrence Appointment Demo" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Grid.Column="0" Margin="10">
+            <Button Content="Daily" Click="DailyButton_Click"  Margin="2"/>
+            <Button Content="Every Monday" Click="WeeklyButton_Click"  Margin="2"/>
+            <Button Content="Work Week" Click="WorkWeekButton_Click"  Margin="2"/>
+        </StackPanel>
+        <schedule:Schedule x:Name="schedule" DisplayReminder="False" Grid.Column="0" AllowAddNew="True" AllowEdit="True" AllowDelete="True" Grid.Row="1" Grid.ColumnSpan="2" HorizontalAlignment="Left"  CalendarVisibility="Visible">
+        </schedule:Schedule>
+    </Grid>
+</Window>

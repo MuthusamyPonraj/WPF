@@ -1,0 +1,158 @@
+﻿<syncfusion:ChromelessWindow x:Class="ColumnAutoSizingDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:ColumnAutoSizingDemo"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        Icon="App.ico" syncfusion:LayoutControl.SetMetroMode="True">
+    <!--  -DataContext set here for Window  -->
+    <syncfusion:ChromelessWindow.DataContext>
+        <local:ViewModel />
+    </syncfusion:ChromelessWindow.DataContext>
+    <syncfusion:ChromelessWindow.Resources>
+        <local:MultiCommandParamererConverter x:Key="CommandParamererConverter" />
+        <local:ColumnSizerConverter x:Key="colummnSizerConverter" />
+        <local:TextBoxEnableConverter x:Key="textBoxEnableConverter" />
+    </syncfusion:ChromelessWindow.Resources>
+
+    <syncfusion:LayoutControl HeaderDescriptionText="This sample showcases how to change the resize mode of entire gird or individual column in grid dynamically."
+                              HeaderText="GridDataControl Column Auto Sizing"
+                              LayoutMode="Metro"
+                              UserOptionsVisibility="Visible">
+        <syncfusion:LayoutControl.GridView>
+            <!--  GridDataControl Created here  -->
+            <syncfusion:GridDataControl x:Name="dataGrid"
+                                        Grid.Row="1"
+                                        Grid.Column="0"
+                                        AllowResizeColumns="{Binding Path=IsChecked,
+                                                                     ElementName=allowResize}"
+                                        AutoPopulateColumns="False"
+                                        AutoPopulateRelations="False"
+                                        ColumnSizer="{Binding SelectedItem,
+                                                              ElementName=unitTypeCombo,
+                                                              Converter={StaticResource colummnSizerConverter}}"
+                                        ItemsSource="{Binding OrdersDetails}"
+                                        ShowAddNewRow="False"
+                                        syncfusion:LayoutControl.IgnoreStyle="True"
+                                        VisualStyle="Metro">
+
+                <!--  Visible Column Created here  -->
+                <syncfusion:GridDataControl.VisibleColumns>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Order ID"
+                                                      MappingName="OrderID"
+                                                      MinimumWidth="20">
+                        <syncfusion:GridDataVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataVisibleColumn>
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Customer ID"
+                                                      MappingName="CustomerID"
+                                                      MinimumWidth="20" />
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Ship Name"
+                                                      MappingName="ShipName"
+                                                      MinimumWidth="20" />
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Ship City"
+                                                      MappingName="ShipCity"
+                                                      MinimumWidth="20" />
+
+                    <syncfusion:GridDataVisibleColumn HeaderText="Ship Country"
+                                                      MappingName="ShipCountry"
+                                                      MinimumWidth="20" />
+
+                    <syncfusion:GridDataCurrencyEditVisibleColumn MappingName="Freight" MinimumWidth="20">
+                        <syncfusion:GridDataCurrencyEditVisibleColumn.ColumnStyle>
+                            <syncfusion:GridDataColumnStyle HorizontalAlignment="Right" />
+                        </syncfusion:GridDataCurrencyEditVisibleColumn.ColumnStyle>
+                    </syncfusion:GridDataCurrencyEditVisibleColumn>
+
+                </syncfusion:GridDataControl.VisibleColumns>
+            </syncfusion:GridDataControl>
+
+        </syncfusion:LayoutControl.GridView>
+
+        <syncfusion:LayoutControl.UserOptionsView>
+
+            <syncfusion:UserOptions HeaderText="Resize Whole Grid">
+
+                <ComboBox x:Name="unitTypeCombo"
+                          Height="25"
+                          Margin="5, 10,0,0"
+                          SelectedIndex="2">
+                    <ComboBoxItem>Auto</ComboBoxItem>
+                    <ComboBoxItem>AutoOnLoad</ComboBoxItem>
+                    <ComboBoxItem>AutoOnLoadWithLastColumnFill</ComboBoxItem>
+                    <ComboBoxItem>AutoWithLastColumnFill</ComboBoxItem>
+                    <ComboBoxItem>None</ComboBoxItem>
+                    <ComboBoxItem>SizeToCells</ComboBoxItem>
+                    <ComboBoxItem>SizeToHeader</ComboBoxItem>
+                    <ComboBoxItem>Star</ComboBoxItem>
+                </ComboBox>
+            </syncfusion:UserOptions>
+
+            <syncfusion:UserOptions HeaderText="Resize Individual Column in Grid">
+                <StackPanel>
+                    <TextBlock Text="Select Column" />
+                    <ComboBox x:Name="ColumnName"
+                              Margin="5"
+                              SelectedItem="{Binding SelectedColumn}">
+                        <ComboBoxItem>OrderID</ComboBoxItem>
+                        <ComboBoxItem>CustomerID</ComboBoxItem>
+                        <ComboBoxItem>ShipName</ComboBoxItem>
+                        <ComboBoxItem>ShipCity</ComboBoxItem>
+                        <ComboBoxItem>ShipCountry</ComboBoxItem>
+                        <ComboBoxItem>Freight</ComboBoxItem>
+                    </ComboBox>
+                    <TextBlock Text="Set Column Sizing" />
+
+                    <!--<ComboBox x:Name="unitTypeCombo1"
+                              Height="25"
+                              Margin="5"
+                              SelectedIndex="0"
+                              SelectedItem="{Binding SelectedSizer,
+                                                     Mode=OneWayToSource}">
+                        <ComboBoxItem>None</ComboBoxItem>
+                        <ComboBoxItem>Star</ComboBoxItem>
+                    </ComboBox>-->
+
+                    <syncfusion:IntegerTextBox x:Name="textBox"
+                             Width="100"
+                             Margin="5"
+                             IsEnabled="{Binding SelectedColumn,
+                                                 Converter={StaticResource ResourceKey=textBoxEnableConverter}}"
+                             Text="{Binding TextValue}" />
+                    <Button x:Name="button"
+                            Width="80"
+                            Height="30"
+                            Margin="5"
+                            Command="local:ColumnResizingCommand.ColumnResize"
+                            IsEnabled="{Binding SelectedColumn,
+                                                 Converter={StaticResource ResourceKey=textBoxEnableConverter}}"
+                            CommandTarget="{Binding GridView,
+                                                    RelativeSource={RelativeSource FindAncestor,
+                                                                                   AncestorType={x:Type syncfusion:LayoutControl}}}"
+                            Content="Set Width">
+                        <Button.CommandParameter>
+                            <MultiBinding Converter="{StaticResource ResourceKey=CommandParamererConverter}">
+                                <Binding Mode="TwoWay" Path="SelectedColumn" />
+                                <Binding Mode="TwoWay" Path="SelectedSizer" />
+                                <Binding Mode="TwoWay" Path="TextValue" />
+                            </MultiBinding>
+                        </Button.CommandParameter>
+
+                    </Button>
+                </StackPanel>
+            </syncfusion:UserOptions>
+            <syncfusion:UserOptions HeaderText="Resize Columns manually">
+                <CheckBox x:Name="allowResize"
+                          Margin="5"
+                          Content="Allow Resize"
+                          IsChecked="True" />
+            </syncfusion:UserOptions>
+
+        </syncfusion:LayoutControl.UserOptionsView>
+
+    </syncfusion:LayoutControl>
+</syncfusion:ChromelessWindow>

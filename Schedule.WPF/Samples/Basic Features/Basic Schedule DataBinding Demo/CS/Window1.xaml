@@ -1,0 +1,28 @@
+﻿<Window x:Class="Basic_Schedule_Demo.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:schedule="clr-namespace:Syncfusion.Windows.Controls.Schedule;assembly=Syncfusion.Schedule.WPF"
+    Title="Schedule Basic DataBinding Demo" WindowStartupLocation="CenterScreen" Icon="App.ico" Height="720" Width="1024" MinHeight="545" MinWidth="745">   
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="250"/>
+        </Grid.ColumnDefinitions>
+        <schedule:Schedule x:Name="schedule" ItemsSource="{Binding AppointmentItemSource}" ScheduleType="{Binding ElementName=ScheduleTypeSelection, Path=SelectedItem, Mode=TwoWay}">        
+            <schedule:Schedule.AppointmentMapping>               
+                <schedule:ScheduleAppointmentMapping StartTimeMapping="StartTime" EndTimeMapping="EndTime" SubjectMapping="Subject" LocationMapping="Location"/>
+            </schedule:Schedule.AppointmentMapping>            
+        </schedule:Schedule>
+        <StackPanel Orientation="Vertical" Grid.Column="1">
+            <Grid x:Name="ScheduleTypePanel">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Schedule Types" Grid.Column="0" Margin="10" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
+                <ComboBox Grid.Column="1" x:Name="ScheduleTypeSelection" SelectedIndex="2" ItemsSource="{Binding ScheduleTypeCollection}" Margin="10" Width="100"></ComboBox>
+            </Grid>
+			<CheckBox x:Name="CalenderVisibilitySelection" IsChecked="false" Click="CalenderVisibilitySelection_Checked" Margin="10,10,0,10" Content=" Show Calendar Items" />
+        </StackPanel>      
+    </Grid>
+</Window>

@@ -1,0 +1,13 @@
+<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    ColumnWidth="400">
+    <Paragraph Style="{DynamicResource HeaderParagraphStyle}">
+        Bing Map Service
+    </Paragraph>
+    <Paragraph >
+      Bing Map Services is the Web service that provides APIs to integrate Bing Maps with applications.
+    </Paragraph>
+    <Paragraph>
+        <Bold>Imagery Service Demo</Bold> - Bing Maps Imagery Service is a Web service which provides the APIs to show Bing Maps with an application. With Imagery Service, aerial view and road view maps can be shown.   
+    </Paragraph>
+
+</FlowDocument> 

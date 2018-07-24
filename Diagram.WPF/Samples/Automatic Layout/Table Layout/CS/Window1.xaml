@@ -1,0 +1,165 @@
+﻿<Window x:Class="TableLayout_2008.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" WindowState="Maximized" WindowStartupLocation="CenterScreen"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" FontFamily="Calibri" FontSize="13"  Icon="App.ico" 
+    xmlns:syncfusion="http://schemas.syncfusion.com/wpf" syncfusion:SkinStorage.VisualStyle="Office2010Blue"
+    Style="{StaticResource windowStyle}"
+    Title="Table Layout " Height="600" Width="1000"  >
+
+    <!--Resources-->
+    <Window.Resources>
+        <ResourceDictionary>
+            <!--Gets the resources from the Shared Library-->
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Syncfusion.Shared.WPF;component/SkinManager/SkinManager.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <LinearGradientBrush x:Key="myBack" EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FFE1EDFA" Offset="0.095"/>
+                <GradientStop Color="#FFD2E0EF" Offset="0.839"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <!--Customization Area-->
+    <Border>
+        <Grid x:Name="GridRoot">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="9*"/>
+            </Grid.RowDefinitions>
+
+            <!--Sample Header-->
+            <Grid Background="{StaticResource myBack}" Grid.Row="0" >
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBlock Margin="1100,0,0,8" FontWeight="Normal" Foreground="#FF284360" FontSize="32" Text="Table Layout" FontFamily="Segoe UI"  HorizontalAlignment="Right" VerticalAlignment="Center" />
+                <Path Margin="20,0,0,4" Data="M27.573,21.885726 C26.039659,21.885726 24.796639,23.128786 24.796639,24.662178 L24.796639,37.3311 C24.796639,38.864491 26.039659,40.107552 27.573,40.107552 L40.064701,40.107552 C41.598042,40.107552 42.841061,38.864491 42.841061,37.3311 L42.841061,24.662178 C42.841061,23.128786 41.598042,21.885726 40.064701,21.885726 z M3.9060001,2.3436508 C2.9710598,2.3436508 2.2131386,3.1015863 2.2131386,4.0365477 L2.2131386,11.76122 C2.2131386,12.69618 2.9710598,13.454117 3.9060001,13.454117 L11.522699,13.454117 C12.457641,13.454117 13.21556,12.69618 13.21556,11.76122 L13.21556,4.0365477 C13.21556,3.1015863 12.457641,2.3436508 11.522699,2.3436508 z M2.7341995,0 L12.8898,0 C14.399857,0 15.624,1.2241688 15.624,2.7342587 L15.624,12.737741 C15.624,14.247831 14.399857,15.472 12.8898,15.472 L8.75,15.472 8.75,29.653 21.167,29.653 21.167,22.526347 C21.167,20.049711 23.174645,18.042 25.6512,18.042 L42.306801,18.042 C44.783356,18.042 46.791,20.049711 46.791,22.526347 L46.791,38.932653 C46.791,41.40929 44.783356,43.417 42.306801,43.417 L25.6512,43.417 C23.174645,43.417 21.167,41.40929 21.167,38.932653 L21.167,32.403 7.3190002,32.403 C6.5596085,32.403 5.9440002,31.787392 5.9440002,31.028 5.9440002,30.933076 5.953619,30.840399 5.9719353,30.75089 L6,30.641743 6,15.472 2.7341995,15.472 C1.2241421,15.472 0,14.247831 0,12.737741 L0,2.7342587 C0,1.2241688 1.2241421,0 2.7341995,0 z" Fill="#FF8FABCA" HorizontalAlignment="Right" Height="39.417"  Stretch="Fill"  VerticalAlignment="Center" Width="46.791"/>
+                </StackPanel>
+           </Grid>
+
+            <Grid Grid.Row="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <!--Control Area-->
+                <Border  Grid.Row="0" Grid.Column="0" >
+                    <syncfusion:DiagramControl  Name="diagramControl">
+
+                        <!-- Model to add nodes and connections-->
+                        <syncfusion:DiagramControl.Model>
+                            <syncfusion:DiagramModel LayoutType="TableLayout" EnableLayoutWithVariedSizes="False" TableExpandMode="Horizontal" HorizontalSpacing="50" VerticalSpacing="50" RowCount="4" ColumnCount="4"  x:Name="diagramModel">
+                            </syncfusion:DiagramModel>
+                        </syncfusion:DiagramControl.Model>
+                        <!--View to display nodes and connections added through model.-->
+                        <syncfusion:DiagramControl.View>
+                            <syncfusion:DiagramView IsPageEditable="True"  Bounds="0,0,200,200" Name="diagramView">
+                                <!--Horizontal ruler declaration-->
+                                <syncfusion:DiagramView.HorizontalRuler>
+                                    <syncfusion:HorizontalRuler />
+                                </syncfusion:DiagramView.HorizontalRuler>
+                                <syncfusion:DiagramView.VerticalRuler>
+                                    <syncfusion:VerticalRuler />
+                                </syncfusion:DiagramView.VerticalRuler>
+                            </syncfusion:DiagramView>
+                        </syncfusion:DiagramControl.View>
+                    </syncfusion:DiagramControl>
+                </Border>
+
+                <!--Property Area-->
+                <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="0" Grid.Column="1">
+                    <Border BorderBrush="AliceBlue" BorderThickness="2,0,0,0">
+                        <StackPanel>
+                            <Border Background="#FFBECEE0" Height="40">
+                                <TextBlock Foreground="#FF284360" FontSize="21.333" FontFamily="Segoe UI" Text="Properties" Margin="5" HorizontalAlignment="Left" VerticalAlignment="Center"  FontWeight="Normal" ></TextBlock>
+                            </Border>
+                            <Border Padding="5,5,5,5" >
+
+                                <StackPanel>
+                                    <Border Margin="0,10,0,0">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="190"></ColumnDefinition>
+                                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <!--Horizontal Spacing-->
+                                            <TextBlock Margin="0,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Row="0" Grid.Column="0" >HorizontalSpacing</TextBlock>
+                                            <syncfusion:DoubleTextBox Background="#FFE1EDFA" UseNullOption="True" Margin="0,5,0,0" Grid.Row="0" Grid.Column="1" Value="50" Name="hspace" Width="100" VerticalAlignment="Center"  TextChanged="TextBox2_TextChanged" MaxLength="5" />
+
+
+                                            <!--Vertical Spacing-->
+                                            <TextBlock Margin="0,8,0,0"  HorizontalAlignment="Left" VerticalAlignment="Center"  Grid.Row="1" Grid.Column="0"  >VerticalSpacing</TextBlock>
+                                            <syncfusion:DoubleTextBox  Background="#FFE1EDFA" UseNullOption="True" Margin="0,5,0,0"  Value="50" Grid.Row="1" Grid.Column="1" Name="vspace"  Width="100"   TextChanged="TextBox2_TextChanged" MaxLength="5"/>
+                                        </Grid>
+                                    </Border>
+                                    <Border>
+                                        <Grid HorizontalAlignment="Center">
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                                <RowDefinition Height="Auto"></RowDefinition>
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="190"></ColumnDefinition>
+                                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                            </Grid.ColumnDefinitions>
+
+                                            <!--EnableLayoutWithDifferentSizes-->
+
+                                            <TextBlock Margin="0,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Center">EnableLayoutWithDifferentSizes</TextBlock>
+                                            <CheckBox Name="VarySize" Margin="0,5,0,0" Grid.Row="0" Grid.Column="1" VerticalAlignment="Center" Checked="CheckBox_Checked" HorizontalAlignment="Left" Unchecked="CheckBox_Unchecked" />
+                                            <TextBlock Margin="0,5,0,0" Grid.Column="0"  Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Center">Enable SelectionBase Layout</TextBlock>
+                                            <CheckBox Name="SelectionBaseLayout" Margin="0,5,0,0" Grid.Row="5" Grid.Column="1" VerticalAlignment="Center" Checked="SelectionBaseLayout_Checked"  HorizontalAlignment="Left" Unchecked="SelectionBaseLayout_Unchecked" />
+
+                                            <!--TableExpandMode-->
+                                            <TextBlock Margin="0,5,0,0" Grid.Row="1" Grid.Column="0"  Text="TableExpandMode" VerticalAlignment="Center" HorizontalAlignment="Left"/>
+                                            <ComboBox Margin="0,5,0,0" Grid.Row="1" Grid.Column="1"  Width="100" SelectedIndex="0" SelectionChanged="ComboBox_SelectionChanged">
+                                                <ComboBoxItem Name="Horizontal" Content="Horizontal" />
+                                                <ComboBoxItem Content="Vertical" Name="Vertical" />
+                                            </ComboBox>
+
+                                            <!--Row Count-->
+                                            <TextBlock  Grid.Row="2" Grid.Column="0" Margin="0,5,0,0"  HorizontalAlignment="Left" VerticalAlignment="Center">RowCount</TextBlock>
+                                            <syncfusion:IntegerTextBox IsEnabled="False" Grid.Row="2" Grid.Column="1"  Margin="0,5,0,0" Value="4" Name="rt"  Width="100" VerticalAlignment="Center" HorizontalAlignment="Center" TextChanged="TextBox_TextChanged"  />
+                                            <!--Column Count-->
+                                            <TextBlock   Grid.Row="3" Grid.Column="0" Margin="0,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Center" >ColumnCount</TextBlock>
+                                            <syncfusion:IntegerTextBox Margin="0,5,0,0" Grid.Row="3" Grid.Column="1" Value="3" Name="ct"  Width="100" TextChanged="TextBox1_TextChanged"/>
+                                            <!--Add Nodes-->
+                                            <TextBlock Margin="0,5,0,0" Text="Number of Nodes" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+                                            <syncfusion:IntegerTextBox Background="#FFE1EDFA" Margin="0,5,0,0" Grid.Row="4" Grid.Column="1" Value="10" HorizontalAlignment="Center" Name="nodes"  Width="100"  UseNullOption="True" NullValue="{x:Null}"/>
+                                            <Grid Grid.Row="6" Grid.ColumnSpan="2">
+
+                                                <!--RefreshLayout-->
+                                                <Button Margin="50,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Center"  Grid.Row="5" Grid.Column="0" Width="75" Click="Button_Click_1" >AddNodes</Button>
+                                                <Button Margin="120,5,0,0" Grid.Row="6" Grid.Column="1" Width="100" Content="Refresh Layout"  Click="Button_Click"/>
+                                            </Grid>
+
+                                        </Grid>
+                                    </Border>
+
+                                </StackPanel>
+
+                            </Border>
+                        </StackPanel>
+                    </Border>
+                </ScrollViewer>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>

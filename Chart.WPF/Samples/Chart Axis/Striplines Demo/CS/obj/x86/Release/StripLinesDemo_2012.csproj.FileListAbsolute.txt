@@ -1,0 +1,4 @@
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Chart Axis\Striplines Demo\CS\obj\x86\Release\StripLinesDemo_2012.csprojResolveAssemblyReference.cache
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Chart Axis\Striplines Demo\CS\obj\x86\Release\App.baml
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Chart Axis\Striplines Demo\CS\obj\x86\Release\App.g.cs
+C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Chart Axis\Striplines Demo\CS\obj\x86\Release\StripLinesDemo_MarkupCompile.cache
