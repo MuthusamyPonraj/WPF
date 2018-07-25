@@ -38,12 +38,12 @@
 
 | | | | | | 
 |-|-|-|-|-|
-|[Auto Complete](Tools.WPF/Samples/AutoComplete)|[Text Box](     )|[Currency TextBox](Tools.WPF/Samples/Editor%20Controls/Currency%20Text%20Box)|[Double TextBox](Tools.WPF/Samples/Editor%20Controls/Double%20Text%20Box)|[Integer TextBox](Tools.WPF/Samples/Editor%20Controls/Integer%20Text%20Box)|
-|[Date Picker](Tools.WPF/Samples/DateTimePicker/DatePicker)|[Time Picker](Tools.WPF/Samples/DateTimePicker/TimePicker)|[Date Time Editor](Tools.WPF/Samples/Editor%20Controls/Date%20Time%20Edit)|[Button Adv](    )|[Masked TextBox](Tools.WPF/Samples/Editor%20Controls/Masked%20Text%20Box)|
+|[Auto Complete](Tools.WPF/Samples/AutoComplete)|Text Box|[Currency TextBox](Tools.WPF/Samples/Editor%20Controls/Currency%20Text%20Box)|[Double TextBox](Tools.WPF/Samples/Editor%20Controls/Double%20Text%20Box)|[Integer TextBox](Tools.WPF/Samples/Editor%20Controls/Integer%20Text%20Box)|
+|[Date Picker](Tools.WPF/Samples/DateTimePicker/DatePicker)|[Time Picker](Tools.WPF/Samples/DateTimePicker/TimePicker)|[Date Time Editor](Tools.WPF/Samples/Editor%20Controls/Date%20Time%20Edit)|Button Adv|[Masked TextBox](Tools.WPF/Samples/Editor%20Controls/Masked%20Text%20Box)|
 |[Percent TextBox](Tools.WPF/Samples/Editor%20Controls/Percent%20Text%20Box)|[Rich TextBox](SfRichTextBoxAdv.WPF/Samples)|[Time Span Editor](Tools.WPF/Samples/Editor%20Controls/Time%20Span%20Edit)|[Numeric UpDown](Samples/Editor%20Controls/UpDown)|[Domain Updown](Tools.WPF/Samples/Editor%20Controls/DomainUpDown)|
 |[Combo Box](Tools.WPF/Samples/ComboBox/ComboBox)|[Range Slider](Tools.WPF/Samples/Range%20Slider/Range%20Slider)|[Radial Slider](Tools.WPF/Samples/RadialSlider)|[Color Picker](Tools.WPF/Samples/Color%20Picker)|[Color Palette](Tools.WPF/Samples/ColorPallete)|
-|[Color Picker Palette](Tools.WPF/Samples/Color%20Picker/Color%20Picker%20Palette)|[Calculator](Tools.WPF/Samples/Calculator/Calculator)|[Rating](Tools.WPF/Samples/Rating)|[Checked ListBox](     )|[Drop Down Button](  )|
-|[Split Button](   )|[MultiColumn Drop-Down](SfGrid.WPF/Samples/MultiColumnDropDownDemo)|[Calender](Tools.WPF/Samples/Calendar%20Controls)|[Syntax Editor](Edit.WPF/Samples/Language-Based%20Highlighting)|
+|[Color Picker Palette](Tools.WPF/Samples/Color%20Picker/Color%20Picker%20Palette)|[Calculator](Tools.WPF/Samples/Calculator/Calculator)|[Rating](Tools.WPF/Samples/Rating)|Checked ListBox|Drop Down Button|
+|Split Button|[MultiColumn Drop-Down](SfGrid.WPF/Samples/MultiColumnDropDownDemo)|[Calender](Tools.WPF/Samples/Calendar%20Controls)|[Syntax Editor](Edit.WPF/Samples/Language-Based%20Highlighting)|
 
 ## NOTIFICATION
 
@@ -55,13 +55,13 @@
 
 | | | | 
 |-|-|-|
-|[Report Viewer](ReportViewer.WPF/samples)|[Report Writer](     )|[Report Designer](ReportDesigner.WPF/Samples)|
+|[Report Viewer](ReportViewer.WPF/samples)|Report Writer|[Report Designer](ReportDesigner.WPF/Samples)|
 
 ## BUSINESS INTELIGENCE
 
 | | | | | | 
 |-|-|-|-|-|
-|[Olap Grid](OlapGrid.WPF)|[Olap Chart](OlapChart.WPF)|[Olap Client](OlapClient.WPF)|[Olap Gauge](OlapGauge.WPF)|[Pivot Grid]( )|
+|[Olap Grid](OlapGrid.WPF)|[Olap Chart](OlapChart.WPF)|[Olap Client](OlapClient.WPF)|[Olap Gauge](OlapGauge.WPF)|Pivot Grid|
 
 ## FILE FORMATS
 
@@ -73,4 +73,4 @@
 
 | | | | | 
 |-|-|-|-|
-|[QTP Addon](   )|[SpellChecker](Tools.WPF/Samples/Spell%20Checker/Spell%20Checker)|[Wizard](Tools.WPF/Samples/Wizard/Wizard%20Control)|[Calculate](Calculate.WPF)|
+|QTP Addon|[SpellChecker](Tools.WPF/Samples/Spell%20Checker/Spell%20Checker)|[Wizard](Tools.WPF/Samples/Wizard/Wizard%20Control)|[Calculate](Calculate.WPF)|
