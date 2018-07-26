@@ -33,18 +33,22 @@
 <td>
 <a href="SfSmithChart.WPF/Samples">Smith Chart</a>
 </td>
-<td>
+
+</tr>
+  <tr>
+  <td>
 <a href="SfKanban.WPF/Samples">Kanban</a>
 </td>
 <td>
 <a href="SfGauge.WPF/Samples/CircularGauge">Radial Gauge</a>
 </td>
-</tr>
-  <tr>
 <td>
 <a href="SfGauge.WPF/Samples/LinearGauge">Linear Gauge</a>
 </td>
-<td>
+
+</tr>
+   <tr>
+   <td>
 <a href="SfGauge.WPF/Samples/DigitalGauge">Digital Gauge</a>
 </td>
 <td>
@@ -53,17 +57,21 @@
 <td>
 <a href="SfMaps.WPF/Samples">Maps</a>
 </td>
-<td>
+</tr>
+  
+   <tr>
+   <td>
 <a href="SfTreeMap.WPF/Samples">Treemap</a>
 </td>
-</tr>
-   <tr>
 <td>
 <a href="SfSchedule.WPF/Samples">Scheduler</a>
 </td>
 <td>
 <a href="SfBulletGraph.WPF/Samples">Bullet Graph</a>
 </td>
+
+</tr>
+<tr>
 <td>
 <a href="Gantt.WPF/Samples">Gantt</a>
 </td>
@@ -71,25 +79,19 @@
 <a href="Samples/DateTimeRangeNavigator">Range Navigator</a>
 </td>
 <td>
-<a href="SfChart.WPF/Samples/SparkLine">Sparkline</a>
-</td>
-</tr>
-  
-   <tr>
-<td>
 <a href="SfChart.WPF/Samples/Surface%20Chart">Surface Chart</a>
 </td>
+</tr>
+<tr>
+<td>
+<a href="SfChart.WPF/Samples/SparkLine">SparkLine</a>
+</td>
+
 <td>
 <a href="SfBarcode.WPF/Samples">Barcode</a>
 </td>
 <td>
 <a href="SfHeatMap.WPF/Samples">Heat Map</a>
-</td>
-<td>
-
-</td>
-<td>
-
 </td>
 </tr>
 </table>
@@ -100,7 +102,7 @@
   <td>
 <a href="PMML.WPF/PMMLWPFSampleBrowser">Predictive Analytics</a>
 </td>
-<td>
+
 </tr>
 </table>
 
@@ -116,17 +118,21 @@
 <td>
 <a href="Tools.WPF/Samples/Docking%20Manager/Document%20Container">Document Container</a>
 </td>
-<td>
+
+</tr>
+  <tr>
+  <td>
 <a href="Tools.WPF/Samples/Tile%20View">Tile View</a>
 </td>
   <td>
 <a href="Tools.WPF/Samples/Carousel/Carousel">Carousel</a>
 </td>
-</tr>
-  <tr>
   <td>
 <a href="Tools.WPF/Samples/Chromeless%20Window/Chromeless%20Window">Chromeless Window</a>
 </td>
+
+</tr>
+<tr>
 <td>
 <a href="Tools.WPF/Samples/Card%20View/Card%20View">Card View</a>
 </td>
@@ -135,9 +141,6 @@
 </td>
 <td>
 <a href="Tools.WPF/Samples/GridSplitter/Getting%20Started">Grid Splitter</a>
-</td>
-  <td>
-
 </td>
 </tr>
 </table>
@@ -152,20 +155,25 @@
 <a href="Tools.WPF/Samples/Menu%20Control">Menu</a>
 </td>
 <td>
-<a href="Tools.WPF/Samples/ToolBarAdv/Getting%20Started">Tool Bar</a>
-</td>
-<td>
 <a href="Tools.WPF/Samples/Hierarchy%20Navigator/Getting%20Started">Hierarchical Navigator</a>
 </td>
-  <td>
-<a href="Tools.WPF/Samples/GroupBar">Group Bar</a>
-</td>
+
 </tr>
   <tr>
   <td>
+<a href="Tools.WPF/Samples/ToolBarAdv/Getting%20Started">Tool Bar</a>
+</td>
+
+  <td>
+<a href="Tools.WPF/Samples/GroupBar">Group Bar</a>
+</td>
+  <td>
 <a href="Tools.WPF/Samples/Tab%20Controls">Tab</a>
 </td>
-<td>
+
+</tr>
+  <tr>
+  <td>
 <a href="Tools.WPF/Samples/TabNavigation">Tab Navigation</a>
 </td>
 <td>
@@ -174,17 +182,21 @@
 <td>
 <a href="Tools.WPF/Samples/RadialMenu">Radial Menu</a>
 </td>
-  <td>
+  
+</tr>
+<tr>
+<td>
 <a href="Tools.WPF/Samples/TreeNavigator">Tree Navigator</a>
 </td>
-</tr>
-  <tr>
   <td>
 <a href="Tools.WPF/Samples/Tab%20Controls">Tab</a>
 </td>
 <td>
 <a href="Tools.WPF/Samples/TabNavigation">Tab Navigation</a>
 </td>
+
+</tr>
+<tr>
 <td>
 <a href="Tools.WPF/Samples/TaskBar/Getting%20Started">Task Bar</a>
 </td>
@@ -204,23 +216,27 @@
 <a href="Tools.WPF/Samples/AutoComplete">Auto Complete</a>
 </td>
 <td>
-<Text Box
+Text Box
 </td>
 <td>
 <a href="Tools.WPF/Samples/Editor%20Controls/Currency%20Text%20Box">Currency TextBox</a>
 </td>
-<td>
+
+</tr>
+  <tr>
+  <td>
 <a href="Tools.WPF/Samples/Editor%20Controls/Double%20Text%20Box">Double TextBox</a>
 </td>
   <td>
 <a href="Tools.WPF/Samples/Editor%20Controls/Integer%20Text%20Box">Integer TextBox</a>
 </td>
-</tr>
-  <tr>
   <td>
 <a href="Tools.WPF/Samples/DateTimePicker/DatePicker">Date Picker</a>
 </td>
-<td>
+
+</tr>
+   <tr>
+   <td>
   <a href="Tools.WPF/Samples/DateTimePicker/TimePicker">Time Picker</a>
 </td>
 <td>
@@ -229,17 +245,22 @@
 <td>
 Button Adv
 </td>
-  <td>
+ 
+</tr>
+  
+   <tr>
+    <td>
     <a href="Tools.WPF/Samples/MaskedEdit">Masked TextBox</a>
 </td>
-</tr>
-   <tr>
   <td>
 <a href="Tools.WPF/Samples/Editor%20Controls/Percent%20Text%20Box">Percent TextBox</a>
 </td>
 <td>
 <a href="SfRichTextBoxAdv.WPF/Sample">Rich TextBox</a>
 </td>
+
+</tr>
+<tr>
 <td>
 <a href="Tools.WPF/Samples/Editor%20Controls/Time%20Span%20Edit">Time Span Editor</a>
 </td>
@@ -249,10 +270,10 @@ Button Adv
   <td>
 <a href="Tools.WPF/Samples/Editor%20Controls/DomainUpDown">Domain Updown</a>
 </td>
-</tr>
   
-   <tr>
-  <td>
+</tr>
+<tr>
+<td>
 <a href="Tools.WPF/Samples/ComboBox/ComboBox">Combo Box</a>
 </td>
 <td>
@@ -261,17 +282,21 @@ Button Adv
 <td>
 <a href="Tools.WPF/Samples/RadialSlider">Radial Slider</a>
 </td>
+
+</tr>
+<tr>
 <td>
 <a href="Tools.WPF/Samples/Color%20Picker">Color Picker</a>
 </td>
   <td>
 <a href="Tools.WPF/Samples/ColorPallete">Color Palette</a>
 </td>
-</tr>
-<tr>
   <td>
 <a href="Tools.WPF/Samples/Color%20Picker/Color%20Picker%20Palette">Color Picker Palette</a>
 </td>
+
+</tr>
+<tr>
 <td>
 <a href="Tools.WPF/Samples/Calculator/Calculator">Calculator</a>
 </td>
@@ -281,25 +306,26 @@ Button Adv
 <td>
 Checked ListBox
 </td>
-  <td>
-Drop Down Button
-</td>
+  
 </tr>
 <tr>
+<td>
+Drop Down Button
+</td>
   <td>
 Split Button
 </td>
 <td>
 <a href="SfGrid.WPF/Samples/MultiColumnDropDownDemo">MultiColumn Drop-Down</a>
 </td>
+
+</tr>
+<tr>
 <td>
 <a href="Tools.WPF/Samples/Calendar%20Controls">Calender</a>
 </td>
-<td>
+<td colspan="2" rowspan="1">
   <a href="Edit.WPF/Samples/Language-Based%20Highlighting">Syntax Editor</a>
-</td>
-  <td>
-
 </td>
 </tr>
 </table>
