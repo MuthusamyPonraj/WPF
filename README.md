@@ -1,29 +1,39 @@
 # WPF
 
-<b>GRID</b>
-<table>
-<tr>
-  <td>
-<a href="Grid.WPF/Samples/GridControl">Cell Grid</a>
-</td>
-<td>
-<a href="SfGrid.WPF/Samples">DataGrid</a>
-</td>
-<td>
-<a href="SfGrid.WPF/Samples/TreeGrid">Tree Grid</a>
-</td>
-<td>
-<a href="Tools.WPF/Samples/PropertyGrid">Property Grid</a>
-</td>
-  <td>
-<a href="SfSpreadsheet.WPF/Samples">Spreadsheet</a>
-</td>
-</tr>
-</table>
 
-<b> DATA VISUALIZATION</b>
 <table>
+  <tr>
+    <td colspan="3" rowspan="1">
+    <b>GRIDS<b>
+    </td>
+</tr>    
 <tr>
+  <td>
+    <a href="Grid.WPF/Samples/GridControl">Cell Grid</a>
+  </td>
+  <td>
+    <a href="SfGrid.WPF/Samples">DataGrid</a>
+  </td>
+  <td>
+    <a href="SfGrid.WPF/Samples/TreeGrid">Tree Grid</a>
+  </td>
+</tr>
+<tr>
+  <td>
+    <a href="Tools.WPF/Samples/PropertyGrid">Property Grid</a>
+  </td>
+  <td>
+    <a href="SfSpreadsheet.WPF/Samples">Spreadsheet</a>
+  </td>
+  <td></td>
+</tr>
+   <tr>
+    <td colspan="3" rowspan="1">
+    <b>DATA VISUALIZATION<b>
+    </td>
+</tr>  
+  
+  <tr>
 <td>
 <a href="SfChart.WPF/Samples">Chart</a>
 </td>
@@ -94,20 +104,20 @@
 <a href="SfHeatMap.WPF/Samples">Heat Map</a>
 </td>
 </tr>
-</table>
-
-<b>DATA SCIENCE</b>
-<table>
+<tr> 
+  <td colspan="3" rowspan="1"><b>DATA SCIENCE</b></td>
+</tr>
 <tr>
   <td>
 <a href="PMML.WPF/PMMLWPFSampleBrowser">Predictive Analytics</a>
 </td>
-
+<td/>
+  <td/>
 </tr>
-</table>
 
-<b>LAYOUT</b>
-<table>
+<tr> 
+  <td colspan="3" rowspan="1"><b>LAYOUT</b></td>
+</tr>
 <tr>
   <td>
 <a href="Tools.WPF/Samples/Ribbon">Ribbon</a>
@@ -143,10 +153,10 @@
 <a href="Tools.WPF/Samples/GridSplitter/Getting%20Started">Grid Splitter</a>
 </td>
 </tr>
-</table>
 
-<b>NAVIGATION</b>
-<table>
+<tr> 
+  <td colspan="3" rowspan="1"><b>NAVIGATION</b></td>
+</tr>
 <tr>
   <td>
 <a href="Tools.WPF/Samples/Tree%20View">Tree View</a>
@@ -207,10 +217,9 @@
 <a href="SfNavigationDrawer.WPF/Samples/Getting%20Started">Navigator Drawer</a>
 </td>
 </tr>
-</table>
-
-<b>EDITORS</b>
-<table>
+<tr> 
+  <td colspan="3" rowspan="1"><b>EDITORS</b></td>
+</tr>
 <tr>
   <td>
 <a href="Tools.WPF/Samples/AutoComplete">Auto Complete</a>
@@ -324,14 +333,12 @@ Split Button
 <td>
 <a href="Tools.WPF/Samples/Calendar%20Controls">Calender</a>
 </td>
-<td colspan="2" rowspan="1">
+<td>
   <a href="Edit.WPF/Samples/Language-Based%20Highlighting">Syntax Editor</a>
 </td>
+  <td/>
 </tr>
-</table>
-
-<b> NOTIFICATION</b>
-<table>
+<tr><td colspan="3" rowspan="1"><b> NOTIFICATION</b></td></tr>
 <tr>
   <td>
    <a href="Tools.WPF/Samples/Busy%20Indicator">Busy Indicator</a>
@@ -342,12 +349,9 @@ Split Button
 <td>
 <a href="Tools.WPF/Samples/HubTile">Hub Tile</a>
 </td>
-
 </tr>
-</table>
 
-<b> REPORTING</b>
-<table>
+<tr><td colspan="3" rowspan="1"><b>REPORTING</b></td></tr>
 <tr>
   <td>
    <a href="ReportViewer.WPF/samples">Report Viewer</a>
@@ -360,10 +364,8 @@ Report Writer
 </td>
 
 </tr>
-</table>
 
-<b> BUSINESS INTELIGENCE</b>
-<table>
+<tr><td colspan="3" rowspan="1"><b>BUSINESS INTELIGENCE</b></td></tr>
 <tr>
   <td>
    <a href="OlapGrid.WPF">Olap Grid</a>
@@ -374,17 +376,18 @@ Report Writer
 <td>
 <a href="OlapClient.WPF">Olap Client</a>
 </td>
+  </tr>
+  <tr>
 <td>
 <a href="OlapGauge.WPF">Olap Gauge</a>
 </td>
   <td>
 <a href="PivotAnalysis.WPF">Pivot Grid</a>
 </td>
+  <td/>
 </tr>
-</table>
 
-<b> FILE FORMATS</b>
-<table>
+<tr><td colspan="3" rowspan="1"><b>FILE FORMATS</b></td></tr>
 <tr>
   <td>
    <a href="XlsIO.WPF">Excel</a>
@@ -395,20 +398,19 @@ Report Writer
 <td>
 <a href="DocIO.WPF">Word</a>
 </td>
+  </tr>
+  <tr>
 <td>
 <a href="PdfViewer.WPF">PDF Viewer</a>
 </td>
   <td>
 <a href="Presentation.WPF/Samples">Power Point</a>
 </td>
+  <td/>
 </tr>
-</table>
 
-
-<b>MISCELLANEOUS</b>
-<table>
+<tr><td colspan="3" rowspan="1"><b>MISCELLANEOUS</b></td></tr>
 <tr>
- 
 <td>
 <a href="Tools.WPF/Samples/Spell%20Checker/Spell%20Checker">SpellChecker</a>
 </td>
@@ -420,6 +422,5 @@ Report Writer
 </td>
 </tr>
 </table>
-
 
 
