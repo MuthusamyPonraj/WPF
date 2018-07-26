@@ -230,7 +230,7 @@
 Button Adv
 </td>
   <td>
-Masked TextBox
+    <a href="Tools.WPF/Samples/MaskedEdit">Masked TextBox</a>
 </td>
 </tr>
    <tr>
@@ -352,7 +352,7 @@ Report Writer
 <a href="OlapGauge.WPF">Olap Gauge</a>
 </td>
   <td>
-Pivot Grid
+<a href="PivotAnalysis.WPF">Pivot Grid</a>
 </td>
 </tr>
 </table>
@@ -382,9 +382,7 @@ Pivot Grid
 <b>MISCELLANEOUS</b>
 <table>
 <tr>
-  <td>
-   QTP Addon
-</td>
+ 
 <td>
 <a href="Tools.WPF/Samples/Spell%20Checker/Spell%20Checker">SpellChecker</a>
 </td>
