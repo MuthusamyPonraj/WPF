@@ -1,3 +1,5 @@
+# Syncfusion WPF samples
+
 This section guides you to use the Syncfusion WPF samples in you applications.
 
 * [Overview](#overview)
