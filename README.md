@@ -19,7 +19,7 @@
   <td/>
 </tr>
 <tr> 
-  <td colspan="3" rowspan="1"><b>Input Controls</b></td>
+  <td colspan="3" rowspan="1"><b>INPUT CONTROLS</b></td>
 </tr>
 <tr>
   <td>
@@ -304,7 +304,7 @@ Split Button
 <td/>
 </tr>
 
-<tr><td colspan="3" rowspan="1"><b> Editors and Viewers</b></td></tr>
+<tr><td colspan="3" rowspan="1"><b>EDITORS AND VIEWERS</b></td></tr>
 <tr>
 <td>
     <a href="SfSpreadsheet.WPF/Samples">Spreadsheet</a>
