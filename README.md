@@ -179,45 +179,32 @@
   <td>
 <a href="Tools.WPF/Samples/GroupBar">Group Bar</a>
 </td>
-  <td>
-<a href="Tools.WPF/Samples/Tab%20Controls">Tab</a>
+ <td>
+<a href="Tools.WPF/Samples/TreeNavigator">Tree Navigator</a>
 </td>
-
 </tr>
   <tr>
-  <td>
-<a href="Tools.WPF/Samples/TabNavigation">Tab Navigation</a>
-</td>
-<td>
-<a href="Tools.WPF/Samples/TaskBar/Getting%20Started">Task Bar</a>
-</td>
-<td>
-<a href="Tools.WPF/Samples/RadialMenu">Radial Menu</a>
-</td>
   
 </tr>
 <tr>
-<td>
-<a href="Tools.WPF/Samples/TreeNavigator">Tree Navigator</a>
-</td>
   <td>
 <a href="Tools.WPF/Samples/Tab%20Controls">Tab</a>
 </td>
 <td>
 <a href="Tools.WPF/Samples/TabNavigation">Tab Navigation</a>
 </td>
-
-</tr>
-<tr>
 <td>
 <a href="Tools.WPF/Samples/TaskBar/Getting%20Started">Task Bar</a>
 </td>
+</tr>
+<tr>
 <td>
 <a href="Tools.WPF/Samples/RadialMenu">Radial Menu</a>
 </td>
   <td>
 <a href="SfNavigationDrawer.WPF/Samples/Getting%20Started">Navigator Drawer</a>
 </td>
+<td/>
 </tr>
 <tr> 
   <td colspan="3" rowspan="1"><b>EDITORS</b></td>
