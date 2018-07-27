@@ -28,7 +28,7 @@ The easiest way to use these samples without using Git is to download the zip fi
 
 The samples use Linked files in Visual Studio to reduce duplication of common files, including sample template files and image assets. These common files are stored in the SharedContent folder at the root of the repository, and are referred to in the project files using links.
 
-To use the Syncfusion WPF samples, provide the license key in the [`SyncfusionLicense.txt`] file associated with each samples. Refer [this](https://www.syncfusion.com/kb/9002) link for more information.
+To use the Syncfusion WPF samples, provide the license key in the `SyncfusionLicense.txt` file associated with each samples. Refer [this](https://www.syncfusion.com/kb/9002) link for more information.
 
 **Reminder:** If you unzip individual samples, they will not build due to references to other portions of the ZIP file that were not unzipped. You must unzip the entire archive if you intend to build the samples.
 
