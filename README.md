@@ -38,7 +38,7 @@ To use the Syncfusion WPF samples, provide the license key in the [`SyncfusionLi
 
 * For using the Syncfusion controls, refer the [User Guide](https://help.syncfusion.com/wpf/welcome-to-syncfusion-essential-wpf)
 
-* For any other queries, reach our support team [here](https://www.syncfusion.com/support/directtrac/incidents)with your query.
+* For any other queries, reach our support team [here](https://www.syncfusion.com/support/directtrac/incidents) with your query.
 
 * To renew the subscription, click [here](https://www.syncfusion.com/sales/products) or contact our sales team at <salessupport@syncfusion.com>.
    
