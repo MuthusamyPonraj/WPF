@@ -11,25 +11,132 @@
 </tr>    
 <tr>
   <td>
-    <a href="Grid.WPF/Samples/GridControl">Cell Grid</a>
-  </td>
-  <td>
     <a href="SfGrid.WPF/Samples">DataGrid</a>
   </td>
   <td>
     <a href="SfGrid.WPF/Samples/TreeGrid">Tree Grid</a>
   </td>
+  <td/>
+</tr>
+<tr> 
+  <td colspan="3" rowspan="1"><b>Input Controls</b></td>
 </tr>
 <tr>
   <td>
-    <a href="Tools.WPF/Samples/PropertyGrid">Property Grid</a>
-  </td>
+<a href="Tools.WPF/Samples/AutoComplete">Auto Complete</a>
+</td>
+<td>
+Text Box
+</td>
+<td>
+<a href="Tools.WPF/Samples/Editor%20Controls/Currency%20Text%20Box">Currency TextBox</a>
+</td>
+
+</tr>
+  <tr>
   <td>
-    <a href="SfSpreadsheet.WPF/Samples">Spreadsheet</a>
-  </td>
-  <td></td>
+<a href="Tools.WPF/Samples/Editor%20Controls/Double%20Text%20Box">Double TextBox</a>
+</td>
+  <td>
+<a href="Tools.WPF/Samples/Editor%20Controls/Integer%20Text%20Box">Integer TextBox</a>
+</td>
+  <td>
+<a href="Tools.WPF/Samples/DateTimePicker/DatePicker">Date Picker</a>
+</td>
+
 </tr>
    <tr>
+   <td>
+  <a href="Tools.WPF/Samples/DateTimePicker/TimePicker">Time Picker</a>
+</td>
+<td>
+<a href="Tools.WPF/Samples/Editor%20Controls/Date%20Time%20Edit">Date-Time Editor</a>
+</td>
+<td>
+Button
+</td>
+ 
+</tr>
+  
+   <tr>
+    <td>
+    <a href="Tools.WPF/Samples/MaskedEdit">Masked TextBox</a>
+</td>
+  <td>
+<a href="Tools.WPF/Samples/Editor%20Controls/Percent%20Text%20Box">Percent TextBox</a>
+</td>
+<td>
+<a href="Tools.WPF/Samples/Editor%20Controls/Time%20Span%20Edit">Time Span Editor</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="Samples/Editor%20Controls/UpDown">Numeric UpDown</a>
+</td>
+  <td>
+<a href="Tools.WPF/Samples/Editor%20Controls/DomainUpDown">Domain Updown</a>
+</td>
+<td>
+<a href="Tools.WPF/Samples/ComboBox/ComboBox">Combo Box</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="Tools.WPF/Samples/Range%20Slider/Range%20Slider">Range Slider</a>
+</td>
+<td>
+<a href="Tools.WPF/Samples/RadialSlider">Radial Slider</a>
+</td>
+<td>
+<a href="Tools.WPF/Samples/Color%20Picker">Color Picker</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="Tools.WPF/Samples/ColorPallete">Color Palette</a>
+</td>
+<td>
+<a href="Tools.WPF/Samples/Color%20Picker/Color%20Picker%20Palette">Color Picker Palette</a>
+</td>
+<td>
+<a href="Tools.WPF/Samples/Calculator/Calculator">Calculator</a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="Tools.WPF/Samples/Rating">Rating</a>
+</td>
+<td>
+Checked ListBox
+</td>
+<td>
+Drop Down Button
+</td>
+</tr>
+<tr>
+<td>
+Split Button
+</td>
+<td>
+<a href="SfGrid.WPF/Samples/MultiColumnDropDownDemo">MultiColumn Drop-Down</a>
+</td>
+<td>
+<a href="Tools.WPF/Samples/Calendar%20Controls">Calender</a>
+</td>
+</tr>
+<tr>
+<td>
+  <a href="Edit.WPF/Samples/Language-Based%20Highlighting">Syntax Editor</a>
+</td>
+  <td>
+    <a href="Grid.WPF/Samples/GridControl">Cell Grid</a>
+  </td>
+   <td>
+    <a href="Tools.WPF/Samples/PropertyGrid">Property Grid</a>
+  </td>
+</tr>
+
+<tr>
     <td colspan="3" rowspan="1">
     <b>DATA VISUALIZATION<b>
     </td>
@@ -105,16 +212,6 @@
 <td>
 <a href="SfHeatMap.WPF/Samples">Heat Map</a>
 </td>
-</tr>
-<tr> 
-  <td colspan="3" rowspan="1"><b>DATA SCIENCE</b></td>
-</tr>
-<tr>
-  <td>
-<a href="PMML.WPF/PMMLWPFSampleBrowser">Predictive Analytics</a>
-</td>
-<td/>
-  <td/>
 </tr>
 
 <tr> 
@@ -206,127 +303,21 @@
 </td>
 <td/>
 </tr>
-<tr> 
-  <td colspan="3" rowspan="1"><b>EDITORS</b></td>
-</tr>
+
+<tr><td colspan="3" rowspan="1"><b> Editors and Viewers</b></td></tr>
 <tr>
-  <td>
-<a href="Tools.WPF/Samples/AutoComplete">Auto Complete</a>
-</td>
 <td>
-Text Box
-</td>
-<td>
-<a href="Tools.WPF/Samples/Editor%20Controls/Currency%20Text%20Box">Currency TextBox</a>
-</td>
-
-</tr>
-  <tr>
-  <td>
-<a href="Tools.WPF/Samples/Editor%20Controls/Double%20Text%20Box">Double TextBox</a>
-</td>
-  <td>
-<a href="Tools.WPF/Samples/Editor%20Controls/Integer%20Text%20Box">Integer TextBox</a>
-</td>
-  <td>
-<a href="Tools.WPF/Samples/DateTimePicker/DatePicker">Date Picker</a>
-</td>
-
-</tr>
-   <tr>
-   <td>
-  <a href="Tools.WPF/Samples/DateTimePicker/TimePicker">Time Picker</a>
-</td>
-<td>
-<a href="Tools.WPF/Samples/Editor%20Controls/Date%20Time%20Edit">Date-Time Editor</a>
-</td>
-<td>
-Button
-</td>
- 
-</tr>
+    <a href="SfSpreadsheet.WPF/Samples">Spreadsheet</a>
+  </td>
   
-   <tr>
-    <td>
-    <a href="Tools.WPF/Samples/MaskedEdit">Masked TextBox</a>
-</td>
-  <td>
-<a href="Tools.WPF/Samples/Editor%20Controls/Percent%20Text%20Box">Percent TextBox</a>
-</td>
-<td>
+ <td>
 <a href="SfRichTextBoxAdv.WPF/Sample">Rich TextBox</a>
 </td>
+<td>
+<a href="PdfViewer.WPF">PDF Viewer</a>
+</td>
+</tr>
 
-</tr>
-<tr>
-<td>
-<a href="Tools.WPF/Samples/Editor%20Controls/Time%20Span%20Edit">Time Span Editor</a>
-</td>
-<td>
-<a href="Samples/Editor%20Controls/UpDown">Numeric UpDown</a>
-</td>
-  <td>
-<a href="Tools.WPF/Samples/Editor%20Controls/DomainUpDown">Domain Updown</a>
-</td>
-  
-</tr>
-<tr>
-<td>
-<a href="Tools.WPF/Samples/ComboBox/ComboBox">Combo Box</a>
-</td>
-<td>
-<a href="Tools.WPF/Samples/Range%20Slider/Range%20Slider">Range Slider</a>
-</td>
-<td>
-<a href="Tools.WPF/Samples/RadialSlider">Radial Slider</a>
-</td>
-
-</tr>
-<tr>
-<td>
-<a href="Tools.WPF/Samples/Color%20Picker">Color Picker</a>
-</td>
-  <td>
-<a href="Tools.WPF/Samples/ColorPallete">Color Palette</a>
-</td>
-  <td>
-<a href="Tools.WPF/Samples/Color%20Picker/Color%20Picker%20Palette">Color Picker Palette</a>
-</td>
-
-</tr>
-<tr>
-<td>
-<a href="Tools.WPF/Samples/Calculator/Calculator">Calculator</a>
-</td>
-<td>
-<a href="Tools.WPF/Samples/Rating">Rating</a>
-</td>
-<td>
-Checked ListBox
-</td>
-  
-</tr>
-<tr>
-<td>
-Drop Down Button
-</td>
-  <td>
-Split Button
-</td>
-<td>
-<a href="SfGrid.WPF/Samples/MultiColumnDropDownDemo">MultiColumn Drop-Down</a>
-</td>
-
-</tr>
-<tr>
-<td>
-<a href="Tools.WPF/Samples/Calendar%20Controls">Calender</a>
-</td>
-<td>
-  <a href="Edit.WPF/Samples/Language-Based%20Highlighting">Syntax Editor</a>
-</td>
-  <td/>
-</tr>
 <tr><td colspan="3" rowspan="1"><b> NOTIFICATION</b></td></tr>
 <tr>
   <td>
@@ -338,6 +329,26 @@ Split Button
 <td>
 <a href="Tools.WPF/Samples/HubTile">Hub Tile</a>
 </td>
+</tr>
+
+<tr><td colspan="3" rowspan="1"><b>FILE FORMATS</b></td></tr>
+<tr>
+  <td>
+   <a href="XlsIO.WPF">Excel</a>
+</td>
+<td>
+<a href="PDF.WPF">PDF</a>
+</td>
+<td>
+<a href="DocIO.WPF">Word</a>
+</td>
+  </tr>
+  <tr>
+ <td>
+<a href="Presentation.WPF/Samples">Power Point</a>
+</td>
+  <td/>
+  <td/>
 </tr>
 
 <tr><td colspan="3" rowspan="1"><b>REPORTING</b></td></tr>
@@ -376,28 +387,6 @@ Report Writer
   <td/>
 </tr>
 
-<tr><td colspan="3" rowspan="1"><b>FILE FORMATS</b></td></tr>
-<tr>
-  <td>
-   <a href="XlsIO.WPF">Excel</a>
-</td>
-<td>
-<a href="PDF.WPF">PDF</a>
-</td>
-<td>
-<a href="DocIO.WPF">Word</a>
-</td>
-  </tr>
-  <tr>
-<td>
-<a href="PdfViewer.WPF">PDF Viewer</a>
-</td>
-  <td>
-<a href="Presentation.WPF/Samples">Power Point</a>
-</td>
-  <td/>
-</tr>
-
 <tr><td colspan="3" rowspan="1"><b>MISCELLANEOUS</b></td></tr>
 <tr>
 <td>
@@ -410,6 +399,14 @@ Report Writer
 <a href="Calculate.WPF">Calculate</a>
 </td>
 </tr>
+<tr> 
+  <td colspan="3" rowspan="1"><b>DATA SCIENCE</b></td>
+</tr>
+<tr>
+  <td>
+<a href="PMML.WPF/PMMLWPFSampleBrowser">Predictive Analytics</a>
+</td>
+<td/>
+  <td/>
+</tr>
 </table>
-
-
