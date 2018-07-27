@@ -251,10 +251,10 @@ Text Box
   <a href="Tools.WPF/Samples/DateTimePicker/TimePicker">Time Picker</a>
 </td>
 <td>
-<a href="Tools.WPF/Samples/Editor%20Controls/Date%20Time%20Edit">Date Time Editor</a>
+<a href="Tools.WPF/Samples/Editor%20Controls/Date%20Time%20Edit">Date-Time Editor</a>
 </td>
 <td>
-Button Adv
+Button
 </td>
  
 </tr>
@@ -414,7 +414,7 @@ Report Writer
 <tr><td colspan="3" rowspan="1"><b>MISCELLANEOUS</b></td></tr>
 <tr>
 <td>
-<a href="Tools.WPF/Samples/Spell%20Checker/Spell%20Checker">SpellChecker</a>
+<a href="Tools.WPF/Samples/Spell%20Checker/Spell%20Checker">Spell Checker</a>
 </td>
 <td>
 <a href="Tools.WPF/Samples/Wizard/Wizard%20Control">Wizard</a>
