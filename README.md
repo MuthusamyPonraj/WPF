@@ -22,11 +22,9 @@
   <td colspan="3" rowspan="1"><b>INPUT CONTROLS</b></td>
 </tr>
 <tr>
-  <td>
-<a href="Tools.WPF/Samples/AutoComplete">Auto Complete</a>
-</td>
+  <td>Auto Complete</td>
 <td>
-Text Box
+<a href="Tools.WPF/Samples/AutoComplete">Text Box</a>
 </td>
 <td>
 <a href="Tools.WPF/Samples/Editor%20Controls/Currency%20Text%20Box">Currency TextBox</a>
