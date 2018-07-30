@@ -1,0 +1,8 @@
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Grouping Aggregate\VB\obj\Release\GroupingAggregate_2010.vbprojResolveAssemblyReference.cache
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Grouping Aggregate\VB\obj\Release\Window1.baml
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Grouping Aggregate\VB\obj\Release\Window1.g.vb
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Grouping Aggregate\VB\obj\Release\Application.g.vb
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Grouping Aggregate\VB\obj\Release\GroupingAggregate_MarkupCompile.cache
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Grouping Aggregate\VB\obj\Release\GroupingAggregate.g.resources
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Grouping Aggregate\VB\obj\Release\Resources.resources
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Grouping Aggregate\VB\obj\Release\GroupingAggregate_2010.vbproj.GenerateResource.Cache

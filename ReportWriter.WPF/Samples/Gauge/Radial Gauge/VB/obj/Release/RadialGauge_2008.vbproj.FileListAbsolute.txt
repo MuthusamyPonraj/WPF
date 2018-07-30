@@ -1,0 +1,8 @@
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Gauge\Radial Gauge\VB\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Gauge\Radial Gauge\VB\obj\Release\Window1.baml
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Gauge\Radial Gauge\VB\obj\Release\Window1.g.vb
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Gauge\Radial Gauge\VB\obj\Release\Application.g.vb
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Gauge\Radial Gauge\VB\obj\Release\RadialGauge_MarkupCompile.cache
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Gauge\Radial Gauge\VB\obj\Release\RadialGauge.g.resources
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Gauge\Radial Gauge\VB\obj\Release\Resources.resources
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Gauge\Radial Gauge\VB\obj\Release\RadialGauge_2008.vbproj.GenerateResource.Cache

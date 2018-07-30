@@ -1,0 +1,8 @@
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Alternate Formatting\VB\obj\Release\AlternateFormatting_2010.vbprojResolveAssemblyReference.cache
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Alternate Formatting\VB\obj\Release\Window1.baml
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Alternate Formatting\VB\obj\Release\Window1.g.vb
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Alternate Formatting\VB\obj\Release\Application.g.vb
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Alternate Formatting\VB\obj\Release\AlternateFormatting_MarkupCompile.cache
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Alternate Formatting\VB\obj\Release\AlternateFormatting.g.resources
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Alternate Formatting\VB\obj\Release\Resources.resources
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Tablix\Alternate Formatting\VB\obj\Release\AlternateFormatting_2010.vbproj.GenerateResource.Cache

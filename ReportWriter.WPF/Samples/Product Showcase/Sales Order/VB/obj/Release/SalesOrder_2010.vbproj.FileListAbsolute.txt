@@ -1,0 +1,8 @@
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Sales Order\VB\obj\Release\SalesOrder_2010.vbprojResolveAssemblyReference.cache
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Sales Order\VB\obj\Release\Window1.baml
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Sales Order\VB\obj\Release\Window1.g.vb
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Sales Order\VB\obj\Release\Application.g.vb
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Sales Order\VB\obj\Release\SalesOrder_MarkupCompile.cache
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Sales Order\VB\obj\Release\SalesOrder.g.resources
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Sales Order\VB\obj\Release\SalesOrder.Resources.resources
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Sales Order\VB\obj\Release\SalesOrder_2010.vbproj.GenerateResource.Cache

@@ -1,0 +1,8 @@
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Pie Chart\VB\obj\Release\PieChart_2010.vbprojResolveAssemblyReference.cache
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Pie Chart\VB\obj\Release\Window1.baml
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Pie Chart\VB\obj\Release\Window1.g.vb
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Pie Chart\VB\obj\Release\Application.g.vb
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Pie Chart\VB\obj\Release\PieChart_MarkupCompile.cache
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Pie Chart\VB\obj\Release\PieChart.g.resources
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Pie Chart\VB\obj\Release\Resources.resources
+C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Pie Chart\VB\obj\Release\PieChart_2010.vbproj.GenerateResource.Cache
