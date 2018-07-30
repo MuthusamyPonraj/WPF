@@ -341,7 +341,7 @@
    <a href="ReportViewer.WPF/samples">Report Viewer</a>
 </td>
 <td>
-Report Writer
+<a href="ReportWriter.WPF/Samples">Report Writer</a>
 </td>
 <td>
 <a href="ReportDesigner.WPF/Samples">Report Designer</a>
