@@ -22,14 +22,16 @@
   <td colspan="3" rowspan="1"><b>INPUT CONTROLS</b></td>
 </tr>
 <tr>
-  <td>Auto Complete</td>
+  
 <td>
 <a href="Tools.WPF/Samples/AutoComplete">Text Box</a>
 </td>
 <td>
 <a href="Tools.WPF/Samples/Editor%20Controls/Currency%20Text%20Box">Currency TextBox</a>
 </td>
-
+<td>
+    <a href="Grid.WPF/Samples/GridControl">Cell Grid</a>
+  </td>
 </tr>
   <tr>
   <td>
@@ -51,9 +53,8 @@
 <a href="Tools.WPF/Samples/Editor%20Controls/Date%20Time%20Edit">Date-Time Editor</a>
 </td>
 <td>
-Button
-</td>
- 
+    <a href="Tools.WPF/Samples/PropertyGrid">Property Grid</a>
+  </td>
 </tr>
   
    <tr>
@@ -105,33 +106,18 @@ Button
 <a href="Tools.WPF/Samples/Rating">Rating</a>
 </td>
 <td>
-Checked ListBox
-</td>
-<td>
-Drop Down Button
-</td>
-</tr>
-<tr>
-<td>
-Split Button
+  <a href="Edit.WPF/Samples/Language-Based%20Highlighting">Syntax Editor</a>
 </td>
 <td>
 <a href="SfGrid.WPF/Samples/MultiColumnDropDownDemo">MultiColumn Drop-Down</a>
 </td>
-<td>
-<a href="Tools.WPF/Samples/Calendar%20Controls">Calender</a>
-</td>
 </tr>
 <tr>
 <td>
-  <a href="Edit.WPF/Samples/Language-Based%20Highlighting">Syntax Editor</a>
+<a href="Tools.WPF/Samples/Calendar%20Controls">Calender</a>
 </td>
-  <td>
-    <a href="Grid.WPF/Samples/GridControl">Cell Grid</a>
-  </td>
-   <td>
-    <a href="Tools.WPF/Samples/PropertyGrid">Property Grid</a>
-  </td>
+  <td/>
+  <td/>
 </tr>
 
 <tr>
