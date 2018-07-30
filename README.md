@@ -1,7 +1,7 @@
 # Syncfusion WPF demos
   This repository contains the demo samples that demonstrates various features of Syncfusion controls for WPF platform
 
-## Samples by Category
+## Samples
 
 <table>
   <tr>
