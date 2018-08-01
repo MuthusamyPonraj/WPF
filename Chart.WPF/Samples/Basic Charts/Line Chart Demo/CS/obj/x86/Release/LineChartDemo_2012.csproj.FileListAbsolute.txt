@@ -1,5 +1,0 @@
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Basic Charts\Line Chart Demo\CS\obj\x86\Release\LineChartDemo_2012.csprojResolveAssemblyReference.cache
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Basic Charts\Line Chart Demo\CS\obj\x86\Release\App.g.cs
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Basic Charts\Line Chart Demo\CS\obj\x86\Release\GeneratedInternalTypeHelper.g.cs
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Basic Charts\Line Chart Demo\CS\obj\x86\Release\LineChartDemo_MarkupCompile.cache
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Basic Charts\Line Chart Demo\CS\obj\x86\Release\LineChartDemo_MarkupCompile.lref

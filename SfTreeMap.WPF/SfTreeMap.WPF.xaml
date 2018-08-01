@@ -1,7 +1,0 @@
-﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
-	      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-
-   <Paragraph  >
-      Essential SfTreemap control provides a simple but effective way to visualize flat or hierarchical data as clustered rectangles with a specific weighted attribute determining the size of the rectangle.
-    </Paragraph>
-</FlowDocument>

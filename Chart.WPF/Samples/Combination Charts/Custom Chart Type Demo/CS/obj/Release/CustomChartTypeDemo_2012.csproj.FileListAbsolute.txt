@@ -1,5 +1,0 @@
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Combination Charts\Custom Chart Type Demo\CS\obj\Release\CustomChartTypeDemo_2012.csprojResolveAssemblyReference.cache
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Combination Charts\Custom Chart Type Demo\CS\obj\Release\App.g.cs
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Combination Charts\Custom Chart Type Demo\CS\obj\Release\GeneratedInternalTypeHelper.g.cs
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Combination Charts\Custom Chart Type Demo\CS\obj\Release\CustomChartTypeDemo_MarkupCompile.cache
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Combination Charts\Custom Chart Type Demo\CS\obj\Release\CustomChartTypeDemo_MarkupCompile.lref

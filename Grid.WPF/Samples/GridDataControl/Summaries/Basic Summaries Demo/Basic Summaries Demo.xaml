@@ -1,9 +1,0 @@
-<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    >
-        <Paragraph>
-           This sample showcases the Summaries capabilities of GridDataControl. The GridDataControl provides support to add additional rows at the bottom of the grid table. Such rows, called summaries, are fixed and are used to provide information about the grid data. For instance, you can display the record count or maximum value as a summary. The GridDataControl provides three kinds of summary row collections, namely SummaryRows, TableSummaryRows, and CaptionSummaryRows, in order to separate the different summary types. 
-        </Paragraph>
-
-				<Paragraph TextAlignment="Center"><Image Source="Images\BasicSummariesDemo.png" Stretch="None" /></Paragraph>
-</FlowDocument>
-

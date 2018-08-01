@@ -1,9 +1,0 @@
-<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    >
-<Paragraph>
-This sample showcases the Filtering capability of GridDataControl. Essential GridDataControl allows you to restrict the display of records using a mechanism called Filters. A filter lets you to extract a subset of records that meet certain filter criteria. Filters can be applied to one or more columns. When this feature is enabled, every column header displays a filter icon. Clicking this icon opens a drop-down list, which has various options for searching, sorting, Advanced Filtering. 
-</Paragraph>
-        
-				<Paragraph TextAlignment="Center"><Image Source="Images\BasicFiltering.png"  Stretch="None" /></Paragraph>
-</FlowDocument> 
-

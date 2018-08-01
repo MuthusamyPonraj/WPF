@@ -1,9 +1,0 @@
-<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    >
-		<Paragraph>
-		This sample showcases the Nested child Collection capability of GridDataControl. The GridDataControl can display nested tables in a hierarchy using a master-detail configuration. In a hierarchical view, all tables in the data source are interconnected by means of relations. The Grid automatically detects the data relations in a data set and creates a relation for each such data relation found in the data set and populates it in hierarchical view.
-		</Paragraph>
-       		
-				<Paragraph TextAlignment="Center"><Image Source="Images\NestedChildDemo.png" Stretch="None" /></Paragraph>
-</FlowDocument>
-

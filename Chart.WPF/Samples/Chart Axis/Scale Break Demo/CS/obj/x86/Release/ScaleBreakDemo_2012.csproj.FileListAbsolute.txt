@@ -1,3 +1,0 @@
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Chart Axis\Scale Break Demo\CS\obj\x86\Release\ScaleBreakDemo_2012.csprojResolveAssemblyReference.cache
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Chart Axis\Scale Break Demo\CS\obj\x86\Release\App.g.cs
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Chart Axis\Scale Break Demo\CS\obj\x86\Release\ScaleBreakDemo_MarkupCompile.cache

@@ -1,2 +1,0 @@
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\TimeLine Control\TimeLine Control Demo\CS\obj\x86\Release\TimeLineControlSample_2012.csprojResolveAssemblyReference.cache
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\TimeLine Control\TimeLine Control Demo\CS\obj\x86\Release\TimeLineControlSample_MarkupCompile.cache

@@ -1,9 +1,0 @@
-<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-   >
-        <Paragraph>
-           This sample simulates stock value updates to showcase how GridDataControl support updates at a very high frequency. You can notice that the GridDataControl is getting updated when the underlying data source changes. This can be achieved by setting the NotifyPropertyChanges property to true, which will ensure that the GridDataControl is notified of the data source changes.
-        </Paragraph>
-
-				<Paragraph TextAlignment="Center"><Image Source="Images\Stock.png" Stretch="None" /></Paragraph>
-</FlowDocument>
-

@@ -1,3 +1,0 @@
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Financial Charts\HiLo Chart Demo\CS\obj\x86\Release\HiLoChart_2012.csprojResolveAssemblyReference.cache
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Financial Charts\HiLo Chart Demo\CS\obj\x86\Release\App.g.cs
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Financial Charts\HiLo Chart Demo\CS\obj\x86\Release\HiLoChart_2010_MarkupCompile.cache

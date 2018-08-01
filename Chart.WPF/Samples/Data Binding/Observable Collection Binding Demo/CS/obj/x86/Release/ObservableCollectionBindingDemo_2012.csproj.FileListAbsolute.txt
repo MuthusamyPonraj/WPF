@@ -1,4 +1,0 @@
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Data Binding\Observable Collection Binding Demo\CS\obj\x86\Release\ObservableCollectionBindingDemo_2012.csprojResolveAssemblyReference.cache
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Data Binding\Observable Collection Binding Demo\CS\obj\x86\Release\App.baml
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Data Binding\Observable Collection Binding Demo\CS\obj\x86\Release\App.g.cs
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Data Binding\Observable Collection Binding Demo\CS\obj\x86\Release\ObservableCollectionBindingDemo_MarkupCompile.cache

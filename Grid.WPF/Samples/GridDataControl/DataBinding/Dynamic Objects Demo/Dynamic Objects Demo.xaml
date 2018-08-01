@@ -1,8 +1,0 @@
-<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    >
-        <Paragraph>
-            This sample showcases the Dynamic Objects capabilities of GridDataControl. The dynamic type is a static type (here we are defining the visible column as dynamic type), but an object of type dynamic by passes static type checking. In most cases, it functions like it has type object. At compile time, an element that is typed as dynamic is assumed to support any operation. Therefore, you do not have to be concerned about whether the object gets its value from a COM API, from a dynamic language such as IronPython, from the HTML Document Object Model (DOM), from reflection, or from somewhere else in the program. However, if the code is not valid, errors are caught at run time. This sample demonstrates how to use C# 4.0 Dynamic Keyword feature.
-        </Paragraph>
-		<Paragraph TextAlignment="Center"><Image Source="Images\DynamicObjectDemo.png" Stretch="None" /></Paragraph>
-</FlowDocument>
-

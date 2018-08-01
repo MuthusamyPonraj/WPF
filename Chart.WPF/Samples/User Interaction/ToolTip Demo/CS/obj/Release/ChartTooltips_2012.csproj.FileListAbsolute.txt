@@ -1,3 +1,0 @@
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\User Interaction\ToolTip Demo\CS\obj\Release\ChartTooltips_2012.csprojResolveAssemblyReference.cache
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\User Interaction\ToolTip Demo\CS\obj\Release\App.g.cs
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\User Interaction\ToolTip Demo\CS\obj\Release\ChartTooltips_MarkupCompile.cache

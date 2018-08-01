@@ -1,9 +1,0 @@
-﻿<Window x:Class="LocalizationDemo.MainWindow"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
-        Title="Localization Demo" WindowStartupLocation="CenterScreen" Icon="App.ico" Height="720" Width="1024" MinHeight="545" MinWidth="745">
-    <Grid x:Name="LayoutRoot" Background="White">
-        <syncfusion:Schedule />
-    </Grid>
-</Window>

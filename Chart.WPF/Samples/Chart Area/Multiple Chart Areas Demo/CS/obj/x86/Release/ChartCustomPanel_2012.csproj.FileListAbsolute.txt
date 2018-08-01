@@ -1,2 +1,0 @@
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Chart Area\Multiple Chart Areas Demo\CS\obj\x86\Release\ChartCustomPanel_2012.csprojResolveAssemblyReference.cache
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Chart Area\Multiple Chart Areas Demo\CS\obj\x86\Release\ChartCustomPanel_MarkupCompile.cache

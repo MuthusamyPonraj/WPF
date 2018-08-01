@@ -1,9 +1,0 @@
-<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    >
-		<Paragraph>
-		This sample showcases the Hierarchy capability of GridDataControl. The GridDataControl can display nested tables in a hierarchy using a master-detail configuration. In a hierarchical view, all the tables in the data source are interconnected by means of relations.
-		</Paragraph>
-		 
-				<Paragraph TextAlignment="Center"><Image Source="Images\HierarchyDemo.png" Stretch="None" /></Paragraph>
-</FlowDocument>
-

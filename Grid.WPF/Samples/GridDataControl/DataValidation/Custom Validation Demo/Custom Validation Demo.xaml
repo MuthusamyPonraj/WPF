@@ -1,9 +1,0 @@
-﻿<FlowDocument xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    >
-        <Paragraph>
-This sample showcases the Custom Validation capability to allow you to validate the error at application level by using the provided events in GridDataControl. The user can also customize the error icon and error message tooltip.
-        </Paragraph>
-
-				<Paragraph TextAlignment="Center"><Image Source="Images\CustomValidationDemo.png" Stretch="None" /></Paragraph>
-</FlowDocument>
-

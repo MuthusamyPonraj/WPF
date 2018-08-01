@@ -1,3 +1,0 @@
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Auxiliary Features\Serialization Demo\CS\obj\Release\Serialization_2012.csprojResolveAssemblyReference.cache
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Auxiliary Features\Serialization Demo\CS\obj\Release\App.g.cs
-C:\Work\SVN\16.2.0.1\WPF\Chart.WPF\Samples\Auxiliary Features\Serialization Demo\CS\obj\Release\SerializationDemo_MarkupCompile.cache

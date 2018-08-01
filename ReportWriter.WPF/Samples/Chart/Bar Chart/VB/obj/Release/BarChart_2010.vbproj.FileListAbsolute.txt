@@ -1,8 +1,0 @@
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Bar Chart\VB\obj\Release\BarChart_2010.vbprojResolveAssemblyReference.cache
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Bar Chart\VB\obj\Release\Window1.baml
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Bar Chart\VB\obj\Release\Window1.g.vb
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Bar Chart\VB\obj\Release\Application.g.vb
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Bar Chart\VB\obj\Release\BarChart_MarkupCompile.cache
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Bar Chart\VB\obj\Release\BarChart.g.resources
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Bar Chart\VB\obj\Release\Resources.resources
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Chart\Bar Chart\VB\obj\Release\BarChart_2010.vbproj.GenerateResource.Cache

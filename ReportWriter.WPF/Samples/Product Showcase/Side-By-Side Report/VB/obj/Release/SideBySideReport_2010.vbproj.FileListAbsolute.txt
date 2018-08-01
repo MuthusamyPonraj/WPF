@@ -1,8 +1,0 @@
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Side-By-Side Report\VB\obj\Release\SideBySideReport_2010.vbprojResolveAssemblyReference.cache
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Side-By-Side Report\VB\obj\Release\Window1.baml
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Side-By-Side Report\VB\obj\Release\Window1.g.vb
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Side-By-Side Report\VB\obj\Release\Application.g.vb
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Side-By-Side Report\VB\obj\Release\SideBySideReport_MarkupCompile.cache
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Side-By-Side Report\VB\obj\Release\SideBySideReport.g.resources
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Side-By-Side Report\VB\obj\Release\Resources.resources
-C:\Users\Syncfusion\Documents\WPF\ReportWriter.WPF\Samples\Product Showcase\Side-By-Side Report\VB\obj\Release\SideBySideReport_2010.vbproj.GenerateResource.Cache
