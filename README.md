@@ -1,18 +1,15 @@
 # Syncfusion WPF samples
 
+This repository contains the demos of [Syncfusion WPF UI controls](https://www.syncfusion.com/products/wpf). This is the best place to check our controls to get more insight about the usage of APIs. You can also check our controls by installing out [click once samples](http://silverlight.syncfusion.com/samples/WPF/Samples.html), in which you can browse the demo for all the controls.
+
 This section guides you to use the Syncfusion WPF samples in your applications.
 
-* [Overview](#overview)
 * [Requirements to run the demo](#requirements-to-run-the-demo)
 * [Documentation](#documentation)
 * [License](#license)
 * [Using the samples](#using-the-samples)
 * [Samples List](#samples-list)
 * [Support and Feedback](#support-and-feedback)
-
-## <a name="overview"></a>Overview ##
-
-This repository contains the demos of [Syncfusion WPF UI controls](https://www.syncfusion.com/products/wpf). This is the best place to check our controls to get more insight about the usage of APIs. You can also check our controls by installing out [click once samples](http://silverlight.syncfusion.com/samples/WPF/Samples.html), in which you can browse the demo for all the controls. 
 
 ## <a name="requirements-to-run-the-demo"></a>Requirements to run the demo ##
 
@@ -439,7 +436,7 @@ The easiest way to use these samples without using Git is to download the zip fi
 
 ## <a name="support-and-feedback"></a>Support and Feedback ##
 
-* For any other queries, reach our support team [here](https://www.syncfusion.com/support/directtrac/incidents) with your query.
+* For any other queries, reach our [Syncfusion support team](https://www.syncfusion.com/support/directtrac/incidents/newincident) or post the queries through the [community forums](https://www.syncfusion.com/forums).
 
 * To renew the subscription, click [here](https://www.syncfusion.com/sales/products) or contact our sales team at <salessupport@syncfusion.com>.
   
