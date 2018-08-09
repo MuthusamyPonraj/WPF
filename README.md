@@ -8,7 +8,7 @@ This section guides you to use the Syncfusion WPF samples in your applications.
 * [Documentation](#documentation)
 * [License](#license)
 * [Using the samples](#using-the-samples)
-* [Samples List](#samples-list)
+* [Controls Catalog](#controls-catalog)
 * [Support and Feedback](#support-and-feedback)
 
 ## <a name="requirements-to-run-the-demo"></a>Requirements to run the demo ##
@@ -40,7 +40,7 @@ The easiest way to use these samples without using Git is to download the zip fi
 **Reminder:** If you unzip individual samples, they will not build due to references to other portions of the ZIP file that were not unzipped. You must unzip the entire archive if you intend to build the samples.
 
 
-## <a name="samples-list"></a>Samples List ## 
+## <a name="controls-catalog"></a>Controls Catalog ## 
 
 <table>
   <tr>
