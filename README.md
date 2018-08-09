@@ -109,7 +109,7 @@ The easiest way to use these samples without using Git is to download the zip fi
 </tr>
 <tr>
 <td>
-<a href="Samples/Editor%20Controls/UpDown">NumericUpDown</a>
+<a href="Tools.WPF/Samples/Editor%20Controls/UpDown">NumericUpDown</a>
 </td>
   <td>
 <a href="Tools.WPF/Samples/Editor%20Controls/DomainUpDown">DomainUpdown</a>
@@ -218,7 +218,7 @@ The easiest way to use these samples without using Git is to download the zip fi
 <a href="Gantt.WPF/Samples">Gantt</a>
 </td>
 <td>
-<a href="Samples/DateTimeRangeNavigator">Range Navigator</a>
+<a href="SfChart.WPF/Samples/DateTimeRangeNavigator">Range Navigator</a>
 </td>
 <td>
 <a href="SfChart.WPF/Samples/Surface%20Chart">Surface Chart</a>
@@ -343,15 +343,13 @@ The easiest way to use these samples without using Git is to download the zip fi
 
 <tr><td colspan="3" rowspan="1"><b> NOTIFICATION</b></td></tr>
 <tr>
-  <td>
-   <a href="Tools.WPF/Samples/Busy%20Indicator">BusyIndicator</a>
-</td>
 <td>
 <a href="Tools.WPF/Samples/Notify%20Icon/Notify%20Icon">NotifyIcon</a>
 </td>
 <td>
 <a href="Tools.WPF/Samples/HubTile">Hub Tile</a>
 </td>
+ <td/>
 </tr>
 
 <tr><td colspan="3" rowspan="1"><b>FILE FORMATS</b></td></tr>
@@ -413,7 +411,7 @@ The easiest way to use these samples without using Git is to download the zip fi
 <tr><td colspan="3" rowspan="1"><b>MISCELLANEOUS</b></td></tr>
 <tr>
 <td>
-<a href="Tools.WPF/Samples/Spell%20Checker/Spell%20Checker">Spell Checker</a>
+<a href="Tools.WPF/Samples/SfSpellChecker">Spell Checker</a>
 </td>
 <td>
 <a href="Tools.WPF/Samples/Wizard/Wizard%20Control">Wizard</a>
