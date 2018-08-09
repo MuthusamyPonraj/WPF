@@ -334,7 +334,7 @@ The easiest way to use these samples without using Git is to download the zip fi
   </td>
   
  <td>
-<a href="SfRichTextBoxAdv.WPF/Sample">Rich TextBox</a>
+<a href="SfRichTextBoxAdv.WPF/Samples">Rich TextBox</a>
 </td>
 <td>
 <a href="PdfViewer.WPF">PDF Viewer</a>
